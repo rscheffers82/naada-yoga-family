@@ -41,7 +41,8 @@ function homepage_Output(){
 
     <hr />
 
-    <h3>Upcoming Workshops</h3>
+    <!-- <h3>Upcoming Workshops</h3> -->
+    <h3><?php the_field('workshop_title'); ?></h3>
     <div class="naada-carousel">
       <div id="healCodeLoading"><?php echo do_shortcode( '[hc-hmw snippet="Family-Workshops-Carousel"]');?></div>
     </div>
@@ -64,19 +65,20 @@ function homepage_Output(){
 
   <div class="homeContentWrap ageGroups">
     <div class="one-third first">
-      <img src="wp-content/themes/naada-family2018/images/prenatal-postnatal.png" alt="prenatal yoga"/>
+
+      <img src="<?php the_field('site_url'); ?>/wp-content/themes/naada-family2018/images/prenatal-postnatal.png" alt="prenatal yoga"/>
       <h3><?php the_field('age_group_1_title');?> </h2>
       <p><?php the_field('age_group_1_copy'); ?></h2>
     </div>
 
     <div class="one-third">
-      <img src="wp-content/themes/naada-family2018/images/tweens-teens.png" alt="teen yoga"/>
+      <img src="<?php the_field('site_url'); ?>/wp-content/themes/naada-family2018/images/tweens-teens.png" alt="teen yoga"/>
       <h3><?php the_field('age_group_2_title');?></h3>
       <p><?php the_field('age_group_2_copy'); ?></h2>
     </div>
 
     <div class="one-third">
-      <img src="wp-content/themes/naada-family2018/images/family-yoga.png" alt="family yoga"/>
+      <img src="<?php the_field('site_url'); ?>/wp-content/themes/naada-family2018/images/family-yoga.png" alt="family yoga"/>
       <h3><?php the_field('age_group_3_title');?></h3>
       <p><?php the_field('age_group_3_copy'); ?></h2>
     </div>
