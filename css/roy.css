@@ -1,0 +1,13 @@
+/* line 1, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/roy.sass */
+div.roy {
+  color: green;
+}
+
+@media only screen and (max-width: 639px) {
+  /* line 5, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/roy.sass */
+  .one-half {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=../css/roy.map */

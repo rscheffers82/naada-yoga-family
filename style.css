@@ -1,0 +1,21 @@
+/*
+ Theme Name:   Naada Family 2018
+ Theme URI:    http://naadayogafamily.ca
+ Description:  Genesis Child theme for Naada Yoga Family
+ Author:       Andrew Sepic & Roy Scheffers
+ Author URI:   http://thinkupdesign.ca / http://royscheffers.com
+ Template:     genesis
+ Version:      2.0.0
+ Text Domain:  naada-yoga-family-theme
+*/
+
+
+@import url("../genesis/style.css");
+
+@import url("../naada-family2018/css/genericons.css");
+
+@import url("css/naada.css");
+
+/* Temp files for development */
+@import url("css/andrew.css");
+@import url("css/roy.css");

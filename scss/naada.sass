@@ -1,0 +1,2238 @@
+/*
+  * CUSTOM THEME FOR NAADA Yoga Family
+  * By ANDREW @ THink Up Design & Roy @ Scheffers IT
+  * V 1.0
+  * January 2018
+
+
+/* COLORS */
+$naadagreen: #b3ba1c
+$orange: #f7ad00
+$orangeHover: #fabd30
+
+/* MIXINS */
+=downArrow
+  position: absolute
+  bottom: -21px
+  left: 48%
+  @media only screen and (min-width: 375px) and (max-width: 449px)
+    left: 42%
+  @media only screen and (max-width: 374px)
+    left: 40%
+  display: inline-block
+  border-radius: 50%
+  display: inline-block
+  width: 2.5rem
+  height: 2.5rem
+  background-color: $naadagreen
+  border-radius: 50%
+  margin-left: 0.75em
+  &:after
+    content: ''
+    display: inline-block
+    margin-top: 12px
+    width: 12px
+    height: 12px
+    border-top: 5px solid #fff
+    border-right: 5px solid #fff
+    -moz-transform: rotate(135deg)
+    -webkit-transform: rotate(135deg)
+    transform: rotate(135deg)
+
+/****/
+/** Default DOM Elements Typography **/
+/****/
+
+html
+  /** Set Root REM size **/
+  font-size: 100%
+
+body
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-size: 15px
+  color: #666
+  font-weight: 300
+  background-color: #f5f5f5
+  & > div
+    font-size: 1rem
+  input, select, textarea
+    font-size: 1rem
+
+.sidebar
+  font-size: 15px
+  color: #666
+  .widget
+    background-color: #fff
+    padding: 2.5rem
+
+body.home, body.page-template-familypage
+  background-color: #fff
+
+
+a, .entry-title a, .sidebar .widget-title a, .entry-content a, .sidebar a
+  color: #f7ad00
+  text-decoration: none
+
+
+a:hover, .entry-title a:hover, .sidebar .widget-title a:hover, .entry-content a:hover, .sidebar a:hover
+  color: #e19d00
+
+h1, h2, h3, h4, h5, h6
+  text-transform: uppercase
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
+  font-weight: 400
+
+h1, .entry-title
+  font-size: 2.25rem
+
+h2
+  font-size: 1.875rem
+
+h3
+  font-size: 1.5rem
+
+h4
+  font-size: 1.25rem
+
+hr
+  border: 0
+  height: 4px
+  margin-bottom: 4rem
+  /*background-image: -webkit-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:    -moz-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:     -ms-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:      -o-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+  width: 100%
+  background-color: #f5f5f5
+
+.entry-content a, .sidebar a
+  border-bottom: none
+
+button,
+  color: #fff
+  font-weight: bold
+  background-color: #f7ad00
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+
+input
+  padding: .95rem
+  &[type="button"], &[type="reset"], &[type="submit"]
+    color: #fff
+    font-weight: bold
+    background-color: #f7ad00
+    -webkit-border-radius: 3px
+    -moz-border-radius: 3px
+    border-radius: 3px
+
+/* buttons
+
+=naada-button
+  display: inline-block
+  position: relative
+  margin: 5px
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif;
+  text-decoration: none
+  text-transform: uppercase
+  font-weight: bold
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+
+=naada-button-hover
+  display: inline-block
+  position: relative
+  margin: 5px
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif;
+  text-decoration: none
+  text-transform: uppercase
+  font-weight: bold
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+
+.naada-button
+  +naada-button
+  &:hover
+    +naada-button-hover
+
+.orange-hollow
+  border: 2px solid $orange
+  &:hover
+    color: #fbc13b
+    border: 2px solid #fbc13b
+
+.grey-button
+  color: #fff !important
+  background-color: #3f3f3f
+  &:hover
+    color: #fff !important
+    background-color: #1f1f1f
+
+.green-button
+  color: #fff !important
+  background-color: #b3ba1c
+  &:hover
+    color: #fff !important
+    background-color: #a6ad1b
+
+=orange-button
+  color: #fff !important
+  background-color: #f7ad00
+
+.orange-button
+  +orange-button
+
+.footer-widgets a.orange-button, .rev_slider a.orange-button
+  border: 1px solid #fff
+
+.orange-button:hover
+  color: #fff !important
+  background-color: #fabd30
+
+.inactive-button
+  background-color: #C5C5C5
+  color: #8D8888
+
+.naada-button
+  &.small
+    font-size: 11px
+    line-height: 14px
+    padding: 5px 10px
+  &.medium
+    font-size: 16px
+    line-height: 16px
+    padding: 12px 20px
+  &.large
+    font-size: 21px
+    line-height: 21px
+    padding: 18px 30px
+
+/* end buttons
+
+a.button, .button, .entry-content a.button, button, input[type="button"], input[type="reset"], input[type="submit"]
+  color: #fff
+  font-weight: bold
+  background-color: #f7ad00
+  -webkit-border-radius: 3px
+  -moz-border-radius: 3px
+  border-radius: 3px
+  font-size: 1rem
+  text-transform: uppercase
+  &:hover
+    background-color: $orangeHover
+    color: #fff
+
+button:hover
+  background-color: #e19d00
+
+input:hover
+  &[type="button"], &[type="reset"], &[type="submit"]
+    background-color: #e19d00
+
+.button:hover
+  background-color: #e19d00
+
+input
+  &[type="search"]
+    margin-bottom: 20px
+  &[type="checkbox"], &[type="image"], &[type="radio"]
+    margin-right: 5px
+
+\:focus
+  outline-color: #fff
+
+.archive-pagination li a
+  background-color: #616161
+
+span.dropcap
+  float: left
+  font-size: 50px
+  line-height: 44px
+  padding: 2px 5px 0 3px
+
+.twocol
+  width: 45%
+  float: left
+  margin-right: 2.5%
+  &:nth-of-type(2)::after
+    content: "."
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+.row
+  float: left
+  width: 100%
+  margin-bottom: 1rem
+
+.alert, .notice
+  margin: 1rem 1rem 2rem
+  padding: 1rem
+  display: block
+  float: left
+  color: #fff
+  border-radius: 5px
+  p
+    margin: 0
+    line-height: 1.1rem
+
+.alert
+  background-color: #e87070
+  border: 2px solid red
+  h3
+    color: #fff
+
+.notice
+  background-color: #d9eaff
+  border: 2px solid #a8c3e4
+  color: #616161
+  h3
+    color: #616161
+
+.checkMarks li
+  background: url('../images/checkmark.png') no-repeat top left
+  padding-left: 35px
+  line-height: normal
+  font-weight: 400
+  font-size: 1.1rem
+  padding-bottom: .75rem
+
+.underline
+  border-bottom: 4px solid $naadagreen
+  display: inline-block
+  text-align: center
+  margin-bottom: 1rem
+  padding-bottom: 3px
+
+.centerWrap
+  text-align: center
+  & > h2
+    margin: 0 auto 2rem
+    display: inline-block
+  h3.newsletter
+    margin: 2rem auto 1rem
+  #mc_embed_signup
+    text-align: center
+    width: 100%
+    margin-bottom: 0
+    form
+      text-align: center
+    #mc_embed_signup_scroll
+      width: 100%
+      input[type="email"]
+        width: 265px
+        display: inline-block
+        @media only screen and (max-width: 500px)
+          width: 46%
+
+
+/* MailChimp */
+
+#mc_embed_signup
+  clear: left
+  font-size: 14px
+  .clear
+    text-align: center
+  p.stupid
+    display: inline-block
+    margin: 0
+    input[type='submit']
+      margin: -20px 0 0 0
+      padding: .75rem 2rem
+      width: 100%
+  input[type='submit']
+    background-color: #F7AD00
+    border: 1px solid #ffffff
+    padding: 16px
+    height: auto
+    margin-top: 1.5em
+    width: 80%
+    &:hover
+      background-color: #E19D00
+
+
+
+
+/* Header
+
+.site-container
+  @media only screen and (min-width: 1200px)
+    padding-top: 43px
+  @media only screen and (min-width: 800px) and (max-width: 1200px)
+    padding-top: 86px
+
+.site-header
+  min-height: 80px
+  background-color: #fff
+  .wrap
+    padding: 8px 0
+
+.title-area
+  padding: 7px 0
+
+/* end Header
+
+/* Navigation
+
+.nav-primary
+  background-color: #b3ba1c
+  z-index: 999
+  position: fixed
+  width: 100%
+
+.genesis-nav-menu
+  font-size: 13px
+  color: #666
+  text-transform: uppercase
+  font-weight: bold
+
+.menu-secondary
+  font-size: 12px
+
+// Special class for intersite links
+li.backhome
+  float: right
+  background-color: #4873c5
+
+@media only screen and (max-width: 400px)
+  #menu-secondary-navigation li
+    font-size: 75%
+
+ul.menu-primary
+  > li.menu-item-has-children > a:after
+    content: '\f502'
+    display: inline-block
+    font: normal 12px/1 'Genericons'
+    vertical-align: bottom
+    -webkit-font-smoothing: antialiased
+    padding-left: 5px
+  ul > li.menu-item-has-children > a:after
+    content: '\f502'
+    display: inline-block
+    font: normal 12px/1 'Genericons'
+    vertical-align: bottom
+    -webkit-font-smoothing: antialiased
+    padding-left: 5px
+    content: '\f501'
+    vertical-align: text-bottom
+    padding-bottom: 2px
+
+.genesis-nav-menu a
+  padding: 15px 10px
+  color: #fff
+
+.nav-primary .genesis-nav-menu
+  a:hover, .current-menu-item > a
+    color: #e8e8e8
+    text-decoration: none
+  .sub-menu
+    .current-menu-item > a:hover
+      color: #fff
+    z-index: 500
+    a
+      background-color: #fff
+      color: #b3ba1c
+      border: 1px solid #e5e5e5
+      border-top: none
+      font-size: 13px
+      text-transform: uppercase
+      line-height: 1.2
+
+.genesis-nav-menu .sub-menu .current-menu-item a
+  background-color: #fff
+  color: #b3ba1c
+  border: 1px solid #e5e5e5
+  border-top: none
+  font-size: 13px
+  text-transform: uppercase
+  line-height: 1.2
+
+.menu-primary .sub-menu
+  a:hover, .current-menu-item a:hover
+    background-color: #b3ba1c
+    color: #fff
+
+.header-image .site-title > a
+  background: url('../images/naada-family-logo.png') no-repeat left
+  width: 360px
+  background-size: contain
+  height: 105px
+  @media only screen and (max-width: 400px)
+    width: 320px
+    background-size: cover
+
+#menu-ytt-submenu li a, #menu-ytt-submenu-french li a
+  font-size: 1.2em
+
+#menu-ytt-submenu li a:hover:after, #menu-ytt-submenu-french li a:hover:after
+  content: '\f501'
+  display: inline-block
+  font: normal 14px/1 'Genericons'
+  vertical-align: middle
+  -webkit-font-smoothing: antialiased
+  padding-left: 5px
+
+.shiftnav-loading
+  display: none !important
+
+/* end Navigation
+
+/* Video Banner CSS
+
+.familyBanner
+  width: 100%
+  position: relative
+  min-height: 100vh
+  background: url('../images/familyyoga-header.jpg') no-repeat center left
+  background-size: cover
+  @media only screen and (max-width: 400px)
+    min-height: 250px
+
+.familyCallout
+  position: absolute
+  top: 15%
+  width: 600px
+  right: 10%
+  color: #fff
+  font-size: 1.5rem
+  line-height: normal
+  font-weight: 400
+  text-align: center
+  z-index: 100
+  h1, h2, h3
+    color: #fff
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.51)
+    font-weight: 600
+  p
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.51)
+  a.naada-button
+    text-shadow: none
+  div.downArrow
+    +downArrow
+    bottom: -36px
+    left: 42%
+  @media only screen and (min-width: 640px) and (max-width: 960px)
+    top: 20%
+    width: 400px
+    left: 5%
+    font-size: 1.25rem
+    .naada-button.large
+      padding: 10px 15px
+      font-size: 18px
+    .text-widget p
+      margin: 0 0 10px
+  @media only screen and (max-width: 639px)
+    top: 10%
+    width: 300px
+    font-size: 1rem
+    font-weight: bold
+    h2
+      font-size: 22px
+    .naada-button.large
+      padding: 8px 10px
+      font-size: 14px
+    .text-widget p
+      margin: 0 0 10px
+  @media only screen and (max-width: 480px)
+    top: 20%
+    .textwidget p
+      display: none
+  @media only screen and (max-width: 400px)
+    left: 2%
+    h1, h2
+      font-size: 17px
+    .textwidget p
+      display: none
+    .naada-button.large
+      padding: 4px 10px
+
+
+/* Video Banner End
+
+/* Header Widget
+
+.header-full-width .title-area
+  width: 360px
+  @media only screen and (max-width: 400px)
+    width: 320px
+
+.site-header .menu-meta-links-container, .site-header .menu-meta-links-french-container
+  max-width: 800px
+  float: right
+  ul
+    li
+      float: left
+      padding: 0 5px
+      a
+        color: #A2A2A2
+        font-weight: bold
+        text-transform: uppercase
+        &:hover
+          color: #BeBebe
+    li#menu-item-wpml-ls-4-fr
+      margin: 48px 20px 0
+    li.backNaada
+      transition: all .3s ease
+      padding: 3rem 0
+      background-color: $naadagreen
+      border-radius: 200px
+      color: #fff
+      cursor: pointer
+      border: 2px solid $naadagreen
+      a
+        padding: 3rem 1rem
+        color: #fff
+      &:hover
+        border: 2px solid $naadagreen
+        background-color: transparent
+        a
+          color: $naadagreen
+    li.language a
+      color: $orange
+      &:hover
+        color: $orangeHover
+  @media only screen and (max-width: 700px)
+    float: left
+    margin-top: 7px
+    section.widget_nav_menu
+      float: left
+      margin-left: 15px
+    section#search-3
+      margin-right: 20px
+      margin-left: 0
+
+@media only screen and (max-width: 640px)
+  .site-header .menu-meta-links-container, .site-header .menu-meta-links-french-container
+    float: left
+    ul
+      li.backNaada
+        padding: 1rem
+        a
+          padding: 0
+      li#menu-item-wpml-ls-4-fr
+        margin: 18px 10px 0
+
+.header-widget-area section
+  float: right
+
+.nav-header
+  a, .naada-icon, .current-menu-item > a
+    color: #999
+  a:hover
+    color: #333
+  .genesis-nav-menu
+    #menu-item-329-fr a, #menu-item-4881-en a, #menu-item-329-fr a:hover, #menu-item-4881-en a:hover
+      color: #F7AD00
+
+.site-header form.search-form
+  margin-top: 21px
+  width: 100%
+  margin-bottom: 0
+  padding: 5px 8px
+  border-radius: 20px
+  font-size: 16px
+  border: 1px solid #ddd
+  float: right
+  height: 30px
+  width: auto
+  @media only screen and (max-width: 700px)
+    margin-top: 60px
+    margin-right: 10px
+  @media only screen and (max-width: 400px)
+    margin-top: 0
+  &:hover
+    background-color: $naadagreen
+    color: #fff
+    cursor: text
+    .ico-mglass
+      background: $naadagreen
+      border: 2px solid #fff
+      &::after
+        background: #fff
+  input
+    border: 0
+    border-bottom: 1px solid #ECEFAC
+    display: none
+    background: transparent
+    color: #fff
+    margin-bottom: 0
+    width: 85%
+    padding: 0
+    height: 20px
+    float: right
+
+.ico-mglass
+  position: relative
+  display: inline-block
+  background: #fff
+  border-radius: 30px
+  height: 11px
+  width: 11px
+  border: 2px solid #888
+  float: left
+  margin-top: 3px
+
+  &:after
+    content: ""
+    height: 2px
+    width: 7px
+    background: #888
+    position: absolute
+    top: 7px
+    left: 5px
+    -webkit-transform: rotate(45deg)
+    -moz-transform: rotate(45deg)
+    -ms-transform: rotate(45deg)
+    -o-transform: rotate(45deg)
+
+
+input[type="search"]
+  &::-webkit-input-placeholder
+    /* WebKit, Blink, Edge
+    color: #ccc
+  &:-moz-placeholder
+    /* Mozilla Firefox 4 to 18
+    color: #ddd
+    opacity: 1
+  &::-moz-placeholder
+    /* Mozilla Firefox 19+
+    color: #ddd
+    opacity: 1
+  &:-ms-input-placeholder
+    /* Internet Explorer 10-11
+    color: #ddd
+  &:placeholder-shown
+    /* Standard Pseudo-class
+    color: #ddd
+
+section#search-3
+  width: 30px
+  margin-left: 20px
+  h4
+    display: none
+
+/* End Header Widget
+
+/* Posts & Pages
+
+.site-inner
+  padding-top: 40px
+
+.breadcrumb
+  margin-bottom: 20px
+
+.content
+  // width: 800px
+  /* Nexus G5 mobile issue fix: With a fix width the content will be pushed off the screen at smaller screen sizes. */
+  .entry
+    background-color: #fff
+    padding: 3rem 4rem
+    @media only screen and (max-width: 500px)
+      padding: 1rem 2rem
+
+.entry-title
+  margin-bottom: 30px
+
+.post h1.entry-title
+  font-size: 24px
+
+.archive-pagination
+  li a:hover, .active a
+    background-color: #f7ad00
+
+.entry-meta
+  font-weight: bold
+  display: none
+
+/* removed from article and courses display
+
+.wp-caption-text
+  font-weight: 400
+  font-style: italic
+
+.widget-title
+  font-size: 20px
+
+.home .site-inner, .page-template-familypage .site-inner
+  padding-top: 0
+  @media only screen and (max-width: 800px)
+    padding: 0
+
+.forcefullwidth_wrapper_tp_banner
+  display: block
+  clear: both
+  margin-bottom: 28px !important
+
+.naada-accordion
+  margin-bottom: 40px !important
+
+.naada-teacher
+  float: right
+  margin: 0 0 20px 20px
+  img
+    float: left
+    padding-right: 5px
+
+div.naada-question
+  margin-bottom: 28px
+
+.video-wrapper
+  position: relative
+  padding-bottom: 52%
+  /* 16:9
+  padding-top: 25px
+  height: 0
+  border: 1px solid #e5e5e5
+  margin-bottom: 20px
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+table.naada-table tbody
+  border: none
+
+.naada-paypal-button input
+  border: none
+  padding: 0
+
+img.resource-boxes
+  width: 220px
+  float: left
+  margin: 5px 5px 0 0
+
+/* Tablepress styles
+
+.naada-pricing
+  font-size: 18px
+  font-weight: bold
+  line-height: 1.3
+  tbody
+    background-color: whitesmoke
+  td
+    padding: 20px !important
+    width: 50%
+  ul
+    font-size: 14px
+    font-weight: normal
+  p
+    font-size: 14px
+    font-weight: normal
+    margin: 14px 0
+
+.naada-pricing-amount
+  font-size: 30px
+  line-height: 0.8
+
+h2
+  &.tablepress-table-name
+    font-size: 24px
+  &.ld-entry-title
+    font-size: 24px
+    margin-bottom: 20px
+
+/* LearnDash styles
+
+#learndash_uploaded_assignments h2
+  font-size: 24px
+  margin-bottom: 20px
+
+.learndash input.button-primary
+  margin-top: 10px
+
+.widget_sfwd-courses-widget h4 a, .widget_sfwd_ldcourseinfo #ld_course_info_mycourses_list h4
+  font-size: 16px
+
+.widget_ldcourseinfo .ld-course-info-my-courses
+  h2
+    font-size: 15px
+  img
+    display: none
+  &:before
+    content: "• "
+
+.widget_sfwd-courses-widget li
+  padding-bottom: 0
+
+#learndash_lessons a, #learndash_quizzes a, .expand_collapse a, .learndash_topic_dots a,
+.learndash_topic_dots a > span, #learndash_lesson_topics_list span a, #learndash_profile a,
+#learndash_profile a span
+  color: $orange !important
+  &:hover
+    color: $orangeHover !important
+
+form#sfwd-mark-complete input#learndash_mark_complete_button[disabled]
+  color: #deb654 !important
+  background-color: #ffd180
+  font-size: 1rem
+  text-transform: uppercase
+
+.learndash_nevigation_lesson_topics_list > div > div.list_arrow
+  display: block
+  width: 16px
+  height: 16px
+  text-align: center
+  margin-top: 4px
+  float: left
+
+#learndash_profile .learndash-course-link a
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
+
+.learndash_nevigation_lesson_topics_list > div
+	margin-bottom: 10px
+
+dd.course_progress div.course_progress_blue
+	background-color: #5CB85C
+	height: 100%
+
+dd.course_progress
+    display: block
+    margin: 10px auto
+    padding: 0
+    position: relative
+    width: 90%
+    background-color: #F5F5F5
+    border: medium none
+    border-radius: 4px
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset
+    height: 20px
+    overflow: hidden
+
+/* Ubergrid styles
+
+div.uber-grid-filters > div
+  a
+    font-size: 14px !important
+  margin-right: 5px !important
+
+.page-id-198 .uber-grid-filters, .page-id-5231 .uber-grid-filters
+  display: none !important
+
+/* Gravity Forms styles
+
+.gform_wrapper input
+  border: 1px solid #ddd
+  &[type="submit"]
+    padding: 16px 24px
+    border: none
+
+/*  end Posts & Pages
+
+/* fix for framework update
+
+.widget ol > li
+  text-indent: 0
+
+/* GF fix for radio buttons overflow
+
+.gform_wrapper ul
+  &.gfield_checkbox li, &.gfield_radio li
+    overflow: visible !important
+
+/* Genericons
+
+.genericon
+  vertical-align: text-bottom
+
+.naada-icon:before
+  display: inline-block
+  -webkit-font-smoothing: antialiased
+  font: normal 16px/1 'Genericons'
+  vertical-align: text-bottom
+
+.naada-facebook-icon:before
+  content: '\f203'
+  /*color: #3b5998;
+
+.naada-twitter-icon:before
+  content: '\f202'
+
+.naada-instagram-icon:before
+  content: '\f215'
+
+/* Slideshow
+
+.naada-slide-box1
+  font-size: 14px
+  color: #fff
+  p
+    margin: 0 0 10px
+  a.naada-slidebox-link
+    color: #999
+    border-bottom: 1px dotted #999
+    &:hover
+      color: #fff
+  h5
+    color: #fff
+    margin: 0 0 10px 0
+    font-weight: bold
+
+.naada-slide-image
+  border: 3px solid #fff
+
+/* Footer
+
+
+.footer-widgets
+  padding-top: 40px
+  .footer-widgets-1, .footer-widgets-2
+    width: 340px
+    float: left
+  .footer-widgets-1
+    margin-right: 60px
+  .footer-widgets-3
+    float: right
+    width: 340px
+
+@media only screen and (max-width: 374px)
+  .footer-widgets .footer-widgets-1, .footer-widgets .footer-widgets-2, .footer-widgets .footer-widgets-3
+    width: 100%
+    margin: .5rem 0
+
+.footer-widgets, .woocommerce .footer-widgets
+  background-color: #b3ba1c
+  color: #fff
+  a
+    color: #fff
+    border-bottom: 1px dotted #fff
+    &.social
+      padding: 0 .25rem
+      border-bottom: 0
+      &:hover img
+        opacity: .8
+      img
+        transition: opacity .25s ease-in-out
+        -moz-transition: opacity .25s ease-in-out
+        -webkit-transition: opacity .25s ease-in-out
+  button, input[type="button"], input[type="reset"], input[type="submit"], .button, input.button
+    font-weight: bold
+    +naada-button
+    +orange-button
+    border: 1px solid white
+    padding: 16px 24px
+    &:hover
+      background-color: $orangeHover
+      color: #fff
+      +naada-button-hover
+
+.site-footer
+  background-color: #90980e
+  background-size: cover
+  color: #fff
+  padding: 1.5rem 0
+  text-align: center
+  font-size: 1rem
+  border-top: 0
+  a
+    color: #fff
+    &:hover
+      color: #D6DA9D
+
+.footer-widgets input
+  border: 1px solid #fff
+  border-radius: 3px
+
+/* end Footer
+
+/* HOMEPAGE Specific Style
+
+body.home .site-inner
+  max-width: 100%
+  article.entry
+    padding: 0
+    margin-bottom: 1rem
+  .homeContentWrap
+    max-width: 1200px
+    margin: 0 auto
+    padding: 3rem 3rem
+    overflow: hidden
+    h2
+      text-align: center
+    &.testimonials
+      padding: 4rem 0 !important
+    @media only screen and (max-width: 400px)
+      padding: 2rem 2rem
+    h3.schedule
+      float: left
+      display: inline-block
+      margin-bottom: 2rem
+    a.fullSched
+      background: #F5F5F5
+      border: 1px solid #DEDEDE
+      border-radius: 5px
+      padding: .25rem
+      font-size: 0.9rem
+      color: #aeaeae
+      margin: 0 0 0 10px
+      display: inline-block
+      float: left
+      &:hover
+        cursor: pointer
+        background: $orange
+        color: #fff
+        border: 1px solid $orange
+    .sell
+      h3
+        padding: 1em
+      &.second, &.first
+        width: 45%
+        float: right
+        @media only screen and (max-width: 1000px)
+          width: 100%
+      &.first
+        margin: 2rem 2rem 2rem 0
+        .greenbox
+          background: url('../images/free-class-bubble-bg.jpg') no-repeat top left
+      &.second
+        margin: 2rem 0 2rem 2rem
+        .greenbox
+          background: url('../images/take-time-bubble-bg.png') no-repeat 0% 50%
+      @media only screen and (max-width: 1000px)
+        &.second, &.first
+          margin: 1rem 0
+      @media only screen and (max-width: 500px)
+        &.second .greenbox, &.first .greenbox
+          width: 100%
+      .greenbox
+        color: #fff
+        padding: 10px
+        margin-bottom: 1rem
+        height: 204px
+        border-radius: 300px
+        width: 42%
+        float: left
+        background-size: cover
+        position: relative
+        &:after
+          content: ""
+          display: block
+          height: 210px
+          width: 210px
+          background: rgba(255, 255, 255, .3)
+          top: 0
+          position: absolute
+          left: 0
+          @media only screen and (max-width: 1000px)
+            width: 100%
+        & + p
+          float: left
+          width: 54%
+          margin-left: 1rem
+          padding-top: .5rem
+          @media only screen and (max-width: 500px)
+            width: 100%
+        h3
+          font-size: 1.35rem
+          color: #fff
+          padding: 10px
+          margin: 3.5rem 0 0 0
+          text-align: center
+          text-shadow: 1px 1px 5px black
+          @media only screen and (max-width: 400px)
+            margin: 4rem 0 0 0
+
+    .col_1_3
+      width: 22%
+    .col_2_3
+      width: 72%
+      .naada-pricing td
+        width: auto !important
+    .col_2_3, .col_1_3
+      float: left
+      margin: 2rem 3% 2rem 0
+      p
+        float: left
+        width: 60%
+        @media only screen and (max-width: 525px)
+          width: 100%
+          float: none
+          + p
+            float: left
+            width: 100%
+    @media only screen and (max-width: 768px)
+      .col_1_3, .col_2_3
+        width: 100%
+        margin: 2rem 3% 0 0
+    .login-left
+      float: left
+      width: 20%
+      margin-right: 5%
+    .login-right
+      float: left
+      width: 75%
+      div.signin
+        background: #e1e1e1
+        border-radius: 10px
+        padding: 2rem 2rem 1rem
+        float: left
+        width: 100%
+      h3
+        background: #f4f4f4
+        padding: .75rem 1.5rem
+        display: inline-block
+        margin: 0 0 0 2rem
+        color: #7B7B7B
+        border-radius: 10px 10px 0 0
+      .form-group
+        float: left
+        margin: 0 3% 2% 0
+        &:nth-of-type(1), .form-group:nth-of-type(2)
+          width: 40%
+        &:nth-of-type(3)
+          width: 15%
+          margin: 1.65rem 0 1rem
+        input[type="submit"]
+          float: right
+      ul li
+        list-style-type: none
+        font-size: 1.2rem
+        font-style: italic
+
+.homeContentWrap.ageGroups
+  padding-top: 7rem !important
+
+
+
+section.module.parallax
+  width: 100%
+  padding: 4rem 0
+  position: relative
+  .parallaxContent
+    margin: 0 auto
+    max-width: 1200px
+    text-align: center
+    overflow: hidden
+    h2
+      color: #fff
+      text-align: center
+      position: relative
+      span
+        border-bottom: 5px solid $naadagreen
+    h3
+      color: #fff
+      font-size: 1.45rem
+      font-weight: 600
+    .block
+      width: 33%
+      margin: 3rem 1rem 1rem
+      float: left
+      color: #fff
+      font-size: 1.2rem
+      text-align: left
+      &.left
+        margin-left: 12rem
+    .center
+      margin: 3rem 1rem 1rem
+      color: #fff
+      font-size: 1.2rem
+      text-align: center
+    @media only screen and (max-width: 640px)
+      .block
+        width: 100%
+        padding: 1rem 2rem 0
+        margin: 2rem 0 0
+        &.left
+          margin-left: 0
+        p
+          padding: 0
+    a.button
+      margin-top: 2rem
+  &.parallax-1 .parallaxContent .block.right p
+    padding-top: 2.3rem
+  @media only screen and (max-width: 640px)
+    &.block.right
+      margin: 0 0 2rem
+      p
+        padding-top: 0
+  div.downArrow
+    +downArrow
+
+.onlineEducation
+  text-align: center
+  padding: 2rem 0
+  a
+    color: $naadagreen
+
+section.module.parallax-1
+  padding: 5rem 0
+  background: url('../images/family-yoga-parallax2.jpg') 50% 100% repeat fixed
+  @media only screen and (max-width: 400px)
+    background: url('../images/family-yoga-parallax2.jpg') 55% 35% repeat
+    background-size: cover
+  .parallaxContent .block .right p
+    padding-top: 0
+
+.clinic-carousel, .nytt-carousel, .online-carousel
+  margin: 3rem 0
+  div.courseImage
+    float: none !important
+    width: 288px
+    margin: 0 auto 1.5rem !important
+    img
+      border: 1px solid #E5E5E5
+      float: none
+      padding: 6px
+      margin: 0
+      width: 288px
+      height: 178px
+      border-radius: 5px
+  h2
+    margin-bottom: 2rem
+    a
+      display: block
+      text-align: center
+      font-weight: 300
+      font-size: 1.5rem
+  span.trainer-name a
+    display: inline-block
+    font-size: 1.1rem
+  .slick-slide
+    width: 365px
+    text-align: center
+  @media only screen and (min-width: 600px) and (max-width: 1024px)
+    .slick-slide
+      width: 400px
+      margin: 0 1rem 0
+  @media only screen and (min-width: 780px) and (max-width: 899px)
+    .slick-slide
+      width: 330px
+  @media only screen and (min-width: 680px) and (max-width: 779px)
+    .slick-slide
+      width: 305px
+  @media only screen and (min-width: 520px) and (max-width: 679px)
+    .slick-slide
+      width: 460px
+      margin: 0 2rem
+  @media only screen and (min-width: 450px) and (max-width: 519px)
+    .slick-slide
+      width: 400px
+      margin: 0 2rem
+  @media only screen and (min-width: 375px) and (max-width: 449px)
+    .slick-slide
+      width: 320px
+      margin: 0 1rem
+  @media only screen and (max-width: 374px)
+    .slick-slide
+      width: 300px
+      margin: 0
+      padding: 0 !important
+    div.healcode-image-area img
+      width: 250px
+      height: 153px
+
+.online-carousel h2
+  margin-bottom: 0
+
+section.module.parallax-3
+  background: url('../images/family-yoga-parallax1.jpg') 50% 30% repeat fixed
+  padding: 4rem 0
+  @media only screen and (max-width: 400px)
+    background: url('../images/family-yoga-parallax1.jpg') 47% 40% repeat
+    background-size: cover
+
+section.module.parallax-4
+
+
+/* Promo box
+
+.naada-promo-box
+  border: 1px solid #e5e5e5
+  margin-bottom: 20px
+
+.naada-promo-box-header
+  display: inline-block
+  width: 100%
+  padding: 15px
+  color: #fff
+  font-weight: bold
+  text-transform: uppercase
+  background-color: #b3ba1c
+
+.naada-promo-box-body
+  display: inline-block
+  padding: 15px
+
+.naada-promo-box-dates
+  display: inline-block
+  padding: 0 15px 15px
+  font-weight: bold
+
+/* end Promo box
+
+/* Andrew's HealCode styles
+
+/* Family
+
+tr
+  /* Family
+  &.kids_class_7_9yrs .class_level span, &.kids_class_5_10yrs .class_level span, &.kids_class_4_6_yrs .class_level span, &.prenatal .class_level span, &.postnatal .class_level span, &.family_yoga .class_level span, &.acro_yoga .class_level span,  &.kids_class_1_3_yrs .class_level span, &.kids_class_2_5_yrs .class_level span, &.mom_dad_crawlers_class .class_level span, &.kids_class_10_15yrs .class_level span,
+  &.moms_dads_yoga .class_level span
+    color: #fff
+    text-transform: uppercase
+    background: #f285a2
+    padding: 5px 10px
+  /* Therapeutic
+  &.meditation .class_level span, &.restorative_101 .class_level span, &.restaurateur_cou_epaules .class_level span, &.restaurateur .class_level span, &.restaurateur_hanches_dos .class_level span, &.yoga_wall_restorative .class_level span, &.yin_yoga .class_level span, &.ayurveda .class_level span, &.advanced_anatomy .class_level span
+    color: #fff
+    text-transform: uppercase
+    background: #F1E33D
+    padding: 5px 10px
+  /* beginner
+  &.energizer .class_level span, &.rise_and_shine .class_level span, &.naada_level_1 .class_level span, &.intro_to_yoga .class_level span, &.yoga_wall_intro .class_level span, &.community_yoga_for_healthy_aging .class_level span, &.community_class .class_level span
+    color: #fff
+    text-transform: uppercase
+    background: #b3ba1e
+    padding: 5px 10px
+  /* Intermediate
+  &.naada_level_2 .class_level span, &.yoga_wall .class_level span, &.shoulder_openers .class_level span, &.hip_openers .class_level span, &.back_bends .class_level span, &.yoga_wall .class_level span, &.yoga_wall_hip_openers .class_level span
+    color: #fff
+    text-transform: uppercase
+    background: #97c9ea
+    padding: 5px 10px
+  /* Advanced
+  &.naada_live_by_donation .class_level span, &.live_workshop_level_2_3 .class_level span, &.naada_live .class_level span, &.naada_level_2_3 .class_level span
+    color: #fff
+    text-transform: uppercase
+    background: #f59c00
+    padding: 5px 10px
+  /* Specialty Classes
+  &.yoga_for_bone_health .class_level span, &.yoga_for_women_yoga_pour_femmes .class_level span, &.inversions .class_level span, &.yoga_for_men_yoga_pour_hommes .class_level span, &.intro_to_pranayama .class_level span, &.prenatal .class_level span, &.soins_du_dos_back_care .class_level span, &.back_care .class_level span, &.yoga_intro .class_level span
+    color: #fff
+    text-transform: uppercase
+    background: #f285a2
+    padding: 5px 10px
+  /* Workshops
+  &.decoding_the_sun_salutations_decoder_les_salutations_au_soleil .class_level span, &.finding_the_earth_through_standing_poses_connecter_avec_le_sol_lors_des_postures_debout .class_level span, &.get_to_the_core_twisting_in_standing_poses_droit_au_coeur_les_torsions_en_postures_debout .class_level span
+    color: #fff
+    text-transform: uppercase
+    background: #D34F3F
+    padding: 5px 10px
+
+
+
+
+.Enrollment
+  td.class_level span.class_level
+    color: #fff
+    text-transform: uppercase
+    background: #D34F3F
+    padding: 5px 10px
+  &.assisting_101 td.class_level span.class_level, &.ayurveda td.class_level span.class_level, &.asana_103 td.class_level span.class_level, &.back_care td.class_level span.class_level, &.meditation_101 td.class_level span.class_level, &.relax_and_renew td.class_level span.class_level, &.pranayama_101 td.class_level span.class_level, &.yoga_wall td.class_level span.class_level, &.naada_101 td.class_level span.class_level, &.psychology_of_yoga td.class_level span.class_level
+    color: #fff
+    text-transform: uppercase
+    background: #909090
+    padding: 5px 10px
+
+/* NYTT
+
+/** Course Descriptions Styles *
+
+.naada-class-categories
+  padding: 10px
+  text-transform: uppercase
+  color: #fff
+
+.naada-class-category-desc
+  margin: 0 0 10px 10px
+  font-style: italic
+
+.naada-therapeutic
+  background: #e3d042
+
+.naada-beginner
+  background: #b3ba1e
+
+.naada-intermediate
+  background: #97c9ea
+
+.naada-advanced
+  background: #f59c00
+
+.naada-family
+  background: #f285a2
+
+
+/* Mobile styles for Full Schedule */
+@media only screen and (max-width: 400px)
+  body.page-id-7 div.healcode.schedule
+    td .hc_starttime, td .hc_endtime
+      display: block
+      float: left
+      line-height: normal
+    td.mbo_class
+      line-height: normal
+    a.hc-button.signup_now, div.healcode input.hc-button
+      font-size: 10px
+      line-height: normal
+      font-weight: normal
+      padding: 4px 2px
+
+
+
+/* end Andrew's HealCode styles
+
+.clearfix
+  &:after
+    visibility: hidden
+    display: block
+    font-size: 0
+    content: " "
+    clear: both
+    height: 0
+  display: inline-block
+
+/* responsive image grid
+
+img.naada-grid
+  margin: 0 5px 5px 0
+  width: 133px
+  float: left
+
+/* Media Queries
+
+@media only screen and (max-width: 1200px)
+  img.naada-grid
+    width: 103px
+
+@media only screen and (max-width: 960px)
+  .naada-teacher
+    float: none
+    img
+      float: none
+  img.naada-grid
+    width: 137px
+
+@media only screen and (max-width: 800px)
+  img.naada-grid
+    width: 113px
+  .entry-title
+    font-size: 30px
+    margin-bottom: 30px
+  img.resource-boxes
+    width: 260px
+
+/* HEALCODE OVERRIDES
+
+#hc_enrollments_301084042aa
+  &:first-child .enrollment
+    display: block
+  .enrollment
+    display: none
+
+/* Healcode widget tweaks
+
+
+/* New Horizontal Schedule Widget for homepage
+
+// if greater than 640px display horizontal orientation
+@media only screen and (min-width: 640px)
+  div.horz-sched
+    margin-bottom: 2rem
+    &::after
+      content: "."
+      display: block
+      height: 0
+      clear: both
+      visibility: hidden
+    .healcode
+      table, tbody
+        border: 0
+    div
+      &.healcode table
+        &.schedule tr td
+          border-top: 0
+        tr
+          border-bottom: 0
+      &.list_view li
+        padding: 1rem
+        width: 100px
+        float: left
+        min-height: 140px
+        border-left: 1px dashed #DEDEDE
+        &:last-child
+          border-right: 1px dashed #DEDEDE
+    .healcode
+      a.hc-button.signup_now
+        font-size: .75rem
+      .hc_time
+        line-height: 1rem
+      span.hc_endtime
+        color: #C3C3C3
+      .mbo_class
+        padding-top: 7px
+        line-height: 1rem
+    div.list_view li div.signup
+      position: absolute
+      bottom: 7%
+      top: inherit
+      margin-top: 0
+      left: 10px
+
+// if less that 640px no horizontal orientation is shown and tweaks these..
+@media only screen and (max-width: 639px)
+  div.horz-sched
+    tbody
+      border: 0
+    div.list_view li
+      border-left: 1px solid #e5e5e5
+      border-right: 1px solid #e5e5e5
+    div.healcode table tr
+      border-bottom: 0
+    div.healcode table.schedule tr td
+      border-top: 0
+
+@media only screen and (max-width: 400px)
+  // div.horz-sched
+  //   div.list_view li div.signup
+  //     top: 0 !important
+
+/* End Horizontal sched
+
+div.healcode
+  div.hc_footer div
+    display: none !important
+  a
+    &.hc-button
+      display: inline-block !important
+      -webkit-border-radius: 3px
+      -moz-border-radius: 3px
+      -o-border-radius: 3px
+      border-radius: 3px
+      color: #fff
+      background-color: #404040
+    &:hover.hc-button
+      background-color: #fabd30
+      color: #fff !important
+    &.hc-button.signup_now
+      font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
+      font-weight: normal
+      background-color: #f7ad00
+    a
+      font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif
+      font-weight: bold !important
+      //background-color: #DEDEDE !important
+      &:hover
+        //background-color: #D0D0D0 !important
+      //  color: #fff !important
+
+/* Subject to Page ID, ie use homepage for deployment
+
+body.page-id-6613 div.healcode.enrollments
+  .enrollment, .healcode-course
+    width: 300px !important
+
+/* Hides Sub Enrollments in Courses
+
+div.healcode-course div.enrollment
+  display: none !important
+
+/* HEALCODE CAROUSEL CSS
+
+#overlay
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #000
+  opacity: 0.5
+  filter: alpha(opacity = 50)
+
+#modal
+  position: absolute
+  background: rgba(0, 0, 0, 0.2)
+  border-radius: 14px
+  padding: 8px
+  /*margin: 3rem 6rem;
+
+#content
+  border-radius: 8px
+  background: #fff
+  padding: 20px
+  overflow: hidden
+
+#close
+  position: absolute
+  width: 30px
+  height: 30px
+  display: block
+  top: -7px
+  right: -7px
+  background-color: #fff
+  border-radius: 14px
+  font-weight: bold
+  padding: 1px 8px
+  border: 2px solid #5A5A5A
+  &:hover
+    background: #f7ad00
+    color: #fff
+
+.naada-carousel
+  div.healcode-image-area
+    float: none !important
+    // width: 288px
+    width: 309px
+    margin: 0 auto 1.5rem !important
+    img
+      border: 1px solid #E5E5E5
+      float: none
+      padding: 6px
+      margin: 0
+      width: 288px
+      height: 178px
+      border-radius: 5px
+  h2.healcode-enrollment-name, h2.healcode-course-name
+    text-transform: uppercase
+    color: #f7ad00
+    text-align: center
+  span.healcode-trainer-name
+    text-align: center
+    display: block
+    text-transform: capitalize
+    color: #555
+  div.healcode .healcode-course
+    min-height: 466px
+  .slick-slider
+    max-height: 450px
+    .slick-slide
+      width: 360px
+    @media only screen and (min-width: 900px) and (max-width: 1024px)
+      .slick-slide
+        width: 400px
+        margin: 0 1rem 0
+    @media only screen and (min-width: 780px) and (max-width: 899px)
+      .slick-slide
+        width: 330px
+    @media only screen and (min-width: 680px) and (max-width: 779px)
+      .slick-slide
+        width: 320px
+    @media only screen and (min-width: 520px) and (max-width: 679px)
+      .slick-slide
+        width: 460px
+        margin: 0 2rem
+    @media only screen and (min-width: 450px) and (max-width: 519px)
+      .slick-slide
+        width: 400px
+        margin: 0 2rem
+    @media only screen and (min-width: 375px) and (max-width: 449px)
+      .slick-slide
+        width: 320px
+        margin: 0 1rem
+    @media only screen and (max-width: 374px)
+      .slick-slide
+        width: 308px
+        margin: 0
+        padding: 0 !important
+      div.healcode-image-area img
+        width: 250px
+        height: 153px
+        margin: 0 auto
+      h2.healcode-enrollment-name
+        width: 90%
+  .slick-list
+    padding: 0 0 0 0 !important
+
+/* Slick Slider
+
+.slick-prev, .slick-next
+  height: 40px !important
+  width: 40px !important
+  z-index: 10
+
+.slick-prev:before, .slick-next:before
+  color: $naadagreen !important
+  font-size: 40px !important
+
+.entry-content ul.slick-dots
+  margin-left: 0
+
+/* Landing Pages */
+
+/* Customisation for different landing page hero images
+.page-id-8571 .page-template-landing .LandingHero
+  background-position: center 33%
+
+/* yoga for women
+.page-id-8598 .LandingHero
+  background-position: center 33% !important
+  background-size: cover
+
+.page-template-landing
+  .homeContentWrap
+    overflow: hidden
+  .LandingHero
+    min-height: 600px
+    background-position: 30% 20%
+    position: relative
+    .callOut
+      position: absolute
+      left: 0
+      right: 0
+      margin: 300px auto 0 auto
+      width: 60%
+      text-align: center
+    .naadaPresents
+      background-color: $naadagreen
+      color: #fff
+      padding: 1rem 2rem
+      display: inline-block
+      margin: 0
+      text-align: center
+      text-transform: none
+    h2
+      text-transform: capitalize
+      font-size: 3rem
+      background-color: #fff
+      color: $naadagreen
+      padding: 1rem 2rem
+      margin: 0 auto
+      text-align: center
+      display: inline-block
+  .breadcrumb
+    display: none
+  .courseShort
+    background-color: $naadagreen
+    color: #fff
+    line-height: 2.5rem
+    font-size: 1.8rem
+    text-align: center
+    font-weight: 400
+    padding: 2rem 0
+    p
+      margin-bottom: 0
+    div
+      max-width: 1200px
+      margin: 0 auto
+  .hardSell
+    h2
+      text-transform: none
+    & + hr
+      margin: 2rem 0 4rem
+    span.coursePrice
+      font-weight: bold
+      font-size: 2.5rem
+      display: block
+      text-align: center
+    .courseBuy
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        width: 0
+        height: 0
+        border-left: 40px solid transparent
+        border-right: 40px solid transparent
+        border-top: 40px solid #b3ba1c
+        top: -60px
+        left: 31%
+  hr
+    width: 100%
+    background-color: #eaeaea
+    margin: 3rem auto 4rem
+    position: relative
+    float: left
+    &.buy::after
+      position: absolute
+      content: ''
+      width: 0
+      height: 0
+      border-left: 40px solid transparent
+      border-right: 40px solid transparent
+      border-top: 40px solid #eaeaea
+      bottom: -36px
+      left: 46%
+  h1.entry-title
+    text-align: center
+    position: relative
+    margin-bottom: 70px
+    &::after
+      content: ""
+      position: absolute
+      width: 37%
+      height: 5px
+      bottom: -14px
+      left: 31%
+      background-color: $naadagreen
+  .price
+    font-size: 2.5rem
+    color: $naadagreen
+  .one-half p:first-child
+    font-size: 120%
+    font-weight: 500
+    line-height: 1.6rem
+    &::first-letter
+      font-weight: bold
+      font-size: 150%
+  .center
+    float: left
+    width: 100%
+    text-align: center
+    margin-top: 2rem
+    .naada-button.large
+      width: 30%
+  @media only screen and (max-width: 800px)
+    h1.entry-title
+      margin-bottom: 50px
+    .one-half.first
+      padding-bottom: 2rem
+    .center .naada-button.large
+      width: 70%
+  ul.greenDots
+    li
+      list-style-type: none
+      padding-left: 10px
+      position: relative
+      font-weight: 400
+      line-height: 2rem
+      font-size: 1.1rem
+      &::before
+        position: absolute
+        content: ""
+        height: 10px
+        width: 10px
+        border-radius: 5px
+        background-color: $naadagreen
+        left: -12px
+        top: 11px
+  .intructorBio
+    font-weight: 400
+    font-weight: 1.1rem
+  a.naada-button.orange-button.large.centered
+    width: 40%
+    display: block
+    margin: 0 0 0 30%
+    text-align: center
+    float: left
+  article.post-6717
+    display: none
+
+// Testimonial Styling
+#thinkup-testimonials
+  h3
+    font-size: 1.5rem
+    position: relative
+    font-weight: 200
+    text-transform: initial
+    line-height: 2.25rem
+    &:first-child
+      background-color: #e6e6e6
+      padding: 2rem 2rem 2rem 3rem
+      border-radius: 4px
+      &:before
+        content: "\201C"
+        position: absolute
+        top: 2rem
+        left: 26px
+        font-size: 3rem
+        font-weight: 500
+        line-height: normal
+  h2
+    float: right
+    font-weight: 600
+    position: relative
+    text-transform: initial
+    max-width: 80%
+    &:before
+      position: absolute
+      content: ''
+      width: 0
+      height: 0
+      border-left: 40px solid transparent
+      border-right: 7px solid transparent
+      border-top: 40px solid #e6e6e6
+      top: -12px
+      left: -59px
+  .flex-control-nav
+    opacity: 0.5
+  @media only screen and (max-width: 400px)
+    .slides
+      padding: 0 !important
+
+
+// First line styling for double line curriculum elemnts
+.page-id-8013.page-template-landing ul.greenDots li
+  margin-bottom: 1rem
+  &::first-line
+    font-weight: bold
+
+.dropdownContainer.closed
+  height: 400px
+  overflow: hidden
+  position: relative
+  &::after
+    position: absolute
+    content: ""
+    height: 200px
+    width: 100%
+    bottom: 0
+    left: 0
+    background: -moz-linear-gradient(top, rgba(245,245,245,0) 0%, rgba(245,245,245,0.01) 1%, rgba(245,245,245,1) 100%)
+    background: -webkit-linear-gradient(top, rgba(245,245,245,0) 0%,rgba(245,245,245,0.01) 1%,rgba(245,245,245,1) 100%)
+    background: linear-gradient(to bottom, rgba(245,245,245,0) 0%,rgba(245,245,245,0.01) 1%,rgba(245,245,245,1) 100%)
+
+a#dropdownOpen
+    background-color: #cccccc
+    color: #fff
+    padding: 1rem
+    &:hover
+      background-color: #aeaeae
+
+
+@media only screen and (max-width: 400px)
+  .page-template-landing
+    .LandingHero
+      background-size: cover
+      min-height: 475px
+      .callOut
+        width: 100%
+        margin: 275px auto 0 auto
+        .naadaPresents
+          font-size: 1rem
+          margin: 0
+          padding: .5rem
+          width: 100%
+        h2
+          font-size: 2rem
+          padding: 1rem .5rem
+    .courseShort p
+      padding: 0 1rem
+    .hardSell
+      .first
+        padding-bottom: 0
+      .courseBuy
+        width: 100%
+        text-align: center
+        &::before
+          display: none
+    hr
+      width: 100%
+    img.instructorPic
+      width: 80%
+      margin: 0 auto 2rem
+      display: block
+    a.naada-button.orange-button.large.centered
+      width: 100%
+    hr.buy::after
+      left: 34%
+
+
+/* CLINIC Page */
+
+.clinicCallout
+  h3
+    font-weight: 400
+    margin-bottom: 3rem
+    line-height: 2rem
+    @media only screen and (max-width: 400px)
+      display: none
+
+
+.page-template-clinicpage
+  font-size: 1.1rem
+  .naada-button.medium
+    font-size: 14px
+  .breadcrumb
+    display: none
+  .centerWrap
+    margin: 2rem auto 4rem
+    &.bottom
+      margin-bottom: 8rem
+    p
+      width: 70%
+      margin: 0 auto 2rem
+      @media only screen and (max-width:400px)
+        width: 90%
+  .servicesWrap
+    float: left
+    margin-bottom: 4rem
+    .serviceBlock
+      position: relative
+      margin: 2rem auto
+      width: 100%
+      float: left
+      background-color: #f1f1f1
+      .serviceRight, .serviceLeft
+        float: left
+        width: 45%
+        @media only screen and (max-width:400px)
+          width: 90%
+      .serviceLeft
+        background-position: center
+        background-size: cover
+        margin-right: 5%
+        min-height: 455px
+        @media only screen and (max-width:400px)
+          min-height: 200px
+          width: 100%
+        h2
+          color: #fff
+          margin: 2rem
+      .serviceRight
+        padding: 2rem 0
+        @media only screen and (max-width:400px)
+          padding: 2rem 1rem
+  .rates
+    width: 100%
+    float: left
+    text-align: left
+    margin-bottom: 4rem
+    .centerWrap
+      margin: 2rem auto
+    ul
+      margin-left: 20px
+      li
+        list-style-type: disc
+  .testimonialWrap
+    float: left
+    margin-bottom: 4rem
+    .testimonial
+      padding: 2rem
+      background-color: #e6e6e6
+      position: relative
+      &:after
+        position: absolute
+        content: ''
+        width: 0
+        height: 0
+        border-left: 40px solid transparent
+        border-right: 7px solid transparent
+        border-top: 40px solid #e6e6e6
+        bottom: -36px
+        left: 54%
+      .pic
+        float: left
+        width: 200px
+        z-index: 100
+        position: relative
+        margin-right: 2rem
+      p:first-child
+        padding: 0
+        width: 75%
+        float: right
+        &:before
+          top: 0rem
+          left: -32px
+    p.author
+      float: right
+      font-weight: 600
+      margin-right: 29%
+      font-size: 1.5rem
+
+
+body.page-id-8431 select#options[staff_ids]
+  display: none
+
+.bookingCloak
+  display: none
+
+
+/* WooCommerce Styles
+.woocommerce
+  main
+    div.product
+      p.price, span.price
+        color: #B3BA1C
+        font-size: 1.5rem
+        font-weight: 500
+      .quantity input
+        padding: .5rem
+    #respond input#submit.alt, a.button.alt,  button.button.alt, input.button.alt
+      background-color: $orange
+      padding: .75rem
+      &:hover
+        background-color: #fabd30
+    button.single_add_to_cart_button.button.alt.large.centered
+      padding: 1.25rem 2rem
+      text-align: center
+      display: block
+      margin: 0 auto
+      float: none
+
+.woocommerce-cart, .woocommerce-checkout
+  main
+    td.product-name
+      font-weight: bold
+      font-size: 1rem
+
+body.woocommerce, body.woocommerce-cart, body.woocommerce-checkout
+  main
+    .woocommerce
+      .order_details li
+        list-style-type: none
+        font-size: .8rem
+      .woocommerce-message
+        border-top: 3px solid $naadagreen
+      .woocommerce-info
+        border-top-color: #3FA4DC
+      .woocommerce-info:before
+        color: #3FA4DC
+      #respond input#submit.alt, a.button.alt, button.button.alt, input.button.alt
+        background-color: $orange
+        &:hover
+          background-color: $orangeHover
+      input.button.alt:disabled, .woocommerce input.button.alt:disabled[disabled]
+        background-color: $orange
+    .star-rating
+      color: $naadagreen
+    #payment ul.payment_methods li
+      list-style-type: none
+    #reviews #comments ol.commentlist li
+      list-style-type: none
+      margin: 2rem 0 2rem
+      img.avatar
+        width: 100px
+        background: transparent
+        border-radius: 4px
+      .comment-text
+        margin: 0 0 0 120px
+        background: #F5F5F5
+        border: 0
+
+
+/* Old Genesis Columns */
+.five-sixths, .four-sixths, .one-fourth, .one-half, .one-sixth,
+.one-third, .three-fourths, .three-sixths, .two-fourths, .two-sixths, .two-thirds
+	float: left
+	margin-left: 2.564102564102564%
+
+.one-half, .three-sixths, .two-fourths
+	width: 48.717948717948715%
+
+.one-third, .two-sixths
+	width: 31.623931623931625%
+
+.four-sixths, .two-thirds
+	width: 65.81196581196582%
+
+.one-fourth
+	width: 23.076923076923077%
+
+.three-fourths
+	width: 74.35897435897436%
+
+.one-sixth
+	width: 14.52991452991453%
+
+.five-sixths
+	width: 82.90598290598291%
+
+.first
+	clear: both
+	margin-left: 0
+
+@media only screen and (max-width: 700px)
+  .one-third
+    width: 100%
+    .first
+      margin: 0
+    img
+      width: 100%
+
+@media only screen and (max-width: 900px)
+  body.parent-pageid-8403 .one-half
+    width: 100%

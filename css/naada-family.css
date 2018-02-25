@@ -1,0 +1,3012 @@
+@charset "UTF-8";
+/*
+  * CUSTOM THEME FOR NAADA yoga_wall
+  * By PAUL @ Blink Web Services & ANDREW @ THink Up Design
+  * Updated and Sassed January 2016 */
+/* COLORS */
+/* MIXINS */
+/****/
+/** Default DOM Elements Typography **/
+/****/
+html {
+  /** Set Root REM size **/
+  font-size: 100%;
+}
+
+body {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #666;
+  font-weight: 300;
+  background-color: #f5f5f5;
+}
+
+body > div {
+  font-size: 1rem;
+}
+
+body input, body select, body textarea {
+  font-size: 1rem;
+}
+
+.sidebar {
+  font-size: 15px;
+  color: #666;
+}
+
+.sidebar .widget {
+  background-color: #fff;
+  padding: 2.5rem;
+}
+
+body.home, body.page-template-familypage {
+  background-color: #fff;
+}
+
+a, .entry-title a, .sidebar .widget-title a, .entry-content a, .sidebar a {
+  color: #f7ad00;
+  text-decoration: none;
+}
+
+a:hover, .entry-title a:hover, .sidebar .widget-title a:hover, .entry-content a:hover, .sidebar a:hover {
+  color: #e19d00;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+h1, .entry-title {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+hr {
+  border: 0;
+  height: 4px;
+  margin-bottom: 4rem;
+  /*background-image: -webkit-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:    -moz-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:     -ms-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:      -o-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0)); */
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.entry-content a, .sidebar a {
+  border-bottom: none;
+}
+
+button {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+input {
+  padding: .95rem;
+}
+
+input[type="button"], input[type="reset"], input[type="submit"] {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* buttons */
+.naada-button {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.naada-button:hover {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.orange-hollow {
+  border: 2px solid #f7ad00;
+}
+
+.orange-hollow:hover {
+  color: #fbc13b;
+  border: 2px solid #fbc13b;
+}
+
+.grey-button {
+  color: #fff !important;
+  background-color: #3f3f3f;
+}
+
+.grey-button:hover {
+  color: #fff !important;
+  background-color: #1f1f1f;
+}
+
+.green-button {
+  color: #fff !important;
+  background-color: #b3ba1c;
+}
+
+.green-button:hover {
+  color: #fff !important;
+  background-color: #a6ad1b;
+}
+
+.orange-button {
+  color: #fff !important;
+  background-color: #f7ad00;
+}
+
+.footer-widgets a.orange-button, .rev_slider a.orange-button {
+  border: 1px solid #fff;
+}
+
+.orange-button:hover {
+  color: #fff !important;
+  background-color: #fabd30;
+}
+
+.inactive-button {
+  background-color: #C5C5C5;
+  color: #8D8888;
+}
+
+.naada-button.small {
+  font-size: 11px;
+  line-height: 14px;
+  padding: 5px 10px;
+}
+
+.naada-button.medium {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 20px;
+}
+
+.naada-button.large {
+  font-size: 21px;
+  line-height: 21px;
+  padding: 18px 30px;
+}
+
+/* end buttons */
+a.button, .button, .entry-content a.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+a.button:hover, .button:hover, .entry-content a.button:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #fabd30;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #e19d00;
+}
+
+input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"] {
+  background-color: #e19d00;
+}
+
+.button:hover {
+  background-color: #e19d00;
+}
+
+input[type="search"] {
+  margin-bottom: 20px;
+}
+
+input[type="checkbox"], input[type="image"], input[type="radio"] {
+  margin-right: 5px;
+}
+
+:focus {
+  outline-color: #fff;
+}
+
+.archive-pagination li a {
+  background-color: #616161;
+}
+
+span.dropcap {
+  float: left;
+  font-size: 50px;
+  line-height: 44px;
+  padding: 2px 5px 0 3px;
+}
+
+.twocol {
+  width: 45%;
+  float: left;
+  margin-right: 2.5%;
+}
+
+.twocol:nth-of-type(2)::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.row {
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.alert, .notice {
+  margin: 1rem 1rem 2rem;
+  padding: 1rem;
+  display: block;
+  float: left;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.alert p, .notice p {
+  margin: 0;
+  line-height: 1.1rem;
+}
+
+.alert {
+  background-color: #e87070;
+  border: 2px solid red;
+}
+
+.alert h3 {
+  color: #fff;
+}
+
+.notice {
+  background-color: #d9eaff;
+  border: 2px solid #a8c3e4;
+  color: #616161;
+}
+
+.notice h3 {
+  color: #616161;
+}
+
+.checkMarks li {
+  background: url("../images/checkmark.png") no-repeat top left;
+  padding-left: 35px;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-bottom: .75rem;
+}
+
+.underline {
+  border-bottom: 4px solid #b3ba1c;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 3px;
+}
+
+.centerWrap {
+  text-align: center;
+}
+
+.centerWrap > h2 {
+  margin: 0 auto 2rem;
+  display: inline-block;
+}
+
+.centerWrap h3.newsletter {
+  margin: 2rem auto 1rem;
+}
+
+.centerWrap #mc_embed_signup {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.centerWrap #mc_embed_signup form {
+  text-align: center;
+}
+
+.centerWrap #mc_embed_signup #mc_embed_signup_scroll {
+  width: 100%;
+}
+
+.centerWrap #mc_embed_signup #mc_embed_signup_scroll input[type="email"] {
+  width: 265px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+  .centerWrap #mc_embed_signup #mc_embed_signup_scroll input[type="email"] {
+    width: 46%;
+  }
+}
+
+/* MailChimp */
+#mc_embed_signup {
+  clear: left;
+  font-size: 14px;
+}
+
+#mc_embed_signup .clear {
+  text-align: center;
+}
+
+#mc_embed_signup p.stupid {
+  display: inline-block;
+  margin: 0;
+}
+
+#mc_embed_signup p.stupid input[type='submit'] {
+  margin: -20px 0 0 0;
+  padding: .75rem 2rem;
+  width: 100%;
+}
+
+#mc_embed_signup input[type='submit'] {
+  background-color: #F7AD00;
+  border: 1px solid #ffffff;
+  padding: 16px;
+  height: auto;
+  margin-top: 1.5em;
+  width: 80%;
+}
+
+#mc_embed_signup input[type='submit']:hover {
+  background-color: #E19D00;
+}
+
+/* Header */
+@media only screen and (min-width: 1200px) {
+  .site-container {
+    padding-top: 43px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .site-container {
+    padding-top: 86px;
+  }
+}
+
+.site-header {
+  min-height: 80px;
+  background-color: #fff;
+}
+
+.site-header .wrap {
+  padding: 8px 0;
+}
+
+.title-area {
+  padding: 7px 0;
+}
+
+/* end Header */
+/* Navigation */
+.nav-primary {
+  background-color: #b3ba1c;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+.genesis-nav-menu {
+  font-size: 13px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu-secondary {
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 400px) {
+  #menu-secondary-navigation li {
+    font-size: 75%;
+  }
+}
+
+ul.menu-primary > li.menu-item-has-children > a:after {
+  content: '\f502';
+  display: inline-block;
+  font: normal 12px/1 'Genericons';
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+}
+
+ul.menu-primary ul > li.menu-item-has-children > a:after {
+  content: '\f502';
+  display: inline-block;
+  font: normal 12px/1 'Genericons';
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+  content: '\f501';
+  vertical-align: text-bottom;
+  padding-bottom: 2px;
+}
+
+.genesis-nav-menu a {
+  padding: 15px 6px;
+  color: #fff;
+}
+
+.nav-primary .genesis-nav-menu a:hover, .nav-primary .genesis-nav-menu .current-menu-item > a {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu {
+  z-index: 500;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #fff;
+}
+
+.nav-primary .genesis-nav-menu .sub-menu a {
+  background-color: #fff;
+  color: #b3ba1c;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.genesis-nav-menu .sub-menu .current-menu-item a {
+  background-color: #fff;
+  color: #b3ba1c;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.menu-primary .sub-menu a:hover, .menu-primary .sub-menu .current-menu-item a:hover {
+  background-color: #b3ba1c;
+  color: #fff;
+}
+
+.header-image .site-title > a {
+  background: url("../images/logo.png") no-repeat left;
+  width: 360px;
+}
+
+@media only screen and (max-width: 400px) {
+  .header-image .site-title > a {
+    width: 320px;
+    background-size: cover;
+  }
+}
+
+#menu-ytt-submenu li a, #menu-ytt-submenu-french li a {
+  font-size: 1.2em;
+}
+
+#menu-ytt-submenu li a:hover:after, #menu-ytt-submenu-french li a:hover:after {
+  content: '\f501';
+  display: inline-block;
+  font: normal 14px/1 'Genericons';
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+}
+
+.shiftnav-loading {
+  display: none !important;
+}
+
+/* end Navigation */
+/* Video Banner CSS */
+.videoBanner, .familyBanner, .clinicBanner {
+  width: 100%;
+  position: relative;
+}
+
+.familyBanner, .clinicBanner {
+  background-size: cover;
+  min-height: 600px;
+}
+
+@media only screen and (max-width: 400px) {
+  .familyBanner, .clinicBanner {
+    min-height: 250px;
+  }
+}
+
+.familyBanner {
+  background: url("../images/familyyoga-header.jpg") no-repeat bottom left;
+}
+
+.clinicBanner {
+  background-position: bottom left;
+}
+
+.videoCallout, .familyCallout, .clinicCallout {
+  position: absolute;
+  top: 30%;
+  width: 500px;
+  left: 10%;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  z-index: 100;
+}
+
+.videoCallout h1, .videoCallout h2, .videoCallout h3, .familyCallout h1, .familyCallout h2, .familyCallout h3, .clinicCallout h1, .clinicCallout h2, .clinicCallout h3 {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.51);
+  font-weight: 600;
+}
+
+.videoCallout p, .familyCallout p, .clinicCallout p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.51);
+}
+
+.videoCallout a.naada-button, .familyCallout a.naada-button, .clinicCallout a.naada-button {
+  text-shadow: none;
+}
+
+.videoCallout div.downArrow, .familyCallout div.downArrow, .clinicCallout div.downArrow {
+  position: absolute;
+  bottom: -21px;
+  left: 48%;
+  display: inline-block;
+  border-radius: 50%;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #b3ba1c;
+  border-radius: 50%;
+  margin-left: 0.75em;
+  bottom: -36px;
+  left: 42%;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  .videoCallout div.downArrow, .familyCallout div.downArrow, .clinicCallout div.downArrow {
+    left: 42%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .videoCallout div.downArrow, .familyCallout div.downArrow, .clinicCallout div.downArrow {
+    left: 40%;
+  }
+}
+
+.videoCallout div.downArrow:after, .familyCallout div.downArrow:after, .clinicCallout div.downArrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 12px;
+  width: 12px;
+  height: 12px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+  .videoCallout, .familyCallout, .clinicCallout {
+    top: 20%;
+    width: 400px;
+    left: 5%;
+    font-size: 1.25rem;
+  }
+  .videoCallout .naada-button.large, .familyCallout .naada-button.large, .clinicCallout .naada-button.large {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  .videoCallout .text-widget p, .familyCallout .text-widget p, .clinicCallout .text-widget p {
+    margin: 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .videoCallout, .familyCallout, .clinicCallout {
+    top: 10%;
+    width: 300px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .videoCallout h2, .familyCallout h2, .clinicCallout h2 {
+    font-size: 22px;
+  }
+  .videoCallout .naada-button.large, .familyCallout .naada-button.large, .clinicCallout .naada-button.large {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  .videoCallout .text-widget p, .familyCallout .text-widget p, .clinicCallout .text-widget p {
+    margin: 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .videoCallout, .familyCallout, .clinicCallout {
+    top: 20%;
+  }
+  .videoCallout .textwidget p, .familyCallout .textwidget p, .clinicCallout .textwidget p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .videoCallout, .familyCallout, .clinicCallout {
+    left: 2%;
+  }
+  .videoCallout h1, .videoCallout h2, .familyCallout h1, .familyCallout h2, .clinicCallout h1, .clinicCallout h2 {
+    font-size: 17px;
+  }
+  .videoCallout .textwidget p, .familyCallout .textwidget p, .clinicCallout .textwidget p {
+    display: none;
+  }
+  .videoCallout .naada-button.large, .familyCallout .naada-button.large, .clinicCallout .naada-button.large {
+    padding: 4px 10px;
+  }
+}
+
+.videoBanner video {
+  z-index: -100;
+  position: relative;
+  width: 100%;
+}
+
+/* Video Banner End */
+/* Header Widget */
+.header-full-width .title-area {
+  width: 360px;
+}
+
+.site-header .menu-secondary-navigation-container, .site-header .menu-secondary-navigation-french-container {
+  max-width: 800px;
+  margin-top: 25px;
+  float: right;
+}
+
+.site-header .menu-secondary-navigation-container ul li, .site-header .menu-secondary-navigation-french-container ul li {
+  float: right;
+  padding: 0 5px;
+}
+
+.site-header .menu-secondary-navigation-container ul li a, .site-header .menu-secondary-navigation-french-container ul li a {
+  color: #A2A2A2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.site-header .menu-secondary-navigation-container ul li a:hover, .site-header .menu-secondary-navigation-french-container ul li a:hover {
+  color: #BeBebe;
+}
+
+.site-header .menu-secondary-navigation-container ul li.language a, .site-header .menu-secondary-navigation-french-container ul li.language a {
+  color: #f7ad00;
+}
+
+.site-header .menu-secondary-navigation-container ul li.language a:hover, .site-header .menu-secondary-navigation-french-container ul li.language a:hover {
+  color: #fabd30;
+}
+
+@media only screen and (max-width: 700px) {
+  .site-header .menu-secondary-navigation-container, .site-header .menu-secondary-navigation-french-container {
+    float: left;
+    margin-top: 7px;
+  }
+  .site-header .menu-secondary-navigation-container section.widget_nav_menu, .site-header .menu-secondary-navigation-french-container section.widget_nav_menu {
+    float: left;
+    margin-left: 15px;
+  }
+  .site-header .menu-secondary-navigation-container section#search-3, .site-header .menu-secondary-navigation-french-container section#search-3 {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+
+.header-widget-area section {
+  float: right;
+}
+
+.nav-header a, .nav-header .naada-icon, .nav-header .current-menu-item > a {
+  color: #999;
+}
+
+.nav-header a:hover {
+  color: #333;
+}
+
+.nav-header .genesis-nav-menu #menu-item-329-fr a, .nav-header .genesis-nav-menu #menu-item-4881-en a, .nav-header .genesis-nav-menu #menu-item-329-fr a:hover, .nav-header .genesis-nav-menu #menu-item-4881-en a:hover {
+  color: #F7AD00;
+}
+
+.site-header form.search-form {
+  margin-top: 21px;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  float: right;
+  height: 30px;
+  width: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .site-header form.search-form {
+    margin-top: 60px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .site-header form.search-form {
+    margin-top: 0;
+  }
+}
+
+.site-header form.search-form:hover {
+  background-color: #b3ba1c;
+  color: #fff;
+  cursor: text;
+}
+
+.site-header form.search-form:hover .ico-mglass {
+  background: #b3ba1c;
+  border: 2px solid #fff;
+}
+
+.site-header form.search-form:hover .ico-mglass::after {
+  background: #fff;
+}
+
+.site-header form.search-form input {
+  border: 0;
+  border-bottom: 1px solid #ECEFAC;
+  display: none;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 0;
+  width: 85%;
+  padding: 0;
+  height: 20px;
+  float: right;
+}
+
+.ico-mglass {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  border-radius: 30px;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #888;
+  float: left;
+  margin-top: 3px;
+}
+
+.ico-mglass:after {
+  content: "";
+  height: 2px;
+  width: 7px;
+  background: #888;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+input[type="search"]::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ccc;
+}
+
+input[type="search"]:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ddd;
+  opacity: 1;
+}
+
+input[type="search"]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ddd;
+  opacity: 1;
+}
+
+input[type="search"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ddd;
+}
+
+input[type="search"]:placeholder-shown {
+  /* Standard Pseudo-class */
+  color: #ddd;
+}
+
+section#search-3 {
+  width: 30px;
+  margin-left: 20px;
+}
+
+section#search-3 h4 {
+  display: none;
+}
+
+/* End Header Widget */
+/* Posts & Pages */
+.site-inner {
+  padding-top: 40px;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+}
+
+.content {
+  /* Nexus G5 mobile issue fix: With a fix width the content will be pushed off the screen at smaller screen sizes. */
+}
+
+.content .entry {
+  background-color: #fff;
+  padding: 3rem 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .content .entry {
+    padding: 1rem 2rem;
+  }
+}
+
+.entry-title {
+  margin-bottom: 30px;
+}
+
+.post h1.entry-title {
+  font-size: 24px;
+}
+
+.archive-pagination li a:hover, .archive-pagination .active a {
+  background-color: #f7ad00;
+}
+
+.entry-meta {
+  font-weight: bold;
+  display: none;
+}
+
+/* removed from article and courses display */
+.wp-caption-text {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.widget-title {
+  font-size: 20px;
+}
+
+.home .site-inner, .page-template-familypage .site-inner {
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  .home .site-inner, .page-template-familypage .site-inner {
+    padding: 0;
+  }
+}
+
+.forcefullwidth_wrapper_tp_banner {
+  display: block;
+  clear: both;
+  margin-bottom: 28px !important;
+}
+
+.naada-accordion {
+  margin-bottom: 40px !important;
+}
+
+.naada-teacher {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.naada-teacher img {
+  float: left;
+  padding-right: 5px;
+}
+
+div.naada-question {
+  margin-bottom: 28px;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 52%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+table.naada-table tbody {
+  border: none;
+}
+
+.naada-paypal-button input {
+  border: none;
+  padding: 0;
+}
+
+img.resource-boxes {
+  width: 220px;
+  float: left;
+  margin: 5px 5px 0 0;
+}
+
+/* Tablepress styles */
+.naada-pricing {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.naada-pricing tbody {
+  background-color: whitesmoke;
+}
+
+.naada-pricing td {
+  padding: 20px !important;
+  width: 50%;
+}
+
+.naada-pricing ul {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.naada-pricing p {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 14px 0;
+}
+
+.naada-pricing-amount {
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+h2.tablepress-table-name {
+  font-size: 24px;
+}
+
+h2.ld-entry-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* LearnDash styles */
+#learndash_uploaded_assignments h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.learndash input.button-primary {
+  margin-top: 10px;
+}
+
+.widget_sfwd-courses-widget h4 a, .widget_sfwd_ldcourseinfo #ld_course_info_mycourses_list h4 {
+  font-size: 16px;
+}
+
+.widget_ldcourseinfo .ld-course-info-my-courses h2 {
+  font-size: 15px;
+}
+
+.widget_ldcourseinfo .ld-course-info-my-courses img {
+  display: none;
+}
+
+.widget_ldcourseinfo .ld-course-info-my-courses:before {
+  content: "• ";
+}
+
+.widget_sfwd-courses-widget li {
+  padding-bottom: 0;
+}
+
+#learndash_lessons a, #learndash_quizzes a, .expand_collapse a, .learndash_topic_dots a,
+.learndash_topic_dots a > span, #learndash_lesson_topics_list span a, #learndash_profile a,
+#learndash_profile a span {
+  color: #f7ad00 !important;
+}
+
+#learndash_lessons a:hover, #learndash_quizzes a:hover, .expand_collapse a:hover, .learndash_topic_dots a:hover,
+.learndash_topic_dots a > span:hover, #learndash_lesson_topics_list span a:hover, #learndash_profile a:hover,
+#learndash_profile a span:hover {
+  color: #fabd30 !important;
+}
+
+form#sfwd-mark-complete input#learndash_mark_complete_button[disabled] {
+  color: #deb654 !important;
+  background-color: #ffd180;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.learndash_nevigation_lesson_topics_list > div > div.list_arrow {
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  margin-top: 4px;
+  float: left;
+}
+
+#learndash_profile .learndash-course-link a {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.learndash_nevigation_lesson_topics_list > div {
+  margin-bottom: 10px;
+}
+
+dd.course_progress div.course_progress_blue {
+  background-color: #5CB85C;
+  height: 100%;
+}
+
+dd.course_progress {
+  display: block;
+  margin: 10px auto;
+  padding: 0;
+  position: relative;
+  width: 90%;
+  background-color: #F5F5F5;
+  border: medium none;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  height: 20px;
+  overflow: hidden;
+}
+
+/* Ubergrid styles */
+div.uber-grid-filters > div {
+  margin-right: 5px !important;
+}
+
+div.uber-grid-filters > div a {
+  font-size: 14px !important;
+}
+
+.page-id-198 .uber-grid-filters, .page-id-5231 .uber-grid-filters {
+  display: none !important;
+}
+
+/* Gravity Forms styles */
+.gform_wrapper input {
+  border: 1px solid #ddd;
+}
+
+.gform_wrapper input[type="submit"] {
+  padding: 16px 24px;
+  border: none;
+}
+
+/*  end Posts & Pages */
+/* fix for framework update */
+.widget ol > li {
+  text-indent: 0;
+}
+
+/* GF fix for radio buttons overflow */
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+  overflow: visible !important;
+}
+
+/* Genericons */
+.genericon {
+  vertical-align: text-bottom;
+}
+
+.naada-icon:before {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px/1 'Genericons';
+  vertical-align: text-bottom;
+}
+
+.naada-facebook-icon:before {
+  content: '\f203';
+  /*color: #3b5998; */
+}
+
+.naada-twitter-icon:before {
+  content: '\f202';
+}
+
+.naada-instagram-icon:before {
+  content: '\f215';
+}
+
+/* Slideshow */
+.naada-slide-box1 {
+  font-size: 14px;
+  color: #fff;
+}
+
+.naada-slide-box1 p {
+  margin: 0 0 10px;
+}
+
+.naada-slide-box1 a.naada-slidebox-link {
+  color: #999;
+  border-bottom: 1px dotted #999;
+}
+
+.naada-slide-box1 a.naada-slidebox-link:hover {
+  color: #fff;
+}
+
+.naada-slide-box1 h5 {
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.naada-slide-image {
+  border: 3px solid #fff;
+}
+
+/* Footer */
+.footer-widgets {
+  padding-top: 40px;
+}
+
+.footer-widgets .footer-widgets-1, .footer-widgets .footer-widgets-2 {
+  width: 340px;
+  float: left;
+}
+
+.footer-widgets .footer-widgets-1 {
+  margin-right: 60px;
+}
+
+.footer-widgets .footer-widgets-3 {
+  float: right;
+  width: 340px;
+}
+
+.footer-widgets, .woocommerce .footer-widgets {
+  background-color: #b3ba1c;
+  color: #fff;
+}
+
+.footer-widgets a, .woocommerce .footer-widgets a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+.footer-widgets a.social, .woocommerce .footer-widgets a.social {
+  padding: 0 .25rem;
+  border-bottom: 0;
+}
+
+.footer-widgets a.social:hover img, .woocommerce .footer-widgets a.social:hover img {
+  opacity: .8;
+}
+
+.footer-widgets a.social img, .woocommerce .footer-widgets a.social img {
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.footer-widgets button, .footer-widgets input[type="button"], .footer-widgets input[type="reset"], .footer-widgets input[type="submit"], .footer-widgets .button, .footer-widgets input.button, .woocommerce .footer-widgets button, .woocommerce .footer-widgets input[type="button"], .woocommerce .footer-widgets input[type="reset"], .woocommerce .footer-widgets input[type="submit"], .woocommerce .footer-widgets .button, .woocommerce .footer-widgets input.button {
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff !important;
+  background-color: #f7ad00;
+  border: 1px solid white;
+  padding: 16px 24px;
+}
+
+.footer-widgets button:hover, .footer-widgets input[type="button"]:hover, .footer-widgets input[type="reset"]:hover, .footer-widgets input[type="submit"]:hover, .footer-widgets .button:hover, .footer-widgets input.button:hover, .woocommerce .footer-widgets button:hover, .woocommerce .footer-widgets input[type="button"]:hover, .woocommerce .footer-widgets input[type="reset"]:hover, .woocommerce .footer-widgets input[type="submit"]:hover, .woocommerce .footer-widgets .button:hover, .woocommerce .footer-widgets input.button:hover {
+  background-color: #fabd30;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.site-footer {
+  background-color: #90980e;
+  background-size: cover;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 0;
+}
+
+.site-footer a {
+  color: #fff;
+}
+
+.site-footer a:hover {
+  color: #D6DA9D;
+}
+
+.footer-widgets input {
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+/* end Footer */
+/* HOMEPAGE Specific Style */
+body.home .site-inner, body.page-template-familypage .site-inner, body.page-template-landing {
+  max-width: 100%;
+}
+
+body.home .site-inner article.entry, body.page-template-familypage .site-inner article.entry, body.page-template-landing article.entry {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+body.home .site-inner .homeContentWrap, body.page-template-familypage .site-inner .homeContentWrap, body.page-template-landing .homeContentWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 3rem;
+}
+
+@media only screen and (max-width: 400px) {
+  body.home .site-inner .homeContentWrap, body.page-template-familypage .site-inner .homeContentWrap, body.page-template-landing .homeContentWrap {
+    padding: 2rem 2rem;
+  }
+}
+
+body.home .site-inner .homeContentWrap h3.schedule, body.page-template-familypage .site-inner .homeContentWrap h3.schedule, body.page-template-landing .homeContentWrap h3.schedule {
+  float: left;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+body.home .site-inner .homeContentWrap a.fullSched, body.page-template-familypage .site-inner .homeContentWrap a.fullSched, body.page-template-landing .homeContentWrap a.fullSched {
+  background: #F5F5F5;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  padding: .25rem;
+  font-size: 0.9rem;
+  color: #aeaeae;
+  margin: 0 0 0 10px;
+  display: inline-block;
+  float: left;
+}
+
+body.home .site-inner .homeContentWrap a.fullSched:hover, body.page-template-familypage .site-inner .homeContentWrap a.fullSched:hover, body.page-template-landing .homeContentWrap a.fullSched:hover {
+  cursor: pointer;
+  background: #f7ad00;
+  color: #fff;
+  border: 1px solid #f7ad00;
+}
+
+body.home .site-inner .homeContentWrap .greenbox, body.page-template-familypage .site-inner .homeContentWrap .greenbox, body.page-template-landing .homeContentWrap .greenbox {
+  background-color: #b3ba1c;
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 1rem;
+  height: 149px;
+  background-color: #b3ba1c;
+}
+
+body.home .site-inner .homeContentWrap .greenbox h3, body.page-template-familypage .site-inner .homeContentWrap .greenbox h3, body.page-template-landing .homeContentWrap .greenbox h3 {
+  font-size: 1.35rem;
+  color: #fff;
+  padding: 10px;
+  margin: 3.5rem 0 0 0;
+  text-shadow: 1px 1px 1px rgba(0, 0, 1, 0.3);
+}
+
+@media only screen and (max-width: 400px) {
+  body.home .site-inner .homeContentWrap .greenbox h3, body.page-template-familypage .site-inner .homeContentWrap .greenbox h3, body.page-template-landing .homeContentWrap .greenbox h3 {
+    margin: .5rem 0 0 0;
+  }
+}
+
+body.home .site-inner .homeContentWrap .greenbox.first, body.page-template-familypage .site-inner .homeContentWrap .greenbox.first, body.page-template-landing .homeContentWrap .greenbox.first {
+  background: url("../images/sauna.jpg") no-repeat 0% 50%;
+  background-size: cover;
+  position: relative;
+}
+
+body.home .site-inner .homeContentWrap .greenbox.first h3, body.page-template-familypage .site-inner .homeContentWrap .greenbox.first h3, body.page-template-landing .homeContentWrap .greenbox.first h3 {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 1, 0.3);
+  padding: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  body.home .site-inner .homeContentWrap .greenbox.first, body.page-template-familypage .site-inner .homeContentWrap .greenbox.first, body.page-template-landing .homeContentWrap .greenbox.first {
+    background-position: 50% 50%;
+  }
+  body.home .site-inner .homeContentWrap .greenbox.first h3, body.page-template-familypage .site-inner .homeContentWrap .greenbox.first h3, body.page-template-landing .homeContentWrap .greenbox.first h3 {
+    padding: 5px;
+  }
+}
+
+body.home .site-inner .homeContentWrap .col_1_3, body.page-template-familypage .site-inner .homeContentWrap .col_1_3, body.page-template-landing .homeContentWrap .col_1_3 {
+  width: 22%;
+}
+
+body.home .site-inner .homeContentWrap .col_2_3, body.page-template-familypage .site-inner .homeContentWrap .col_2_3, body.page-template-landing .homeContentWrap .col_2_3 {
+  width: 72%;
+}
+
+body.home .site-inner .homeContentWrap .col_2_3 .naada-pricing td, body.page-template-familypage .site-inner .homeContentWrap .col_2_3 .naada-pricing td, body.page-template-landing .homeContentWrap .col_2_3 .naada-pricing td {
+  width: auto !important;
+}
+
+body.home .site-inner .homeContentWrap .col_2_3, body.home .site-inner .homeContentWrap .col_1_3, body.page-template-familypage .site-inner .homeContentWrap .col_2_3, body.page-template-familypage .site-inner .homeContentWrap .col_1_3, body.page-template-landing .homeContentWrap .col_2_3, body.page-template-landing .homeContentWrap .col_1_3 {
+  float: left;
+  margin: 2rem 3% 2rem 0;
+}
+
+body.home .site-inner .homeContentWrap .col_2_3 p, body.home .site-inner .homeContentWrap .col_1_3 p, body.page-template-familypage .site-inner .homeContentWrap .col_2_3 p, body.page-template-familypage .site-inner .homeContentWrap .col_1_3 p, body.page-template-landing .homeContentWrap .col_2_3 p, body.page-template-landing .homeContentWrap .col_1_3 p {
+  float: left;
+  width: 60%;
+}
+
+body.home .site-inner .homeContentWrap .col_2_3 .greenbox + p, body.home .site-inner .homeContentWrap .col_1_3 .greenbox + p, body.page-template-familypage .site-inner .homeContentWrap .col_2_3 .greenbox + p, body.page-template-familypage .site-inner .homeContentWrap .col_1_3 .greenbox + p, body.page-template-landing .homeContentWrap .col_2_3 .greenbox + p, body.page-template-landing .homeContentWrap .col_1_3 .greenbox + p {
+  float: left;
+  width: 35%;
+}
+
+@media only screen and (max-width: 525px) {
+  body.home .site-inner .homeContentWrap .col_2_3 .greenbox + p, body.home .site-inner .homeContentWrap .col_1_3 .greenbox + p, body.page-template-familypage .site-inner .homeContentWrap .col_2_3 .greenbox + p, body.page-template-familypage .site-inner .homeContentWrap .col_1_3 .greenbox + p, body.page-template-landing .homeContentWrap .col_2_3 .greenbox + p, body.page-template-landing .homeContentWrap .col_1_3 .greenbox + p {
+    width: 100%;
+    float: none;
+  }
+  body.home .site-inner .homeContentWrap .col_2_3 .greenbox + p + p, body.home .site-inner .homeContentWrap .col_1_3 .greenbox + p + p, body.page-template-familypage .site-inner .homeContentWrap .col_2_3 .greenbox + p + p, body.page-template-familypage .site-inner .homeContentWrap .col_1_3 .greenbox + p + p, body.page-template-landing .homeContentWrap .col_2_3 .greenbox + p + p, body.page-template-landing .homeContentWrap .col_1_3 .greenbox + p + p {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.home .site-inner .homeContentWrap .col_1_3, body.home .site-inner .homeContentWrap .col_2_3, body.page-template-familypage .site-inner .homeContentWrap .col_1_3, body.page-template-familypage .site-inner .homeContentWrap .col_2_3, body.page-template-landing .homeContentWrap .col_1_3, body.page-template-landing .homeContentWrap .col_2_3 {
+    width: 100%;
+    margin: 2rem 3% 0 0;
+  }
+}
+
+body.home .site-inner .homeContentWrap .sell, body.page-template-familypage .site-inner .homeContentWrap .sell, body.page-template-landing .homeContentWrap .sell {
+  width: 47%;
+  float: left;
+  margin: 2rem 3% 2rem 0;
+}
+
+body.home .site-inner .homeContentWrap .sell p, body.page-template-familypage .site-inner .homeContentWrap .sell p, body.page-template-landing .homeContentWrap .sell p {
+  float: left;
+  width: 60%;
+}
+
+body.home .site-inner .homeContentWrap .sell .greenbox + p, body.page-template-familypage .site-inner .homeContentWrap .sell .greenbox + p, body.page-template-landing .homeContentWrap .sell .greenbox + p {
+  float: left;
+  width: 35%;
+}
+
+@media only screen and (max-width: 525px) {
+  body.home .site-inner .homeContentWrap .sell .greenbox + p, body.page-template-familypage .site-inner .homeContentWrap .sell .greenbox + p, body.page-template-landing .homeContentWrap .sell .greenbox + p {
+    width: 100%;
+    float: none;
+  }
+  body.home .site-inner .homeContentWrap .sell .greenbox + p + p, body.page-template-familypage .site-inner .homeContentWrap .sell .greenbox + p + p, body.page-template-landing .homeContentWrap .sell .greenbox + p + p {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body.home .site-inner .homeContentWrap .sell, body.page-template-familypage .site-inner .homeContentWrap .sell, body.page-template-landing .homeContentWrap .sell {
+    width: 100%;
+    margin: 2rem 3% 0 0;
+  }
+}
+
+body.home .site-inner .homeContentWrap .login-left, body.page-template-familypage .site-inner .homeContentWrap .login-left, body.page-template-landing .homeContentWrap .login-left {
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+
+body.home .site-inner .homeContentWrap .login-right, body.page-template-familypage .site-inner .homeContentWrap .login-right, body.page-template-landing .homeContentWrap .login-right {
+  float: left;
+  width: 75%;
+}
+
+body.home .site-inner .homeContentWrap .login-right div.signin, body.page-template-familypage .site-inner .homeContentWrap .login-right div.signin, body.page-template-landing .homeContentWrap .login-right div.signin {
+  background: #e1e1e1;
+  border-radius: 10px;
+  padding: 2rem 2rem 1rem;
+  float: left;
+  width: 100%;
+}
+
+body.home .site-inner .homeContentWrap .login-right h3, body.page-template-familypage .site-inner .homeContentWrap .login-right h3, body.page-template-landing .homeContentWrap .login-right h3 {
+  background: #f4f4f4;
+  padding: .75rem 1.5rem;
+  display: inline-block;
+  margin: 0 0 0 2rem;
+  color: #7B7B7B;
+  border-radius: 10px 10px 0 0;
+}
+
+body.home .site-inner .homeContentWrap .login-right .form-group, body.page-template-familypage .site-inner .homeContentWrap .login-right .form-group, body.page-template-landing .homeContentWrap .login-right .form-group {
+  float: left;
+  margin: 0 3% 2% 0;
+}
+
+body.home .site-inner .homeContentWrap .login-right .form-group:nth-of-type(1), body.home .site-inner .homeContentWrap .login-right .form-group .form-group:nth-of-type(2), body.page-template-familypage .site-inner .homeContentWrap .login-right .form-group:nth-of-type(1), body.page-template-familypage .site-inner .homeContentWrap .login-right .form-group .form-group:nth-of-type(2), body.page-template-landing .homeContentWrap .login-right .form-group:nth-of-type(1), body.page-template-landing .homeContentWrap .login-right .form-group .form-group:nth-of-type(2) {
+  width: 40%;
+}
+
+body.home .site-inner .homeContentWrap .login-right .form-group:nth-of-type(3), body.page-template-familypage .site-inner .homeContentWrap .login-right .form-group:nth-of-type(3), body.page-template-landing .homeContentWrap .login-right .form-group:nth-of-type(3) {
+  width: 15%;
+  margin: 1.65rem 0 1rem;
+}
+
+body.home .site-inner .homeContentWrap .login-right .form-group input[type="submit"], body.page-template-familypage .site-inner .homeContentWrap .login-right .form-group input[type="submit"], body.page-template-landing .homeContentWrap .login-right .form-group input[type="submit"] {
+  float: right;
+}
+
+body.home .site-inner .homeContentWrap .login-right ul li, body.page-template-familypage .site-inner .homeContentWrap .login-right ul li, body.page-template-landing .homeContentWrap .login-right ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+body.page-template-familypage .site-inner .homeContentWrap .sell h3 {
+  padding: 1em;
+}
+
+body.page-template-familypage .site-inner .homeContentWrap .sell .greenbox + p {
+  width: 100%;
+}
+
+body.page-template-familypage .site-inner .homeContentWrap .sell .greenbox.family {
+  background: url("../images/family-yoga-bg.png") no-repeat 0% 50%;
+  background-size: cover;
+  position: relative;
+}
+
+body.page-template-familypage .site-inner .homeContentWrap .sell .greenbox.family + p {
+  width: 35%;
+  float: left;
+}
+
+section.module.parallax {
+  width: 100%;
+  padding: 4rem 0;
+  position: relative;
+}
+
+section.module.parallax .parallaxContent {
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+section.module.parallax .parallaxContent h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+section.module.parallax .parallaxContent h2 span {
+  border-bottom: 5px solid #b3ba1c;
+}
+
+section.module.parallax .parallaxContent h3 {
+  color: #fff;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+section.module.parallax .parallaxContent .block {
+  width: 45%;
+  margin: 3rem 1rem 1rem;
+  float: left;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+section.module.parallax .parallaxContent .center {
+  margin: 3rem 1rem 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  section.module.parallax .parallaxContent .block {
+    width: 100%;
+    padding: 1rem 2rem 0;
+    margin: 2rem 0 0;
+  }
+  section.module.parallax .parallaxContent .block p {
+    padding: 0;
+  }
+}
+
+section.module.parallax.parallax-1 .parallaxContent .block.right p {
+  padding-top: 2.3rem;
+}
+
+@media only screen and (max-width: 640px) {
+  section.module.parallax.block.right {
+    margin: 0 0 2rem;
+  }
+  section.module.parallax.block.right p {
+    padding-top: 0;
+  }
+}
+
+section.module.parallax div.downArrow {
+  position: absolute;
+  bottom: -21px;
+  left: 48%;
+  display: inline-block;
+  border-radius: 50%;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #b3ba1c;
+  border-radius: 50%;
+  margin-left: 0.75em;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  section.module.parallax div.downArrow {
+    left: 42%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  section.module.parallax div.downArrow {
+    left: 40%;
+  }
+}
+
+section.module.parallax div.downArrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 12px;
+  width: 12px;
+  height: 12px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.onlineEducation {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.onlineEducation a {
+  color: #b3ba1c;
+}
+
+section.module.parallax-1 {
+  background: url("../images/clinic-parallax.jpg") 50% 0 repeat fixed;
+}
+
+@media only screen and (max-width: 400px) {
+  section.module.parallax-1 {
+    background: url("../images/clinic-parallax-mobile.jpg") 47% 40% repeat;
+    background-size: cover;
+  }
+}
+
+section.module.parallax-2 {
+  background: url("../images/nytt-bg.jpg") 50% 0 repeat fixed;
+}
+
+@media only screen and (max-width: 400px) {
+  section.module.parallax-2 {
+    background: url("../images/nytt-bg-mobile.jpg") 55% 35% repeat;
+    background-size: cover;
+  }
+}
+
+section.module.parallax-2 .parallaxContent .block .right p {
+  padding-top: 0;
+}
+
+section.module.parallax-5 {
+  background: url("../images/online-yoga-education.jpg") 50% 0 repeat fixed;
+}
+
+@media only screen and (max-width: 400px) {
+  section.module.parallax-5 {
+    background: url("../images/online-yoga-education-mobile.jpg") 47% 40% repeat;
+    background-size: cover;
+  }
+}
+
+.clinic-carousel, .nytt-carousel, .online-carousel {
+  margin: 3rem 0;
+}
+
+.clinic-carousel div.courseImage, .nytt-carousel div.courseImage, .online-carousel div.courseImage {
+  float: none !important;
+  width: 288px;
+  margin: 0 auto 1.5rem !important;
+}
+
+.clinic-carousel div.courseImage img, .nytt-carousel div.courseImage img, .online-carousel div.courseImage img {
+  border: 1px solid #E5E5E5;
+  float: none;
+  padding: 6px;
+  margin: 0;
+  width: 288px;
+  height: 178px;
+  border-radius: 5px;
+}
+
+.clinic-carousel h2, .nytt-carousel h2, .online-carousel h2 {
+  margin-bottom: 2rem;
+}
+
+.clinic-carousel h2 a, .nytt-carousel h2 a, .online-carousel h2 a {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.clinic-carousel span.trainer-name a, .nytt-carousel span.trainer-name a, .online-carousel span.trainer-name a {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+  width: 365px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 400px;
+    margin: 0 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 899px) {
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 330px;
+  }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 779px) {
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 305px;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 679px) {
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 460px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 519px) {
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 400px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 320px;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 300px;
+    margin: 0;
+    padding: 0 !important;
+  }
+  .clinic-carousel div.healcode-image-area img, .nytt-carousel div.healcode-image-area img, .online-carousel div.healcode-image-area img {
+    width: 250px;
+    height: 153px;
+  }
+}
+
+.online-carousel h2 {
+  margin-bottom: 0;
+}
+
+/* Family Page Style */
+body.page-template-familypage .site-inner {
+  max-width: 100%;
+}
+
+body.page-template-familypage .homeContentWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 3rem;
+}
+
+body.page-template-familypage .homeContentWrap h2 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+body.page-template-familypage header.entry-header {
+  display: none;
+}
+
+body.page-template-familypage article.entry {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+body.page-template-familypage .breadcrumb {
+  display: none;
+}
+
+section.module.parallax-3 {
+  background: url("../images/family-yoga-parallax1.jpg") 50% 30% repeat fixed;
+  padding: 4rem 0;
+}
+
+@media only screen and (max-width: 400px) {
+  section.module.parallax-3 {
+    background: url("../images/family-yoga-parallax1.jpg") 47% 40% repeat;
+    background-size: cover;
+  }
+}
+
+section.module.parallax-4 {
+  padding: 9.5rem 0;
+  background: url("../images/family-yoga-parallax2.jpg") 50% 50% repeat fixed;
+}
+
+@media only screen and (max-width: 400px) {
+  section.module.parallax-4 {
+    background: url("../images/family-yoga-parallax2.jpg") 55% 35% repeat;
+    background-size: cover;
+  }
+}
+
+section.module.parallax-4 .parallaxContent .block .right p {
+  padding-top: 0;
+}
+
+/* Promo box */
+.naada-promo-box {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+.naada-promo-box-header {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #b3ba1c;
+}
+
+.naada-promo-box-body {
+  display: inline-block;
+  padding: 15px;
+}
+
+.naada-promo-box-dates {
+  display: inline-block;
+  padding: 0 15px 15px;
+  font-weight: bold;
+}
+
+/* end Promo box */
+/* Andrew's HealCode styles */
+/* Family */
+tr {
+  /* Family */
+  /* Therapeutic */
+  /* beginner */
+  /* Intermediate */
+  /* Advanced */
+  /* Specialty Classes */
+  /* Workshops */
+}
+
+tr.kids_class_7_9yrs .class_level span, tr.kids_class_5_10yrs .class_level span, tr.kids_class_4_6_yrs .class_level span, tr.prenatal .class_level span, tr.postnatal .class_level span, tr.family_yoga .class_level span, tr.acro_yoga .class_level span, tr.kids_class_1_3_yrs .class_level span, tr.kids_class_2_5_yrs .class_level span, tr.mom_dad_crawlers_class .class_level span, tr.kids_class_10_15yrs .class_level span,
+tr.moms_dads_yoga .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #f285a2;
+  padding: 5px 10px;
+}
+
+tr.meditation .class_level span, tr.restorative_101 .class_level span, tr.restaurateur_cou_epaules .class_level span, tr.restaurateur .class_level span, tr.restaurateur_hanches_dos .class_level span, tr.yoga_wall_restorative .class_level span, tr.yin_yoga .class_level span, tr.ayurveda .class_level span, tr.advanced_anatomy .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #F1E33D;
+  padding: 5px 10px;
+}
+
+tr.energizer .class_level span, tr.rise_and_shine .class_level span, tr.naada_level_1 .class_level span, tr.intro_to_yoga .class_level span, tr.yoga_wall_intro .class_level span, tr.community_yoga_for_healthy_aging .class_level span, tr.community_class .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #b3ba1e;
+  padding: 5px 10px;
+}
+
+tr.naada_level_2 .class_level span, tr.yoga_wall .class_level span, tr.shoulder_openers .class_level span, tr.hip_openers .class_level span, tr.back_bends .class_level span, tr.yoga_wall .class_level span, tr.yoga_wall_hip_openers .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #97c9ea;
+  padding: 5px 10px;
+}
+
+tr.naada_live_by_donation .class_level span, tr.live_workshop_level_2_3 .class_level span, tr.naada_live .class_level span, tr.naada_level_2_3 .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #f59c00;
+  padding: 5px 10px;
+}
+
+tr.yoga_for_bone_health .class_level span, tr.yoga_for_women_yoga_pour_femmes .class_level span, tr.inversions .class_level span, tr.yoga_for_men_yoga_pour_hommes .class_level span, tr.intro_to_pranayama .class_level span, tr.prenatal .class_level span, tr.soins_du_dos_back_care .class_level span, tr.back_care .class_level span, tr.yoga_intro .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #f285a2;
+  padding: 5px 10px;
+}
+
+tr.decoding_the_sun_salutations_decoder_les_salutations_au_soleil .class_level span, tr.finding_the_earth_through_standing_poses_connecter_avec_le_sol_lors_des_postures_debout .class_level span, tr.get_to_the_core_twisting_in_standing_poses_droit_au_coeur_les_torsions_en_postures_debout .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #D34F3F;
+  padding: 5px 10px;
+}
+
+.Enrollment td.class_level span.class_level {
+  color: #fff;
+  text-transform: uppercase;
+  background: #D34F3F;
+  padding: 5px 10px;
+}
+
+.Enrollment.assisting_101 td.class_level span.class_level, .Enrollment.ayurveda td.class_level span.class_level, .Enrollment.asana_103 td.class_level span.class_level, .Enrollment.back_care td.class_level span.class_level, .Enrollment.meditation_101 td.class_level span.class_level, .Enrollment.relax_and_renew td.class_level span.class_level, .Enrollment.pranayama_101 td.class_level span.class_level, .Enrollment.yoga_wall td.class_level span.class_level, .Enrollment.naada_101 td.class_level span.class_level, .Enrollment.psychology_of_yoga td.class_level span.class_level {
+  color: #fff;
+  text-transform: uppercase;
+  background: #909090;
+  padding: 5px 10px;
+}
+
+/* NYTT */
+/** Course Descriptions Styles * */
+.naada-class-categories {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.naada-class-category-desc {
+  margin: 0 0 10px 10px;
+  font-style: italic;
+}
+
+.naada-therapeutic {
+  background: #e3d042;
+}
+
+.naada-beginner {
+  background: #b3ba1e;
+}
+
+.naada-intermediate {
+  background: #97c9ea;
+}
+
+.naada-advanced {
+  background: #f59c00;
+}
+
+.naada-family {
+  background: #f285a2;
+}
+
+/* Mobile styles for Full Schedule */
+@media only screen and (max-width: 400px) {
+  body.page-id-7 div.healcode.schedule td .hc_starttime, body.page-id-7 div.healcode.schedule td .hc_endtime {
+    display: block;
+    float: left;
+    line-height: normal;
+  }
+  body.page-id-7 div.healcode.schedule td.mbo_class {
+    line-height: normal;
+  }
+  body.page-id-7 div.healcode.schedule a.hc-button.signup_now, body.page-id-7 div.healcode.schedule div.healcode input.hc-button {
+    font-size: 10px;
+    line-height: normal;
+    font-weight: normal;
+    padding: 4px 2px;
+  }
+}
+
+/* end Andrew's HealCode styles */
+.clearfix {
+  display: inline-block;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* responsive image grid */
+img.naada-grid {
+  margin: 0 5px 5px 0;
+  width: 133px;
+  float: left;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  img.naada-grid {
+    width: 103px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .naada-teacher {
+    float: none;
+  }
+  .naada-teacher img {
+    float: none;
+  }
+  img.naada-grid {
+    width: 137px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img.naada-grid {
+    width: 113px;
+  }
+  .entry-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  img.resource-boxes {
+    width: 260px;
+  }
+}
+
+/* HEALCODE OVERRIDES */
+#hc_enrollments_301084042aa:first-child .enrollment {
+  display: block;
+}
+
+#hc_enrollments_301084042aa .enrollment {
+  display: none;
+}
+
+/* Healcode widget tweaks */
+/* New Horizontal Schedule Widget for homepage */
+@media only screen and (min-width: 640px) {
+  div.horz-sched {
+    margin-bottom: 2rem;
+  }
+  div.horz-sched::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  div.horz-sched .healcode table, div.horz-sched .healcode tbody {
+    border: 0;
+  }
+  div.horz-sched div.healcode table.schedule tr td {
+    border-top: 0;
+  }
+  div.horz-sched div.healcode table tr {
+    border-bottom: 0;
+  }
+  div.horz-sched div.list_view li {
+    padding: 1rem;
+    width: 100px;
+    float: left;
+    min-height: 140px;
+    border-left: 1px dashed #DEDEDE;
+  }
+  div.horz-sched div.list_view li:last-child {
+    border-right: 1px dashed #DEDEDE;
+  }
+  div.horz-sched .healcode a.hc-button.signup_now {
+    font-size: .75rem;
+  }
+  div.horz-sched .healcode .hc_time {
+    line-height: 1rem;
+  }
+  div.horz-sched .healcode span.hc_endtime {
+    color: #C3C3C3;
+  }
+  div.horz-sched .healcode .mbo_class {
+    padding-top: 7px;
+    line-height: 1rem;
+  }
+  div.horz-sched div.list_view li div.signup {
+    position: absolute;
+    bottom: 7%;
+    top: inherit;
+    margin-top: 0;
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  div.horz-sched tbody {
+    border: 0;
+  }
+  div.horz-sched div.list_view li {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+  }
+  div.horz-sched div.healcode table tr {
+    border-bottom: 0;
+  }
+  div.horz-sched div.healcode table.schedule tr td {
+    border-top: 0;
+  }
+}
+
+/* End Horizontal sched */
+div.healcode div.hc_footer div {
+  display: none !important;
+}
+
+div.healcode a.hc-button {
+  display: inline-block !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #404040;
+}
+
+div.healcode a:hover.hc-button {
+  background-color: #fabd30;
+  color: #fff !important;
+}
+
+div.healcode a.hc-button.signup_now {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  background-color: #f7ad00;
+}
+
+div.healcode a a {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold !important;
+}
+
+/* Subject to Page ID, ie use homepage for deployment */
+body.page-id-6613 div.healcode.enrollments .enrollment, body.page-id-6613 div.healcode.enrollments .healcode-course {
+  width: 300px !important;
+}
+
+/* Hides Sub Enrollments in Courses */
+div.healcode-course div.enrollment {
+  display: none !important;
+}
+
+/* HEALCODE CAROUSEL CSS */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  padding: 8px;
+  /*margin: 3rem 6rem; */
+}
+
+#content {
+  border-radius: 8px;
+  background: #fff;
+  padding: 20px;
+  overflow: hidden;
+}
+
+#close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  top: -7px;
+  right: -7px;
+  background-color: #fff;
+  border-radius: 14px;
+  font-weight: bold;
+  padding: 1px 8px;
+  border: 2px solid #5A5A5A;
+}
+
+#close:hover {
+  background: #f7ad00;
+  color: #fff;
+}
+
+.naada-carousel div.healcode-image-area {
+  float: none !important;
+  width: 309px;
+  margin: 0 auto 1.5rem !important;
+}
+
+.naada-carousel div.healcode-image-area img {
+  border: 1px solid #E5E5E5;
+  float: none;
+  padding: 6px;
+  margin: 0;
+  width: 288px;
+  height: 178px;
+  border-radius: 5px;
+}
+
+.naada-carousel h2.healcode-enrollment-name, .naada-carousel h2.healcode-course-name {
+  text-transform: uppercase;
+  color: #f7ad00;
+  text-align: center;
+}
+
+.naada-carousel span.healcode-trainer-name {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+  color: #555;
+}
+
+.naada-carousel div.healcode .healcode-course {
+  min-height: 466px;
+}
+
+.naada-carousel .slick-slider {
+  max-height: 450px;
+}
+
+.naada-carousel .slick-slider .slick-slide {
+  width: 360px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  .naada-carousel .slick-slider .slick-slide {
+    width: 400px;
+    margin: 0 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 899px) {
+  .naada-carousel .slick-slider .slick-slide {
+    width: 330px;
+  }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 779px) {
+  .naada-carousel .slick-slider .slick-slide {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 679px) {
+  .naada-carousel .slick-slider .slick-slide {
+    width: 460px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 519px) {
+  .naada-carousel .slick-slider .slick-slide {
+    width: 400px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  .naada-carousel .slick-slider .slick-slide {
+    width: 320px;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  .naada-carousel .slick-slider .slick-slide {
+    width: 308px;
+    margin: 0;
+    padding: 0 !important;
+  }
+  .naada-carousel .slick-slider div.healcode-image-area img {
+    width: 250px;
+    height: 153px;
+    margin: 0 auto;
+  }
+  .naada-carousel .slick-slider h2.healcode-enrollment-name {
+    width: 90%;
+  }
+}
+
+.naada-carousel .slick-list {
+  padding: 0 0 0 0 !important;
+}
+
+/* Slick Slider */
+.slick-prev, .slick-next {
+  height: 40px !important;
+  width: 40px !important;
+  z-index: 10;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #b3ba1c !important;
+  font-size: 40px !important;
+}
+
+.entry-content ul.slick-dots {
+  margin-left: 0;
+}
+
+/* Landing Pages */
+/* Customisation for different landing page hero images */
+.page-id-8571 .page-template-landing .LandingHero {
+  background-position: center 33%;
+}
+
+/* yoga for women */
+.page-id-8598 .LandingHero {
+  background-position: center 33% !important;
+  background-size: cover;
+}
+
+.page-template-landing .homeContentWrap {
+  overflow: hidden;
+}
+
+.page-template-landing .LandingHero {
+  min-height: 600px;
+  background-position: 30% 20%;
+  position: relative;
+}
+
+.page-template-landing .LandingHero .callOut {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 300px auto 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+.page-template-landing .LandingHero .naadaPresents {
+  background-color: #b3ba1c;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  text-transform: none;
+}
+
+.page-template-landing .LandingHero h2 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  background-color: #fff;
+  color: #b3ba1c;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+.page-template-landing .breadcrumb {
+  display: none;
+}
+
+.page-template-landing .courseShort {
+  background-color: #b3ba1c;
+  color: #fff;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 400;
+  padding: 2rem 0;
+}
+
+.page-template-landing .courseShort p {
+  margin-bottom: 0;
+}
+
+.page-template-landing .courseShort div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-template-landing .hardSell h2 {
+  text-transform: none;
+}
+
+.page-template-landing .hardSell + hr {
+  margin: 2rem 0 4rem;
+}
+
+.page-template-landing .hardSell span.coursePrice {
+  font-weight: bold;
+  font-size: 2.5rem;
+  display: block;
+  text-align: center;
+}
+
+.page-template-landing .hardSell .courseBuy {
+  position: relative;
+}
+
+.page-template-landing .hardSell .courseBuy::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #b3ba1c;
+  top: -60px;
+  left: 31%;
+}
+
+.page-template-landing hr {
+  width: 100%;
+  background-color: #eaeaea;
+  margin: 3rem auto 4rem;
+  position: relative;
+  float: left;
+}
+
+.page-template-landing hr.buy::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #eaeaea;
+  bottom: -36px;
+  left: 46%;
+}
+
+.page-template-landing h1.entry-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+.page-template-landing h1.entry-title::after {
+  content: "";
+  position: absolute;
+  width: 37%;
+  height: 5px;
+  bottom: -14px;
+  left: 31%;
+  background-color: #b3ba1c;
+}
+
+.page-template-landing .price {
+  font-size: 2.5rem;
+  color: #b3ba1c;
+}
+
+.page-template-landing .one-half p:first-child {
+  font-size: 120%;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+.page-template-landing .one-half p:first-child::first-letter {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.page-template-landing .center {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.page-template-landing .center .naada-button.large {
+  width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  .page-template-landing h1.entry-title {
+    margin-bottom: 50px;
+  }
+  .page-template-landing .one-half.first {
+    padding-bottom: 2rem;
+  }
+  .page-template-landing .center .naada-button.large {
+    width: 70%;
+  }
+}
+
+.page-template-landing ul.greenDots li {
+  list-style-type: none;
+  padding-left: 10px;
+  position: relative;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+.page-template-landing ul.greenDots li::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #b3ba1c;
+  left: -12px;
+  top: 11px;
+}
+
+.page-template-landing .intructorBio {
+  font-weight: 400;
+  font-weight: 1.1rem;
+}
+
+.page-template-landing a.naada-button.orange-button.large.centered {
+  width: 40%;
+  display: block;
+  margin: 0 0 0 30%;
+  text-align: center;
+  float: left;
+}
+
+.page-template-landing article.post-6717 {
+  display: none;
+}
+
+.testimonial {
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.testimonial p {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+.testimonial p:first-child {
+  background-color: #e6e6e6;
+  padding: 2rem 2rem 2rem 3rem;
+  border-radius: 4px;
+}
+
+.testimonial p:first-child:before {
+  content: "\201C";
+  position: absolute;
+  top: 2rem;
+  left: 26px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.testimonial p:first-child:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 40px solid #e6e6e6;
+  bottom: -36px;
+  left: 54%;
+}
+
+.testimonial p.author {
+  float: right;
+  font-weight: 600;
+}
+
+.page-id-8013.page-template-landing ul.greenDots li {
+  margin-bottom: 1rem;
+}
+
+.page-id-8013.page-template-landing ul.greenDots li::first-line {
+  font-weight: bold;
+}
+
+.dropdownContainer.closed {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.dropdownContainer.closed::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: -moz-linear-gradient(top, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0.01) 1%, whitesmoke 100%);
+  background: -webkit-linear-gradient(top, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0.01) 1%, whitesmoke 100%);
+  background: linear-gradient(to bottom, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0.01) 1%, whitesmoke 100%);
+}
+
+a#dropdownOpen {
+  background-color: #cccccc;
+  color: #fff;
+  padding: 1rem;
+}
+
+a#dropdownOpen:hover {
+  background-color: #aeaeae;
+}
+
+@media only screen and (max-width: 400px) {
+  .page-template-landing .LandingHero {
+    background-size: cover;
+    min-height: 475px;
+  }
+  .page-template-landing .LandingHero .callOut {
+    width: 100%;
+    margin: 275px auto 0 auto;
+  }
+  .page-template-landing .LandingHero .callOut .naadaPresents {
+    font-size: 1rem;
+    margin: 0;
+    padding: .5rem;
+    width: 100%;
+  }
+  .page-template-landing .LandingHero .callOut h2 {
+    font-size: 2rem;
+    padding: 1rem .5rem;
+  }
+  .page-template-landing .courseShort p {
+    padding: 0 1rem;
+  }
+  .page-template-landing .hardSell .first {
+    padding-bottom: 0;
+  }
+  .page-template-landing .hardSell .courseBuy {
+    width: 100%;
+    text-align: center;
+  }
+  .page-template-landing .hardSell .courseBuy::before {
+    display: none;
+  }
+  .page-template-landing hr {
+    width: 100%;
+  }
+  .page-template-landing img.instructorPic {
+    width: 80%;
+    margin: 0 auto 2rem;
+    display: block;
+  }
+  .page-template-landing a.naada-button.orange-button.large.centered {
+    width: 100%;
+  }
+  .page-template-landing hr.buy::after {
+    left: 34%;
+  }
+}
+
+/* CLINIC Page */
+.clinicCallout h3 {
+  font-weight: 400;
+  margin-bottom: 3rem;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .clinicCallout h3 {
+    display: none;
+  }
+}
+
+.page-template-clinicpage {
+  font-size: 1.1rem;
+}
+
+.page-template-clinicpage .naada-button.medium {
+  font-size: 14px;
+}
+
+.page-template-clinicpage .breadcrumb {
+  display: none;
+}
+
+.page-template-clinicpage .centerWrap {
+  margin: 2rem auto 4rem;
+}
+
+.page-template-clinicpage .centerWrap.bottom {
+  margin-bottom: 8rem;
+}
+
+.page-template-clinicpage .centerWrap p {
+  width: 70%;
+  margin: 0 auto 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  .page-template-clinicpage .centerWrap p {
+    width: 90%;
+  }
+}
+
+.page-template-clinicpage .servicesWrap {
+  float: left;
+  margin-bottom: 4rem;
+}
+
+.page-template-clinicpage .servicesWrap .serviceBlock {
+  position: relative;
+  margin: 2rem auto;
+  width: 100%;
+  float: left;
+  background-color: #f1f1f1;
+}
+
+.page-template-clinicpage .servicesWrap .serviceBlock .serviceRight, .page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft {
+  float: left;
+  width: 45%;
+}
+
+@media only screen and (max-width: 400px) {
+  .page-template-clinicpage .servicesWrap .serviceBlock .serviceRight, .page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft {
+    width: 90%;
+  }
+}
+
+.page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft {
+  background-position: center;
+  background-size: cover;
+  margin-right: 5%;
+  min-height: 455px;
+}
+
+@media only screen and (max-width: 400px) {
+  .page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft {
+    min-height: 200px;
+    width: 100%;
+  }
+}
+
+.page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft h2 {
+  color: #fff;
+  margin: 2rem;
+}
+
+.page-template-clinicpage .servicesWrap .serviceBlock .serviceRight {
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 400px) {
+  .page-template-clinicpage .servicesWrap .serviceBlock .serviceRight {
+    padding: 2rem 1rem;
+  }
+}
+
+.page-template-clinicpage .rates {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.page-template-clinicpage .rates .centerWrap {
+  margin: 2rem auto;
+}
+
+.page-template-clinicpage .rates ul {
+  margin-left: 20px;
+}
+
+.page-template-clinicpage .rates ul li {
+  list-style-type: disc;
+}
+
+.page-template-clinicpage .testimonialWrap {
+  float: left;
+  margin-bottom: 4rem;
+}
+
+.page-template-clinicpage .testimonialWrap .testimonial {
+  padding: 2rem;
+  background-color: #e6e6e6;
+  position: relative;
+}
+
+.page-template-clinicpage .testimonialWrap .testimonial:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 40px solid #e6e6e6;
+  bottom: -36px;
+  left: 54%;
+}
+
+.page-template-clinicpage .testimonialWrap .testimonial .pic {
+  float: left;
+  width: 200px;
+  z-index: 100;
+  position: relative;
+  margin-right: 2rem;
+}
+
+.page-template-clinicpage .testimonialWrap .testimonial p:first-child {
+  padding: 0;
+  width: 75%;
+  float: right;
+}
+
+.page-template-clinicpage .testimonialWrap .testimonial p:first-child:before {
+  top: 0rem;
+  left: -32px;
+}
+
+.page-template-clinicpage .testimonialWrap p.author {
+  float: right;
+  font-weight: 600;
+  margin-right: 29%;
+  font-size: 1.5rem;
+}
+
+body.page-id-8431 select#options[staff_ids] {
+  display: none;
+}
+
+.bookingCloak {
+  display: none;
+}
+
+/* WooCommerce Styles */
+.woocommerce main div.product p.price, .woocommerce main div.product span.price {
+  color: #B3BA1C;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.woocommerce main div.product .quantity input {
+  padding: .5rem;
+}
+
+.woocommerce main #respond input#submit.alt, .woocommerce main a.button.alt, .woocommerce main button.button.alt, .woocommerce main input.button.alt {
+  background-color: #f7ad00;
+  padding: .75rem;
+}
+
+.woocommerce main #respond input#submit.alt:hover, .woocommerce main a.button.alt:hover, .woocommerce main button.button.alt:hover, .woocommerce main input.button.alt:hover {
+  background-color: #fabd30;
+}
+
+.woocommerce main button.single_add_to_cart_button.button.alt.large.centered {
+  padding: 1.25rem 2rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
+.woocommerce-cart main td.product-name, .woocommerce-checkout main td.product-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+body.woocommerce main .woocommerce .order_details li, body.woocommerce-cart main .woocommerce .order_details li, body.woocommerce-checkout main .woocommerce .order_details li {
+  list-style-type: none;
+  font-size: .8rem;
+}
+
+body.woocommerce main .woocommerce .woocommerce-message, body.woocommerce-cart main .woocommerce .woocommerce-message, body.woocommerce-checkout main .woocommerce .woocommerce-message {
+  border-top: 3px solid #b3ba1c;
+}
+
+body.woocommerce main .woocommerce .woocommerce-info, body.woocommerce-cart main .woocommerce .woocommerce-info, body.woocommerce-checkout main .woocommerce .woocommerce-info {
+  border-top-color: #3FA4DC;
+}
+
+body.woocommerce main .woocommerce .woocommerce-info:before, body.woocommerce-cart main .woocommerce .woocommerce-info:before, body.woocommerce-checkout main .woocommerce .woocommerce-info:before {
+  color: #3FA4DC;
+}
+
+body.woocommerce main .woocommerce #respond input#submit.alt, body.woocommerce main .woocommerce a.button.alt, body.woocommerce main .woocommerce button.button.alt, body.woocommerce main .woocommerce input.button.alt, body.woocommerce-cart main .woocommerce #respond input#submit.alt, body.woocommerce-cart main .woocommerce a.button.alt, body.woocommerce-cart main .woocommerce button.button.alt, body.woocommerce-cart main .woocommerce input.button.alt, body.woocommerce-checkout main .woocommerce #respond input#submit.alt, body.woocommerce-checkout main .woocommerce a.button.alt, body.woocommerce-checkout main .woocommerce button.button.alt, body.woocommerce-checkout main .woocommerce input.button.alt {
+  background-color: #f7ad00;
+}
+
+body.woocommerce main .woocommerce #respond input#submit.alt:hover, body.woocommerce main .woocommerce a.button.alt:hover, body.woocommerce main .woocommerce button.button.alt:hover, body.woocommerce main .woocommerce input.button.alt:hover, body.woocommerce-cart main .woocommerce #respond input#submit.alt:hover, body.woocommerce-cart main .woocommerce a.button.alt:hover, body.woocommerce-cart main .woocommerce button.button.alt:hover, body.woocommerce-cart main .woocommerce input.button.alt:hover, body.woocommerce-checkout main .woocommerce #respond input#submit.alt:hover, body.woocommerce-checkout main .woocommerce a.button.alt:hover, body.woocommerce-checkout main .woocommerce button.button.alt:hover, body.woocommerce-checkout main .woocommerce input.button.alt:hover {
+  background-color: #fabd30;
+}
+
+body.woocommerce main .woocommerce input.button.alt:disabled, body.woocommerce main .woocommerce .woocommerce input.button.alt:disabled[disabled], body.woocommerce-cart main .woocommerce input.button.alt:disabled, body.woocommerce-cart main .woocommerce .woocommerce input.button.alt:disabled[disabled], body.woocommerce-checkout main .woocommerce input.button.alt:disabled, body.woocommerce-checkout main .woocommerce .woocommerce input.button.alt:disabled[disabled] {
+  background-color: #f7ad00;
+}
+
+body.woocommerce main .star-rating, body.woocommerce-cart main .star-rating, body.woocommerce-checkout main .star-rating {
+  color: #b3ba1c;
+}
+
+body.woocommerce main #payment ul.payment_methods li, body.woocommerce-cart main #payment ul.payment_methods li, body.woocommerce-checkout main #payment ul.payment_methods li {
+  list-style-type: none;
+}
+
+body.woocommerce main #reviews #comments ol.commentlist li, body.woocommerce-cart main #reviews #comments ol.commentlist li, body.woocommerce-checkout main #reviews #comments ol.commentlist li {
+  list-style-type: none;
+  margin: 2rem 0 2rem;
+}
+
+body.woocommerce main #reviews #comments ol.commentlist li img.avatar, body.woocommerce-cart main #reviews #comments ol.commentlist li img.avatar, body.woocommerce-checkout main #reviews #comments ol.commentlist li img.avatar {
+  width: 100px;
+  background: transparent;
+  border-radius: 4px;
+}
+
+body.woocommerce main #reviews #comments ol.commentlist li .comment-text, body.woocommerce-cart main #reviews #comments ol.commentlist li .comment-text, body.woocommerce-checkout main #reviews #comments ol.commentlist li .comment-text {
+  margin: 0 0 0 120px;
+  background: #F5F5F5;
+  border: 0;
+}
+
+/* Old Genesis Columns */
+.five-sixths, .four-sixths, .one-fourth, .one-half, .one-sixth,
+.one-third, .three-fourths, .three-sixths, .two-fourths, .two-sixths, .two-thirds {
+  float: left;
+  margin-left: 2.564102564102564%;
+}
+
+.one-half, .three-sixths, .two-fourths {
+  width: 48.717948717948715%;
+}
+
+.one-third, .two-sixths {
+  width: 31.623931623931625%;
+}
+
+.four-sixths, .two-thirds {
+  width: 65.81196581196582%;
+}
+
+.one-fourth {
+  width: 23.076923076923077%;
+}
+
+.three-fourths {
+  width: 74.35897435897436%;
+}
+
+.one-sixth {
+  width: 14.52991452991453%;
+}
+
+.five-sixths {
+  width: 82.90598290598291%;
+}
+
+.first {
+  clear: both;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  body.parent-pageid-8403 .one-half {
+    width: 100%;
+  }
+}

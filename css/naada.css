@@ -1,0 +1,3564 @@
+@charset "UTF-8";
+/*
+  * CUSTOM THEME FOR NAADA Yoga Family
+  * By ANDREW @ THink Up Design & Roy @ Scheffers IT
+  * V 1.0
+  * January 2018 */
+/* COLORS */
+/* MIXINS */
+/****/
+/** Default DOM Elements Typography **/
+/****/
+/* line 46, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+html {
+  /** Set Root REM size **/
+  font-size: 100%;
+}
+
+/* line 50, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  color: #666;
+  font-weight: 300;
+  background-color: #f5f5f5;
+}
+
+/* line 56, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body > div {
+  font-size: 1rem;
+}
+
+/* line 58, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body input, body select, body textarea {
+  font-size: 1rem;
+}
+
+/* line 61, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.sidebar {
+  font-size: 15px;
+  color: #666;
+}
+
+/* line 64, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.sidebar .widget {
+  background-color: #fff;
+  padding: 2.5rem;
+}
+
+/* line 68, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home, body.page-template-familypage {
+  background-color: #fff;
+}
+
+/* line 72, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+a, .entry-title a, .sidebar .widget-title a, .entry-content a, .sidebar a {
+  color: #f7ad00;
+  text-decoration: none;
+}
+
+/* line 77, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+a:hover, .entry-title a:hover, .sidebar .widget-title a:hover, .entry-content a:hover, .sidebar a:hover {
+  color: #e19d00;
+}
+
+/* line 80, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+/* line 85, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+h1, .entry-title {
+  font-size: 2.25rem;
+}
+
+/* line 88, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+h2 {
+  font-size: 1.875rem;
+}
+
+/* line 91, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+h3 {
+  font-size: 1.5rem;
+}
+
+/* line 94, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+h4 {
+  font-size: 1.25rem;
+}
+
+/* line 97, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+hr {
+  border: 0;
+  height: 4px;
+  margin-bottom: 4rem;
+  /*background-image: -webkit-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:    -moz-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:     -ms-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0));
+   *background-image:      -o-linear-gradient(left, rgba(153,153,153,0), rgba(153,153,153,0.75), rgba(153,153,153,0)); */
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+/* line 108, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.entry-content a, .sidebar a {
+  border-bottom: none;
+}
+
+/* line 111, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+button {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 119, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input {
+  padding: .95rem;
+}
+
+/* line 121, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input[type="button"], input[type="reset"], input[type="submit"] {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* buttons */
+/* line 155, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-button {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 157, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-button:hover {
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 160, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.orange-hollow {
+  border: 2px solid #f7ad00;
+}
+
+/* line 162, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.orange-hollow:hover {
+  color: #fbc13b;
+  border: 2px solid #fbc13b;
+}
+
+/* line 166, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.grey-button {
+  color: #fff !important;
+  background-color: #3f3f3f;
+}
+
+/* line 169, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.grey-button:hover {
+  color: #fff !important;
+  background-color: #1f1f1f;
+}
+
+/* line 173, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.green-button {
+  color: #fff !important;
+  background-color: #b3ba1c;
+}
+
+/* line 176, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.green-button:hover {
+  color: #fff !important;
+  background-color: #a6ad1b;
+}
+
+/* line 184, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.orange-button {
+  color: #fff !important;
+  background-color: #f7ad00;
+}
+
+/* line 187, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets a.orange-button, .rev_slider a.orange-button {
+  border: 1px solid #fff;
+}
+
+/* line 190, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.orange-button:hover {
+  color: #fff !important;
+  background-color: #fabd30;
+}
+
+/* line 194, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.inactive-button {
+  background-color: #C5C5C5;
+  color: #8D8888;
+}
+
+/* line 199, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-button.small {
+  font-size: 11px;
+  line-height: 14px;
+  padding: 5px 10px;
+}
+
+/* line 203, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-button.medium {
+  font-size: 16px;
+  line-height: 16px;
+  padding: 12px 20px;
+}
+
+/* line 207, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-button.large {
+  font-size: 21px;
+  line-height: 21px;
+  padding: 18px 30px;
+}
+
+/* end buttons */
+/* line 214, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+a.button, .button, .entry-content a.button, button, input[type="button"], input[type="reset"], input[type="submit"] {
+  color: #fff;
+  font-weight: bold;
+  background-color: #f7ad00;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* line 223, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+a.button:hover, .button:hover, .entry-content a.button:hover, button:hover, input[type="button"]:hover, input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #fabd30;
+  color: #fff;
+}
+
+/* line 227, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+button:hover {
+  background-color: #e19d00;
+}
+
+/* line 231, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input:hover[type="button"], input:hover[type="reset"], input:hover[type="submit"] {
+  background-color: #e19d00;
+}
+
+/* line 234, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.button:hover {
+  background-color: #e19d00;
+}
+
+/* line 238, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input[type="search"] {
+  margin-bottom: 20px;
+}
+
+/* line 240, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input[type="checkbox"], input[type="image"], input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* line 243, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+:focus {
+  outline-color: #fff;
+}
+
+/* line 246, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.archive-pagination li a {
+  background-color: #616161;
+}
+
+/* line 249, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+span.dropcap {
+  float: left;
+  font-size: 50px;
+  line-height: 44px;
+  padding: 2px 5px 0 3px;
+}
+
+/* line 255, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.twocol {
+  width: 45%;
+  float: left;
+  margin-right: 2.5%;
+}
+
+/* line 259, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.twocol:nth-of-type(2)::after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* line 266, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.row {
+  float: left;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* line 271, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.alert, .notice {
+  margin: 1rem 1rem 2rem;
+  padding: 1rem;
+  display: block;
+  float: left;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* line 278, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.alert p, .notice p {
+  margin: 0;
+  line-height: 1.1rem;
+}
+
+/* line 282, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.alert {
+  background-color: #e87070;
+  border: 2px solid red;
+}
+
+/* line 285, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.alert h3 {
+  color: #fff;
+}
+
+/* line 288, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.notice {
+  background-color: #d9eaff;
+  border: 2px solid #a8c3e4;
+  color: #616161;
+}
+
+/* line 292, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.notice h3 {
+  color: #616161;
+}
+
+/* line 295, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.checkMarks li {
+  background: url("../images/checkmark.png") no-repeat top left;
+  padding-left: 35px;
+  line-height: normal;
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-bottom: .75rem;
+}
+
+/* line 303, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.underline {
+  border-bottom: 4px solid #b3ba1c;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-bottom: 3px;
+}
+
+/* line 310, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.centerWrap {
+  text-align: center;
+}
+
+/* line 312, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.centerWrap > h2 {
+  margin: 0 auto 2rem;
+  display: inline-block;
+}
+
+/* line 315, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.centerWrap h3.newsletter {
+  margin: 2rem auto 1rem;
+}
+
+/* line 317, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.centerWrap #mc_embed_signup {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+/* line 321, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.centerWrap #mc_embed_signup form {
+  text-align: center;
+}
+
+/* line 323, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.centerWrap #mc_embed_signup #mc_embed_signup_scroll {
+  width: 100%;
+}
+
+/* line 325, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.centerWrap #mc_embed_signup #mc_embed_signup_scroll input[type="email"] {
+  width: 265px;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 325, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .centerWrap #mc_embed_signup #mc_embed_signup_scroll input[type="email"] {
+    width: 46%;
+  }
+}
+
+/* MailChimp */
+/* line 334, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#mc_embed_signup {
+  clear: left;
+  font-size: 14px;
+}
+
+/* line 337, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#mc_embed_signup .clear {
+  text-align: center;
+}
+
+/* line 339, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#mc_embed_signup p.stupid {
+  display: inline-block;
+  margin: 0;
+}
+
+/* line 342, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#mc_embed_signup p.stupid input[type='submit'] {
+  margin: -20px 0 0 0;
+  padding: .75rem 2rem;
+  width: 100%;
+}
+
+/* line 346, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#mc_embed_signup input[type='submit'] {
+  background-color: #F7AD00;
+  border: 1px solid #ffffff;
+  padding: 16px;
+  height: auto;
+  margin-top: 1.5em;
+  width: 80%;
+}
+
+/* line 353, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#mc_embed_signup input[type='submit']:hover {
+  background-color: #E19D00;
+}
+
+/* Header */
+@media only screen and (min-width: 1200px) {
+  /* line 361, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-container {
+    padding-top: 43px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  /* line 361, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-container {
+    padding-top: 86px;
+  }
+}
+
+/* line 367, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header {
+  min-height: 80px;
+  background-color: #fff;
+}
+
+/* line 370, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .wrap {
+  padding: 8px 0;
+}
+
+/* line 373, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.title-area {
+  padding: 7px 0;
+}
+
+/* end Header */
+/* Navigation */
+/* line 380, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.nav-primary {
+  background-color: #b3ba1c;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+}
+
+/* line 386, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.genesis-nav-menu {
+  font-size: 13px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 392, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.menu-secondary {
+  font-size: 12px;
+}
+
+/* line 396, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+li.backhome {
+  float: right;
+  background-color: #4873c5;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 401, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  #menu-secondary-navigation li {
+    font-size: 75%;
+  }
+}
+
+/* line 405, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+ul.menu-primary > li.menu-item-has-children > a:after {
+  content: '\f502';
+  display: inline-block;
+  font: normal 12px/1 'Genericons';
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+}
+
+/* line 412, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+ul.menu-primary ul > li.menu-item-has-children > a:after {
+  content: '\f502';
+  display: inline-block;
+  font: normal 12px/1 'Genericons';
+  vertical-align: bottom;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+  content: '\f501';
+  vertical-align: text-bottom;
+  padding-bottom: 2px;
+}
+
+/* line 423, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.genesis-nav-menu a {
+  padding: 15px 10px;
+  color: #fff;
+}
+
+/* line 428, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.nav-primary .genesis-nav-menu a:hover, .nav-primary .genesis-nav-menu .current-menu-item > a {
+  color: #e8e8e8;
+  text-decoration: none;
+}
+
+/* line 431, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.nav-primary .genesis-nav-menu .sub-menu {
+  z-index: 500;
+}
+
+/* line 432, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.nav-primary .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+  color: #fff;
+}
+
+/* line 435, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.nav-primary .genesis-nav-menu .sub-menu a {
+  background-color: #fff;
+  color: #b3ba1c;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* line 444, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.genesis-nav-menu .sub-menu .current-menu-item a {
+  background-color: #fff;
+  color: #b3ba1c;
+  border: 1px solid #e5e5e5;
+  border-top: none;
+  font-size: 13px;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+/* line 454, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.menu-primary .sub-menu a:hover, .menu-primary .sub-menu .current-menu-item a:hover {
+  background-color: #b3ba1c;
+  color: #fff;
+}
+
+/* line 458, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.header-image .site-title > a {
+  background: url("../images/naada-family-logo.png") no-repeat left;
+  width: 360px;
+  background-size: contain;
+  height: 105px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 458, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .header-image .site-title > a {
+    width: 320px;
+    background-size: cover;
+  }
+}
+
+/* line 467, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#menu-ytt-submenu li a, #menu-ytt-submenu-french li a {
+  font-size: 1.2em;
+}
+
+/* line 470, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#menu-ytt-submenu li a:hover:after, #menu-ytt-submenu-french li a:hover:after {
+  content: '\f501';
+  display: inline-block;
+  font: normal 14px/1 'Genericons';
+  vertical-align: middle;
+  -webkit-font-smoothing: antialiased;
+  padding-left: 5px;
+}
+
+/* line 478, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.shiftnav-loading {
+  display: none !important;
+}
+
+/* end Navigation */
+/* Video Banner CSS */
+/* line 485, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.familyBanner {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  background: url("../images/familyyoga-header.jpg") no-repeat center left;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 485, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyBanner {
+    min-height: 250px;
+  }
+}
+
+/* line 494, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.familyCallout {
+  position: absolute;
+  top: 15%;
+  width: 600px;
+  right: 10%;
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: normal;
+  font-weight: 400;
+  text-align: center;
+  z-index: 100;
+}
+
+/* line 505, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.familyCallout h1, .familyCallout h2, .familyCallout h3 {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.51);
+  font-weight: 600;
+}
+
+/* line 509, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.familyCallout p {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.51);
+}
+
+/* line 511, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.familyCallout a.naada-button {
+  text-shadow: none;
+}
+
+/* line 513, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.familyCallout div.downArrow {
+  position: absolute;
+  bottom: -21px;
+  left: 48%;
+  display: inline-block;
+  border-radius: 50%;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #b3ba1c;
+  border-radius: 50%;
+  margin-left: 0.75em;
+  bottom: -36px;
+  left: 42%;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  /* line 513, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout div.downArrow {
+    left: 42%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 513, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout div.downArrow {
+    left: 40%;
+  }
+}
+
+/* line 30, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.familyCallout div.downArrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 12px;
+  width: 12px;
+  height: 12px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+@media only screen and (min-width: 640px) and (max-width: 960px) {
+  /* line 494, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout {
+    top: 20%;
+    width: 400px;
+    left: 5%;
+    font-size: 1.25rem;
+  }
+  /* line 522, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout .naada-button.large {
+    padding: 10px 15px;
+    font-size: 18px;
+  }
+  /* line 525, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout .text-widget p {
+    margin: 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  /* line 494, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout {
+    top: 10%;
+    width: 300px;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  /* line 532, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout h2 {
+    font-size: 22px;
+  }
+  /* line 534, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout .naada-button.large {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  /* line 537, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout .text-widget p {
+    margin: 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* line 494, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout {
+    top: 20%;
+  }
+  /* line 541, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout .textwidget p {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 494, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout {
+    left: 2%;
+  }
+  /* line 545, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout h1, .familyCallout h2 {
+    font-size: 17px;
+  }
+  /* line 547, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout .textwidget p {
+    display: none;
+  }
+  /* line 549, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .familyCallout .naada-button.large {
+    padding: 4px 10px;
+  }
+}
+
+/* Video Banner End */
+/* Header Widget */
+/* line 557, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.header-full-width .title-area {
+  width: 360px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 557, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .header-full-width .title-area {
+    width: 320px;
+  }
+}
+
+/* line 562, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container, .site-header .menu-meta-links-french-container {
+  max-width: 800px;
+  float: right;
+}
+
+/* line 566, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li, .site-header .menu-meta-links-french-container ul li {
+  float: left;
+  padding: 0 5px;
+}
+
+/* line 569, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li a, .site-header .menu-meta-links-french-container ul li a {
+  color: #A2A2A2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 573, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li a:hover, .site-header .menu-meta-links-french-container ul li a:hover {
+  color: #BeBebe;
+}
+
+/* line 575, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li#menu-item-wpml-ls-4-fr, .site-header .menu-meta-links-french-container ul li#menu-item-wpml-ls-4-fr {
+  margin: 48px 20px 0;
+}
+
+/* line 577, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li.backNaada, .site-header .menu-meta-links-french-container ul li.backNaada {
+  transition: all .3s ease;
+  padding: 3rem 0;
+  background-color: #b3ba1c;
+  border-radius: 200px;
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #b3ba1c;
+}
+
+/* line 585, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li.backNaada a, .site-header .menu-meta-links-french-container ul li.backNaada a {
+  padding: 3rem 1rem;
+  color: #fff;
+}
+
+/* line 588, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li.backNaada:hover, .site-header .menu-meta-links-french-container ul li.backNaada:hover {
+  border: 2px solid #b3ba1c;
+  background-color: transparent;
+}
+
+/* line 591, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li.backNaada:hover a, .site-header .menu-meta-links-french-container ul li.backNaada:hover a {
+  color: #b3ba1c;
+}
+
+/* line 593, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li.language a, .site-header .menu-meta-links-french-container ul li.language a {
+  color: #f7ad00;
+}
+
+/* line 595, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header .menu-meta-links-container ul li.language a:hover, .site-header .menu-meta-links-french-container ul li.language a:hover {
+  color: #fabd30;
+}
+
+@media only screen and (max-width: 700px) {
+  /* line 562, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header .menu-meta-links-container, .site-header .menu-meta-links-french-container {
+    float: left;
+    margin-top: 7px;
+  }
+  /* line 600, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header .menu-meta-links-container section.widget_nav_menu, .site-header .menu-meta-links-french-container section.widget_nav_menu {
+    float: left;
+    margin-left: 15px;
+  }
+  /* line 603, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header .menu-meta-links-container section#search-3, .site-header .menu-meta-links-french-container section#search-3 {
+    margin-right: 20px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 608, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header .menu-meta-links-container, .site-header .menu-meta-links-french-container {
+    float: left;
+  }
+  /* line 611, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header .menu-meta-links-container ul li.backNaada, .site-header .menu-meta-links-french-container ul li.backNaada {
+    padding: 1rem;
+  }
+  /* line 613, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header .menu-meta-links-container ul li.backNaada a, .site-header .menu-meta-links-french-container ul li.backNaada a {
+    padding: 0;
+  }
+  /* line 615, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header .menu-meta-links-container ul li#menu-item-wpml-ls-4-fr, .site-header .menu-meta-links-french-container ul li#menu-item-wpml-ls-4-fr {
+    margin: 18px 10px 0;
+  }
+}
+
+/* line 618, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.header-widget-area section {
+  float: right;
+}
+
+/* line 622, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.nav-header a, .nav-header .naada-icon, .nav-header .current-menu-item > a {
+  color: #999;
+}
+
+/* line 624, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.nav-header a:hover {
+  color: #333;
+}
+
+/* line 627, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.nav-header .genesis-nav-menu #menu-item-329-fr a, .nav-header .genesis-nav-menu #menu-item-4881-en a, .nav-header .genesis-nav-menu #menu-item-329-fr a:hover, .nav-header .genesis-nav-menu #menu-item-4881-en a:hover {
+  color: #F7AD00;
+}
+
+/* line 630, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header form.search-form {
+  margin-top: 21px;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 5px 8px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  float: right;
+  height: 30px;
+  width: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  /* line 630, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header form.search-form {
+    margin-top: 60px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 630, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .site-header form.search-form {
+    margin-top: 0;
+  }
+}
+
+/* line 646, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header form.search-form:hover {
+  background-color: #b3ba1c;
+  color: #fff;
+  cursor: text;
+}
+
+/* line 650, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header form.search-form:hover .ico-mglass {
+  background: #b3ba1c;
+  border: 2px solid #fff;
+}
+
+/* line 653, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header form.search-form:hover .ico-mglass::after {
+  background: #fff;
+}
+
+/* line 655, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-header form.search-form input {
+  border: 0;
+  border-bottom: 1px solid #ECEFAC;
+  display: none;
+  background: transparent;
+  color: #fff;
+  margin-bottom: 0;
+  width: 85%;
+  padding: 0;
+  height: 20px;
+  float: right;
+}
+
+/* line 667, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.ico-mglass {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  border-radius: 30px;
+  height: 11px;
+  width: 11px;
+  border: 2px solid #888;
+  float: left;
+  margin-top: 3px;
+}
+
+/* line 678, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.ico-mglass:after {
+  content: "";
+  height: 2px;
+  width: 7px;
+  background: #888;
+  position: absolute;
+  top: 7px;
+  left: 5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
+
+/* line 693, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input[type="search"]::-webkit-input-placeholder {
+  /* WebKit, Blink, Edge */
+  color: #ccc;
+}
+
+/* line 696, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input[type="search"]:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #ddd;
+  opacity: 1;
+}
+
+/* line 700, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input[type="search"]::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #ddd;
+  opacity: 1;
+}
+
+/* line 704, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input[type="search"]:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ddd;
+}
+
+/* line 707, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+input[type="search"]:placeholder-shown {
+  /* Standard Pseudo-class */
+  color: #ddd;
+}
+
+/* line 711, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section#search-3 {
+  width: 30px;
+  margin-left: 20px;
+}
+
+/* line 714, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section#search-3 h4 {
+  display: none;
+}
+
+/* End Header Widget */
+/* Posts & Pages */
+/* line 721, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-inner {
+  padding-top: 40px;
+}
+
+/* line 724, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.breadcrumb {
+  margin-bottom: 20px;
+}
+
+/* line 727, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.content {
+  /* Nexus G5 mobile issue fix: With a fix width the content will be pushed off the screen at smaller screen sizes. */
+}
+
+/* line 730, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.content .entry {
+  background-color: #fff;
+  padding: 3rem 4rem;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 730, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .content .entry {
+    padding: 1rem 2rem;
+  }
+}
+
+/* line 736, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.entry-title {
+  margin-bottom: 30px;
+}
+
+/* line 739, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.post h1.entry-title {
+  font-size: 24px;
+}
+
+/* line 743, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.archive-pagination li a:hover, .archive-pagination .active a {
+  background-color: #f7ad00;
+}
+
+/* line 746, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.entry-meta {
+  font-weight: bold;
+  display: none;
+}
+
+/* removed from article and courses display */
+/* line 752, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.wp-caption-text {
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 756, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.widget-title {
+  font-size: 20px;
+}
+
+/* line 759, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.home .site-inner, .page-template-familypage .site-inner {
+  padding-top: 0;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 759, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .home .site-inner, .page-template-familypage .site-inner {
+    padding: 0;
+  }
+}
+
+/* line 764, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.forcefullwidth_wrapper_tp_banner {
+  display: block;
+  clear: both;
+  margin-bottom: 28px !important;
+}
+
+/* line 769, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-accordion {
+  margin-bottom: 40px !important;
+}
+
+/* line 772, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-teacher {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+/* line 775, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-teacher img {
+  float: left;
+  padding-right: 5px;
+}
+
+/* line 779, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.naada-question {
+  margin-bottom: 28px;
+}
+
+/* line 782, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.video-wrapper {
+  position: relative;
+  padding-bottom: 52%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+/* line 790, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 797, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+table.naada-table tbody {
+  border: none;
+}
+
+/* line 800, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-paypal-button input {
+  border: none;
+  padding: 0;
+}
+
+/* line 804, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+img.resource-boxes {
+  width: 220px;
+  float: left;
+  margin: 5px 5px 0 0;
+}
+
+/* Tablepress styles */
+/* line 811, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-pricing {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+/* line 815, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-pricing tbody {
+  background-color: whitesmoke;
+}
+
+/* line 817, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-pricing td {
+  padding: 20px !important;
+  width: 50%;
+}
+
+/* line 820, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-pricing ul {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* line 823, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-pricing p {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 14px 0;
+}
+
+/* line 828, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-pricing-amount {
+  font-size: 30px;
+  line-height: 0.8;
+}
+
+/* line 833, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+h2.tablepress-table-name {
+  font-size: 24px;
+}
+
+/* line 835, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+h2.ld-entry-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* LearnDash styles */
+/* line 841, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#learndash_uploaded_assignments h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* line 845, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.learndash input.button-primary {
+  margin-top: 10px;
+}
+
+/* line 848, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.widget_sfwd-courses-widget h4 a, .widget_sfwd_ldcourseinfo #ld_course_info_mycourses_list h4 {
+  font-size: 16px;
+}
+
+/* line 852, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.widget_ldcourseinfo .ld-course-info-my-courses h2 {
+  font-size: 15px;
+}
+
+/* line 854, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.widget_ldcourseinfo .ld-course-info-my-courses img {
+  display: none;
+}
+
+/* line 856, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.widget_ldcourseinfo .ld-course-info-my-courses:before {
+  content: "• ";
+}
+
+/* line 859, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.widget_sfwd-courses-widget li {
+  padding-bottom: 0;
+}
+
+/* line 862, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#learndash_lessons a, #learndash_quizzes a, .expand_collapse a, .learndash_topic_dots a,
+.learndash_topic_dots a > span, #learndash_lesson_topics_list span a, #learndash_profile a,
+#learndash_profile a span {
+  color: #f7ad00 !important;
+}
+
+/* line 866, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#learndash_lessons a:hover, #learndash_quizzes a:hover, .expand_collapse a:hover, .learndash_topic_dots a:hover,
+.learndash_topic_dots a > span:hover, #learndash_lesson_topics_list span a:hover, #learndash_profile a:hover,
+#learndash_profile a span:hover {
+  color: #fabd30 !important;
+}
+
+/* line 869, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+form#sfwd-mark-complete input#learndash_mark_complete_button[disabled] {
+  color: #deb654 !important;
+  background-color: #ffd180;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* line 875, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.learndash_nevigation_lesson_topics_list > div > div.list_arrow {
+  display: block;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  margin-top: 4px;
+  float: left;
+}
+
+/* line 883, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#learndash_profile .learndash-course-link a {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* line 886, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.learndash_nevigation_lesson_topics_list > div {
+  margin-bottom: 10px;
+}
+
+/* line 889, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+dd.course_progress div.course_progress_blue {
+  background-color: #5CB85C;
+  height: 100%;
+}
+
+/* line 893, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+dd.course_progress {
+  display: block;
+  margin: 10px auto;
+  padding: 0;
+  position: relative;
+  width: 90%;
+  background-color: #F5F5F5;
+  border: medium none;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset;
+  height: 20px;
+  overflow: hidden;
+}
+
+/* Ubergrid styles */
+/* line 908, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.uber-grid-filters > div {
+  margin-right: 5px !important;
+}
+
+/* line 909, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.uber-grid-filters > div a {
+  font-size: 14px !important;
+}
+
+/* line 913, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-id-198 .uber-grid-filters, .page-id-5231 .uber-grid-filters {
+  display: none !important;
+}
+
+/* Gravity Forms styles */
+/* line 918, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.gform_wrapper input {
+  border: 1px solid #ddd;
+}
+
+/* line 920, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.gform_wrapper input[type="submit"] {
+  padding: 16px 24px;
+  border: none;
+}
+
+/*  end Posts & Pages */
+/* fix for framework update */
+/* line 928, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.widget ol > li {
+  text-indent: 0;
+}
+
+/* GF fix for radio buttons overflow */
+/* line 934, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.gform_wrapper ul.gfield_checkbox li, .gform_wrapper ul.gfield_radio li {
+  overflow: visible !important;
+}
+
+/* Genericons */
+/* line 939, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.genericon {
+  vertical-align: text-bottom;
+}
+
+/* line 942, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-icon:before {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  font: normal 16px/1 'Genericons';
+  vertical-align: text-bottom;
+}
+
+/* line 948, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-facebook-icon:before {
+  content: '\f203';
+  /*color: #3b5998; */
+}
+
+/* line 952, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-twitter-icon:before {
+  content: '\f202';
+}
+
+/* line 955, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-instagram-icon:before {
+  content: '\f215';
+}
+
+/* Slideshow */
+/* line 960, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-slide-box1 {
+  font-size: 14px;
+  color: #fff;
+}
+
+/* line 963, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-slide-box1 p {
+  margin: 0 0 10px;
+}
+
+/* line 965, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-slide-box1 a.naada-slidebox-link {
+  color: #999;
+  border-bottom: 1px dotted #999;
+}
+
+/* line 968, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-slide-box1 a.naada-slidebox-link:hover {
+  color: #fff;
+}
+
+/* line 970, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-slide-box1 h5 {
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+/* line 975, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-slide-image {
+  border: 3px solid #fff;
+}
+
+/* Footer */
+/* line 981, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets {
+  padding-top: 40px;
+}
+
+/* line 983, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets .footer-widgets-1, .footer-widgets .footer-widgets-2 {
+  width: 340px;
+  float: left;
+}
+
+/* line 986, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets .footer-widgets-1 {
+  margin-right: 60px;
+}
+
+/* line 988, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets .footer-widgets-3 {
+  float: right;
+  width: 340px;
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 993, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .footer-widgets .footer-widgets-1, .footer-widgets .footer-widgets-2, .footer-widgets .footer-widgets-3 {
+    width: 100%;
+    margin: .5rem 0;
+  }
+}
+
+/* line 997, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets, .woocommerce .footer-widgets {
+  background-color: #b3ba1c;
+  color: #fff;
+}
+
+/* line 1000, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets a, .woocommerce .footer-widgets a {
+  color: #fff;
+  border-bottom: 1px dotted #fff;
+}
+
+/* line 1003, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets a.social, .woocommerce .footer-widgets a.social {
+  padding: 0 .25rem;
+  border-bottom: 0;
+}
+
+/* line 1006, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets a.social:hover img, .woocommerce .footer-widgets a.social:hover img {
+  opacity: .8;
+}
+
+/* line 1008, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets a.social img, .woocommerce .footer-widgets a.social img {
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+/* line 1012, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets button, .footer-widgets input[type="button"], .footer-widgets input[type="reset"], .footer-widgets input[type="submit"], .footer-widgets .button, .footer-widgets input.button, .woocommerce .footer-widgets button, .woocommerce .footer-widgets input[type="button"], .woocommerce .footer-widgets input[type="reset"], .woocommerce .footer-widgets input[type="submit"], .woocommerce .footer-widgets .button, .woocommerce .footer-widgets input.button {
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff !important;
+  background-color: #f7ad00;
+  border: 1px solid white;
+  padding: 16px 24px;
+}
+
+/* line 1018, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets button:hover, .footer-widgets input[type="button"]:hover, .footer-widgets input[type="reset"]:hover, .footer-widgets input[type="submit"]:hover, .footer-widgets .button:hover, .footer-widgets input.button:hover, .woocommerce .footer-widgets button:hover, .woocommerce .footer-widgets input[type="button"]:hover, .woocommerce .footer-widgets input[type="reset"]:hover, .woocommerce .footer-widgets input[type="submit"]:hover, .woocommerce .footer-widgets .button:hover, .woocommerce .footer-widgets input.button:hover {
+  background-color: #fabd30;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  margin: 5px;
+  /*font-family: Merriweather, 'Open Sans', Arial, sans-serif; */
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 1023, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-footer {
+  background-color: #90980e;
+  background-size: cover;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 1rem;
+  border-top: 0;
+}
+
+/* line 1031, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-footer a {
+  color: #fff;
+}
+
+/* line 1033, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.site-footer a:hover {
+  color: #D6DA9D;
+}
+
+/* line 1036, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.footer-widgets input {
+  border: 1px solid #fff;
+  border-radius: 3px;
+}
+
+/* end Footer */
+/* HOMEPAGE Specific Style */
+/* line 1044, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner {
+  max-width: 100%;
+}
+
+/* line 1046, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner article.entry {
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 1049, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 3rem;
+  overflow: hidden;
+}
+
+/* line 1054, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap h2 {
+  text-align: center;
+}
+
+/* line 1056, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap.testimonials {
+  padding: 4rem 0 !important;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 1049, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap {
+    padding: 2rem 2rem;
+  }
+}
+
+/* line 1060, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap h3.schedule {
+  float: left;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+/* line 1064, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap a.fullSched {
+  background: #F5F5F5;
+  border: 1px solid #DEDEDE;
+  border-radius: 5px;
+  padding: .25rem;
+  font-size: 0.9rem;
+  color: #aeaeae;
+  margin: 0 0 0 10px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 1074, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap a.fullSched:hover {
+  cursor: pointer;
+  background: #f7ad00;
+  color: #fff;
+  border: 1px solid #f7ad00;
+}
+
+/* line 1080, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell h3 {
+  padding: 1em;
+}
+
+/* line 1082, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell.second, body.home .site-inner .homeContentWrap .sell.first {
+  width: 45%;
+  float: right;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 1082, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell.second, body.home .site-inner .homeContentWrap .sell.first {
+    width: 100%;
+  }
+}
+
+/* line 1087, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell.first {
+  margin: 2rem 2rem 2rem 0;
+}
+
+/* line 1089, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell.first .greenbox {
+  background: url("../images/free-class-bubble-bg.jpg") no-repeat top left;
+}
+
+/* line 1091, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell.second {
+  margin: 2rem 0 2rem 2rem;
+}
+
+/* line 1093, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell.second .greenbox {
+  background: url("../images/take-time-bubble-bg.png") no-repeat 0% 50%;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 1096, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell.second, body.home .site-inner .homeContentWrap .sell.first {
+    margin: 1rem 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 1099, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell.second .greenbox, body.home .site-inner .homeContentWrap .sell.first .greenbox {
+    width: 100%;
+  }
+}
+
+/* line 1101, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell .greenbox {
+  color: #fff;
+  padding: 10px;
+  margin-bottom: 1rem;
+  height: 204px;
+  border-radius: 300px;
+  width: 42%;
+  float: left;
+  background-size: cover;
+  position: relative;
+}
+
+/* line 1111, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell .greenbox:after {
+  content: "";
+  display: block;
+  height: 210px;
+  width: 210px;
+  background: rgba(255, 255, 255, 0.3);
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  /* line 1111, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell .greenbox:after {
+    width: 100%;
+  }
+}
+
+/* line 1122, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell .greenbox + p {
+  float: left;
+  width: 54%;
+  margin-left: 1rem;
+  padding-top: .5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  /* line 1122, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell .greenbox + p {
+    width: 100%;
+  }
+}
+
+/* line 1129, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .sell .greenbox h3 {
+  font-size: 1.35rem;
+  color: #fff;
+  padding: 10px;
+  margin: 3.5rem 0 0 0;
+  text-align: center;
+  text-shadow: 1px 1px 5px black;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 1129, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .sell .greenbox h3 {
+    margin: 4rem 0 0 0;
+  }
+}
+
+/* line 1139, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .col_1_3 {
+  width: 22%;
+}
+
+/* line 1141, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .col_2_3 {
+  width: 72%;
+}
+
+/* line 1143, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .col_2_3 .naada-pricing td {
+  width: auto !important;
+}
+
+/* line 1145, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .col_2_3, body.home .site-inner .homeContentWrap .col_1_3 {
+  float: left;
+  margin: 2rem 3% 2rem 0;
+}
+
+/* line 1148, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .col_2_3 p, body.home .site-inner .homeContentWrap .col_1_3 p {
+  float: left;
+  width: 60%;
+}
+
+@media only screen and (max-width: 525px) {
+  /* line 1148, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .col_2_3 p, body.home .site-inner .homeContentWrap .col_1_3 p {
+    width: 100%;
+    float: none;
+  }
+  /* line 1154, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .col_2_3 p + p, body.home .site-inner .homeContentWrap .col_1_3 p + p {
+    float: left;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 1158, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.home .site-inner .homeContentWrap .col_1_3, body.home .site-inner .homeContentWrap .col_2_3 {
+    width: 100%;
+    margin: 2rem 3% 0 0;
+  }
+}
+
+/* line 1161, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-left {
+  float: left;
+  width: 20%;
+  margin-right: 5%;
+}
+
+/* line 1165, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right {
+  float: left;
+  width: 75%;
+}
+
+/* line 1168, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right div.signin {
+  background: #e1e1e1;
+  border-radius: 10px;
+  padding: 2rem 2rem 1rem;
+  float: left;
+  width: 100%;
+}
+
+/* line 1174, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right h3 {
+  background: #f4f4f4;
+  padding: .75rem 1.5rem;
+  display: inline-block;
+  margin: 0 0 0 2rem;
+  color: #7B7B7B;
+  border-radius: 10px 10px 0 0;
+}
+
+/* line 1181, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right .form-group {
+  float: left;
+  margin: 0 3% 2% 0;
+}
+
+/* line 1184, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right .form-group:nth-of-type(1), body.home .site-inner .homeContentWrap .login-right .form-group .form-group:nth-of-type(2) {
+  width: 40%;
+}
+
+/* line 1186, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right .form-group:nth-of-type(3) {
+  width: 15%;
+  margin: 1.65rem 0 1rem;
+}
+
+/* line 1189, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right .form-group input[type="submit"] {
+  float: right;
+}
+
+/* line 1191, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.home .site-inner .homeContentWrap .login-right ul li {
+  list-style-type: none;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* line 1196, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.homeContentWrap.ageGroups {
+  padding-top: 7rem !important;
+}
+
+/* line 1201, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax {
+  width: 100%;
+  padding: 4rem 0;
+  position: relative;
+}
+
+/* line 1205, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax .parallaxContent {
+  margin: 0 auto;
+  max-width: 1200px;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* line 1210, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax .parallaxContent h2 {
+  color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+/* line 1214, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax .parallaxContent h2 span {
+  border-bottom: 5px solid #b3ba1c;
+}
+
+/* line 1216, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax .parallaxContent h3 {
+  color: #fff;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+/* line 1220, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax .parallaxContent .block {
+  width: 33%;
+  margin: 3rem 1rem 1rem;
+  float: left;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+/* line 1227, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax .parallaxContent .block.left {
+  margin-left: 12rem;
+}
+
+/* line 1229, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax .parallaxContent .center {
+  margin: 3rem 1rem 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 1235, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax .parallaxContent .block {
+    width: 100%;
+    padding: 1rem 2rem 0;
+    margin: 2rem 0 0;
+  }
+  /* line 1239, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax .parallaxContent .block.left {
+    margin-left: 0;
+  }
+  /* line 1241, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax .parallaxContent .block p {
+    padding: 0;
+  }
+}
+
+/* line 1243, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax .parallaxContent a.button {
+  margin-top: 2rem;
+}
+
+/* line 1245, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax.parallax-1 .parallaxContent .block.right p {
+  padding-top: 2.3rem;
+}
+
+@media only screen and (max-width: 640px) {
+  /* line 1248, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax.block.right {
+    margin: 0 0 2rem;
+  }
+  /* line 1250, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax.block.right p {
+    padding-top: 0;
+  }
+}
+
+/* line 1252, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax div.downArrow {
+  position: absolute;
+  bottom: -21px;
+  left: 48%;
+  display: inline-block;
+  border-radius: 50%;
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #b3ba1c;
+  border-radius: 50%;
+  margin-left: 0.75em;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  /* line 1252, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax div.downArrow {
+    left: 42%;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 1252, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax div.downArrow {
+    left: 40%;
+  }
+}
+
+/* line 30, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax div.downArrow:after {
+  content: '';
+  display: inline-block;
+  margin-top: 12px;
+  width: 12px;
+  height: 12px;
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+  -moz-transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* line 1255, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.onlineEducation {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* line 1258, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.onlineEducation a {
+  color: #b3ba1c;
+}
+
+/* line 1261, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax-1 {
+  padding: 5rem 0;
+  background: url("../images/family-yoga-parallax2.jpg") 50% 100% repeat fixed;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 1261, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax-1 {
+    background: url("../images/family-yoga-parallax2.jpg") 55% 35% repeat;
+    background-size: cover;
+  }
+}
+
+/* line 1267, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax-1 .parallaxContent .block .right p {
+  padding-top: 0;
+}
+
+/* line 1270, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clinic-carousel, .nytt-carousel, .online-carousel {
+  margin: 3rem 0;
+}
+
+/* line 1272, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clinic-carousel div.courseImage, .nytt-carousel div.courseImage, .online-carousel div.courseImage {
+  float: none !important;
+  width: 288px;
+  margin: 0 auto 1.5rem !important;
+}
+
+/* line 1276, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clinic-carousel div.courseImage img, .nytt-carousel div.courseImage img, .online-carousel div.courseImage img {
+  border: 1px solid #E5E5E5;
+  float: none;
+  padding: 6px;
+  margin: 0;
+  width: 288px;
+  height: 178px;
+  border-radius: 5px;
+}
+
+/* line 1284, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clinic-carousel h2, .nytt-carousel h2, .online-carousel h2 {
+  margin-bottom: 2rem;
+}
+
+/* line 1286, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clinic-carousel h2 a, .nytt-carousel h2 a, .online-carousel h2 a {
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+/* line 1291, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clinic-carousel span.trainer-name a, .nytt-carousel span.trainer-name a, .online-carousel span.trainer-name a {
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+/* line 1294, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+  width: 365px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  /* line 1298, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 400px;
+    margin: 0 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 899px) {
+  /* line 1302, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 330px;
+  }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 779px) {
+  /* line 1305, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 305px;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 679px) {
+  /* line 1308, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 460px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 519px) {
+  /* line 1312, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 400px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  /* line 1316, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 320px;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 1320, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinic-carousel .slick-slide, .nytt-carousel .slick-slide, .online-carousel .slick-slide {
+    width: 300px;
+    margin: 0;
+    padding: 0 !important;
+  }
+  /* line 1324, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinic-carousel div.healcode-image-area img, .nytt-carousel div.healcode-image-area img, .online-carousel div.healcode-image-area img {
+    width: 250px;
+    height: 153px;
+  }
+}
+
+/* line 1328, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.online-carousel h2 {
+  margin-bottom: 0;
+}
+
+/* line 1331, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+section.module.parallax-3 {
+  background: url("../images/family-yoga-parallax1.jpg") 50% 30% repeat fixed;
+  padding: 4rem 0;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 1331, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  section.module.parallax-3 {
+    background: url("../images/family-yoga-parallax1.jpg") 47% 40% repeat;
+    background-size: cover;
+  }
+}
+
+/* Promo box */
+/* line 1343, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-promo-box {
+  border: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+
+/* line 1347, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-promo-box-header {
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #b3ba1c;
+}
+
+/* line 1356, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-promo-box-body {
+  display: inline-block;
+  padding: 15px;
+}
+
+/* line 1360, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-promo-box-dates {
+  display: inline-block;
+  padding: 0 15px 15px;
+  font-weight: bold;
+}
+
+/* end Promo box */
+/* Andrew's HealCode styles */
+/* Family */
+/* line 1371, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+tr {
+  /* Family */
+  /* Therapeutic */
+  /* beginner */
+  /* Intermediate */
+  /* Advanced */
+  /* Specialty Classes */
+  /* Workshops */
+}
+
+/* line 1373, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+tr.kids_class_7_9yrs .class_level span, tr.kids_class_5_10yrs .class_level span, tr.kids_class_4_6_yrs .class_level span, tr.prenatal .class_level span, tr.postnatal .class_level span, tr.family_yoga .class_level span, tr.acro_yoga .class_level span, tr.kids_class_1_3_yrs .class_level span, tr.kids_class_2_5_yrs .class_level span, tr.mom_dad_crawlers_class .class_level span, tr.kids_class_10_15yrs .class_level span,
+tr.moms_dads_yoga .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #f285a2;
+  padding: 5px 10px;
+}
+
+/* line 1380, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+tr.meditation .class_level span, tr.restorative_101 .class_level span, tr.restaurateur_cou_epaules .class_level span, tr.restaurateur .class_level span, tr.restaurateur_hanches_dos .class_level span, tr.yoga_wall_restorative .class_level span, tr.yin_yoga .class_level span, tr.ayurveda .class_level span, tr.advanced_anatomy .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #F1E33D;
+  padding: 5px 10px;
+}
+
+/* line 1386, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+tr.energizer .class_level span, tr.rise_and_shine .class_level span, tr.naada_level_1 .class_level span, tr.intro_to_yoga .class_level span, tr.yoga_wall_intro .class_level span, tr.community_yoga_for_healthy_aging .class_level span, tr.community_class .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #b3ba1e;
+  padding: 5px 10px;
+}
+
+/* line 1392, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+tr.naada_level_2 .class_level span, tr.yoga_wall .class_level span, tr.shoulder_openers .class_level span, tr.hip_openers .class_level span, tr.back_bends .class_level span, tr.yoga_wall .class_level span, tr.yoga_wall_hip_openers .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #97c9ea;
+  padding: 5px 10px;
+}
+
+/* line 1398, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+tr.naada_live_by_donation .class_level span, tr.live_workshop_level_2_3 .class_level span, tr.naada_live .class_level span, tr.naada_level_2_3 .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #f59c00;
+  padding: 5px 10px;
+}
+
+/* line 1404, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+tr.yoga_for_bone_health .class_level span, tr.yoga_for_women_yoga_pour_femmes .class_level span, tr.inversions .class_level span, tr.yoga_for_men_yoga_pour_hommes .class_level span, tr.intro_to_pranayama .class_level span, tr.prenatal .class_level span, tr.soins_du_dos_back_care .class_level span, tr.back_care .class_level span, tr.yoga_intro .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #f285a2;
+  padding: 5px 10px;
+}
+
+/* line 1410, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+tr.decoding_the_sun_salutations_decoder_les_salutations_au_soleil .class_level span, tr.finding_the_earth_through_standing_poses_connecter_avec_le_sol_lors_des_postures_debout .class_level span, tr.get_to_the_core_twisting_in_standing_poses_droit_au_coeur_les_torsions_en_postures_debout .class_level span {
+  color: #fff;
+  text-transform: uppercase;
+  background: #D34F3F;
+  padding: 5px 10px;
+}
+
+/* line 1420, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.Enrollment td.class_level span.class_level {
+  color: #fff;
+  text-transform: uppercase;
+  background: #D34F3F;
+  padding: 5px 10px;
+}
+
+/* line 1425, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.Enrollment.assisting_101 td.class_level span.class_level, .Enrollment.ayurveda td.class_level span.class_level, .Enrollment.asana_103 td.class_level span.class_level, .Enrollment.back_care td.class_level span.class_level, .Enrollment.meditation_101 td.class_level span.class_level, .Enrollment.relax_and_renew td.class_level span.class_level, .Enrollment.pranayama_101 td.class_level span.class_level, .Enrollment.yoga_wall td.class_level span.class_level, .Enrollment.naada_101 td.class_level span.class_level, .Enrollment.psychology_of_yoga td.class_level span.class_level {
+  color: #fff;
+  text-transform: uppercase;
+  background: #909090;
+  padding: 5px 10px;
+}
+
+/* NYTT */
+/** Course Descriptions Styles * */
+/* line 1435, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-class-categories {
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* line 1440, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-class-category-desc {
+  margin: 0 0 10px 10px;
+  font-style: italic;
+}
+
+/* line 1444, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-therapeutic {
+  background: #e3d042;
+}
+
+/* line 1447, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-beginner {
+  background: #b3ba1e;
+}
+
+/* line 1450, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-intermediate {
+  background: #97c9ea;
+}
+
+/* line 1453, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-advanced {
+  background: #f59c00;
+}
+
+/* line 1456, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-family {
+  background: #f285a2;
+}
+
+/* Mobile styles for Full Schedule */
+@media only screen and (max-width: 400px) {
+  /* line 1463, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.page-id-7 div.healcode.schedule td .hc_starttime, body.page-id-7 div.healcode.schedule td .hc_endtime {
+    display: block;
+    float: left;
+    line-height: normal;
+  }
+  /* line 1467, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.page-id-7 div.healcode.schedule td.mbo_class {
+    line-height: normal;
+  }
+  /* line 1469, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.page-id-7 div.healcode.schedule a.hc-button.signup_now, body.page-id-7 div.healcode.schedule div.healcode input.hc-button {
+    font-size: 10px;
+    line-height: normal;
+    font-weight: normal;
+    padding: 4px 2px;
+  }
+}
+
+/* end Andrew's HealCode styles */
+/* line 1479, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clearfix {
+  display: inline-block;
+}
+
+/* line 1480, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* responsive image grid */
+/* line 1491, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+img.naada-grid {
+  margin: 0 5px 5px 0;
+  width: 133px;
+  float: left;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1200px) {
+  /* line 1499, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  img.naada-grid {
+    width: 103px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  /* line 1503, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-teacher {
+    float: none;
+  }
+  /* line 1505, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-teacher img {
+    float: none;
+  }
+  /* line 1507, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  img.naada-grid {
+    width: 137px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 1511, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  img.naada-grid {
+    width: 113px;
+  }
+  /* line 1513, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .entry-title {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  /* line 1516, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  img.resource-boxes {
+    width: 260px;
+  }
+}
+
+/* HEALCODE OVERRIDES */
+/* line 1522, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#hc_enrollments_301084042aa:first-child .enrollment {
+  display: block;
+}
+
+/* line 1524, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#hc_enrollments_301084042aa .enrollment {
+  display: none;
+}
+
+/* Healcode widget tweaks */
+/* New Horizontal Schedule Widget for homepage */
+@media only screen and (min-width: 640px) {
+  /* line 1534, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched {
+    margin-bottom: 2rem;
+  }
+  /* line 1536, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched::after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  /* line 1543, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched .healcode table, div.horz-sched .healcode tbody {
+    border: 0;
+  }
+  /* line 1547, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched div.healcode table.schedule tr td {
+    border-top: 0;
+  }
+  /* line 1549, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched div.healcode table tr {
+    border-bottom: 0;
+  }
+  /* line 1551, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched div.list_view li {
+    padding: 1rem;
+    width: 100px;
+    float: left;
+    min-height: 140px;
+    border-left: 1px dashed #DEDEDE;
+  }
+  /* line 1557, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched div.list_view li:last-child {
+    border-right: 1px dashed #DEDEDE;
+  }
+  /* line 1560, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched .healcode a.hc-button.signup_now {
+    font-size: .75rem;
+  }
+  /* line 1562, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched .healcode .hc_time {
+    line-height: 1rem;
+  }
+  /* line 1564, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched .healcode span.hc_endtime {
+    color: #C3C3C3;
+  }
+  /* line 1566, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched .healcode .mbo_class {
+    padding-top: 7px;
+    line-height: 1rem;
+  }
+  /* line 1569, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched div.list_view li div.signup {
+    position: absolute;
+    bottom: 7%;
+    top: inherit;
+    margin-top: 0;
+    left: 10px;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  /* line 1579, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched tbody {
+    border: 0;
+  }
+  /* line 1581, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched div.list_view li {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+  }
+  /* line 1584, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched div.healcode table tr {
+    border-bottom: 0;
+  }
+  /* line 1586, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  div.horz-sched div.healcode table.schedule tr td {
+    border-top: 0;
+  }
+}
+
+/* End Horizontal sched */
+/* line 1597, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.healcode div.hc_footer div {
+  display: none !important;
+}
+
+/* line 1600, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.healcode a.hc-button {
+  display: inline-block !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  color: #fff;
+  background-color: #404040;
+}
+
+/* line 1608, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.healcode a:hover.hc-button {
+  background-color: #fabd30;
+  color: #fff !important;
+}
+
+/* line 1611, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.healcode a.hc-button.signup_now {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  background-color: #f7ad00;
+}
+
+/* line 1615, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.healcode a a {
+  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold !important;
+}
+
+/* Subject to Page ID, ie use homepage for deployment */
+/* line 1626, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.page-id-6613 div.healcode.enrollments .enrollment, body.page-id-6613 div.healcode.enrollments .healcode-course {
+  width: 300px !important;
+}
+
+/* Hides Sub Enrollments in Courses */
+/* line 1631, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+div.healcode-course div.enrollment {
+  display: none !important;
+}
+
+/* HEALCODE CAROUSEL CSS */
+/* line 1636, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 1646, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#modal {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  padding: 8px;
+  /*margin: 3rem 6rem; */
+}
+
+/* line 1653, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#content {
+  border-radius: 8px;
+  background: #fff;
+  padding: 20px;
+  overflow: hidden;
+}
+
+/* line 1659, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  display: block;
+  top: -7px;
+  right: -7px;
+  background-color: #fff;
+  border-radius: 14px;
+  font-weight: bold;
+  padding: 1px 8px;
+  border: 2px solid #5A5A5A;
+}
+
+/* line 1671, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#close:hover {
+  background: #f7ad00;
+  color: #fff;
+}
+
+/* line 1676, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-carousel div.healcode-image-area {
+  float: none !important;
+  width: 309px;
+  margin: 0 auto 1.5rem !important;
+}
+
+/* line 1681, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-carousel div.healcode-image-area img {
+  border: 1px solid #E5E5E5;
+  float: none;
+  padding: 6px;
+  margin: 0;
+  width: 288px;
+  height: 178px;
+  border-radius: 5px;
+}
+
+/* line 1689, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-carousel h2.healcode-enrollment-name, .naada-carousel h2.healcode-course-name {
+  text-transform: uppercase;
+  color: #f7ad00;
+  text-align: center;
+}
+
+/* line 1693, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-carousel span.healcode-trainer-name {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+  color: #555;
+}
+
+/* line 1698, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-carousel div.healcode .healcode-course {
+  min-height: 466px;
+}
+
+/* line 1700, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-carousel .slick-slider {
+  max-height: 450px;
+}
+
+/* line 1702, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-carousel .slick-slider .slick-slide {
+  width: 360px;
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1024px) {
+  /* line 1705, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 400px;
+    margin: 0 1rem 0;
+  }
+}
+
+@media only screen and (min-width: 780px) and (max-width: 899px) {
+  /* line 1709, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 330px;
+  }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 779px) {
+  /* line 1712, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 320px;
+  }
+}
+
+@media only screen and (min-width: 520px) and (max-width: 679px) {
+  /* line 1715, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 460px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 450px) and (max-width: 519px) {
+  /* line 1719, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 400px;
+    margin: 0 2rem;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 449px) {
+  /* line 1723, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 320px;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 374px) {
+  /* line 1727, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider .slick-slide {
+    width: 308px;
+    margin: 0;
+    padding: 0 !important;
+  }
+  /* line 1731, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider div.healcode-image-area img {
+    width: 250px;
+    height: 153px;
+    margin: 0 auto;
+  }
+  /* line 1735, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .naada-carousel .slick-slider h2.healcode-enrollment-name {
+    width: 90%;
+  }
+}
+
+/* line 1737, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.naada-carousel .slick-list {
+  padding: 0 0 0 0 !important;
+}
+
+/* Slick Slider */
+/* line 1742, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.slick-prev, .slick-next {
+  height: 40px !important;
+  width: 40px !important;
+  z-index: 10;
+}
+
+/* line 1747, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.slick-prev:before, .slick-next:before {
+  color: #b3ba1c !important;
+  font-size: 40px !important;
+}
+
+/* line 1751, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.entry-content ul.slick-dots {
+  margin-left: 0;
+}
+
+/* Landing Pages */
+/* Customisation for different landing page hero images */
+/* line 1757, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-id-8571 .page-template-landing .LandingHero {
+  background-position: center 33%;
+}
+
+/* yoga for women */
+/* line 1761, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-id-8598 .LandingHero {
+  background-position: center 33% !important;
+  background-size: cover;
+}
+
+/* line 1766, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .homeContentWrap {
+  overflow: hidden;
+}
+
+/* line 1768, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .LandingHero {
+  min-height: 600px;
+  background-position: 30% 20%;
+  position: relative;
+}
+
+/* line 1772, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .LandingHero .callOut {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 300px auto 0 auto;
+  width: 60%;
+  text-align: center;
+}
+
+/* line 1779, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .LandingHero .naadaPresents {
+  background-color: #b3ba1c;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  text-transform: none;
+}
+
+/* line 1787, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .LandingHero h2 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  background-color: #fff;
+  color: #b3ba1c;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+}
+
+/* line 1796, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .breadcrumb {
+  display: none;
+}
+
+/* line 1798, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .courseShort {
+  background-color: #b3ba1c;
+  color: #fff;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 400;
+  padding: 2rem 0;
+}
+
+/* line 1806, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .courseShort p {
+  margin-bottom: 0;
+}
+
+/* line 1808, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .courseShort div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* line 1812, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .hardSell h2 {
+  text-transform: none;
+}
+
+/* line 1814, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .hardSell + hr {
+  margin: 2rem 0 4rem;
+}
+
+/* line 1816, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .hardSell span.coursePrice {
+  font-weight: bold;
+  font-size: 2.5rem;
+  display: block;
+  text-align: center;
+}
+
+/* line 1821, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .hardSell .courseBuy {
+  position: relative;
+}
+
+/* line 1823, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .hardSell .courseBuy::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #b3ba1c;
+  top: -60px;
+  left: 31%;
+}
+
+/* line 1833, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing hr {
+  width: 100%;
+  background-color: #eaeaea;
+  margin: 3rem auto 4rem;
+  position: relative;
+  float: left;
+}
+
+/* line 1839, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing hr.buy::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 40px solid #eaeaea;
+  bottom: -36px;
+  left: 46%;
+}
+
+/* line 1849, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing h1.entry-title {
+  text-align: center;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+/* line 1853, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing h1.entry-title::after {
+  content: "";
+  position: absolute;
+  width: 37%;
+  height: 5px;
+  bottom: -14px;
+  left: 31%;
+  background-color: #b3ba1c;
+}
+
+/* line 1861, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .price {
+  font-size: 2.5rem;
+  color: #b3ba1c;
+}
+
+/* line 1864, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .one-half p:first-child {
+  font-size: 120%;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+/* line 1868, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .one-half p:first-child::first-letter {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+/* line 1871, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .center {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* line 1876, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .center .naada-button.large {
+  width: 30%;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 1879, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing h1.entry-title {
+    margin-bottom: 50px;
+  }
+  /* line 1881, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .one-half.first {
+    padding-bottom: 2rem;
+  }
+  /* line 1883, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .center .naada-button.large {
+    width: 70%;
+  }
+}
+
+/* line 1886, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing ul.greenDots li {
+  list-style-type: none;
+  padding-left: 10px;
+  position: relative;
+  font-weight: 400;
+  line-height: 2rem;
+  font-size: 1.1rem;
+}
+
+/* line 1893, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing ul.greenDots li::before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #b3ba1c;
+  left: -12px;
+  top: 11px;
+}
+
+/* line 1902, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing .intructorBio {
+  font-weight: 400;
+  font-weight: 1.1rem;
+}
+
+/* line 1905, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing a.naada-button.orange-button.large.centered {
+  width: 40%;
+  display: block;
+  margin: 0 0 0 30%;
+  text-align: center;
+  float: left;
+}
+
+/* line 1911, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-landing article.post-6717 {
+  display: none;
+}
+
+/* line 1916, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#thinkup-testimonials h3 {
+  font-size: 1.5rem;
+  position: relative;
+  font-weight: 200;
+  text-transform: initial;
+  line-height: 2.25rem;
+}
+
+/* line 1922, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#thinkup-testimonials h3:first-child {
+  background-color: #e6e6e6;
+  padding: 2rem 2rem 2rem 3rem;
+  border-radius: 4px;
+}
+
+/* line 1926, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#thinkup-testimonials h3:first-child:before {
+  content: "\201C";
+  position: absolute;
+  top: 2rem;
+  left: 26px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* line 1934, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#thinkup-testimonials h2 {
+  float: right;
+  font-weight: 600;
+  position: relative;
+  text-transform: initial;
+  max-width: 80%;
+}
+
+/* line 1940, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#thinkup-testimonials h2:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 40px solid #e6e6e6;
+  top: -12px;
+  left: -59px;
+}
+
+/* line 1950, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+#thinkup-testimonials .flex-control-nav {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 1953, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  #thinkup-testimonials .slides {
+    padding: 0 !important;
+  }
+}
+
+/* line 1958, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-id-8013.page-template-landing ul.greenDots li {
+  margin-bottom: 1rem;
+}
+
+/* line 1960, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-id-8013.page-template-landing ul.greenDots li::first-line {
+  font-weight: bold;
+}
+
+/* line 1963, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.dropdownContainer.closed {
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 1967, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.dropdownContainer.closed::after {
+  position: absolute;
+  content: "";
+  height: 200px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: -moz-linear-gradient(top, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0.01) 1%, whitesmoke 100%);
+  background: -webkit-linear-gradient(top, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0.01) 1%, whitesmoke 100%);
+  background: linear-gradient(to bottom, rgba(245, 245, 245, 0) 0%, rgba(245, 245, 245, 0.01) 1%, whitesmoke 100%);
+}
+
+/* line 1978, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+a#dropdownOpen {
+  background-color: #cccccc;
+  color: #fff;
+  padding: 1rem;
+}
+
+/* line 1982, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+a#dropdownOpen:hover {
+  background-color: #aeaeae;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 1988, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .LandingHero {
+    background-size: cover;
+    min-height: 475px;
+  }
+  /* line 1991, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .LandingHero .callOut {
+    width: 100%;
+    margin: 275px auto 0 auto;
+  }
+  /* line 1994, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .LandingHero .callOut .naadaPresents {
+    font-size: 1rem;
+    margin: 0;
+    padding: .5rem;
+    width: 100%;
+  }
+  /* line 1999, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .LandingHero .callOut h2 {
+    font-size: 2rem;
+    padding: 1rem .5rem;
+  }
+  /* line 2002, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .courseShort p {
+    padding: 0 1rem;
+  }
+  /* line 2005, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .hardSell .first {
+    padding-bottom: 0;
+  }
+  /* line 2007, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .hardSell .courseBuy {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 2010, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing .hardSell .courseBuy::before {
+    display: none;
+  }
+  /* line 2012, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing hr {
+    width: 100%;
+  }
+  /* line 2014, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing img.instructorPic {
+    width: 80%;
+    margin: 0 auto 2rem;
+    display: block;
+  }
+  /* line 2018, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing a.naada-button.orange-button.large.centered {
+    width: 100%;
+  }
+  /* line 2020, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-landing hr.buy::after {
+    left: 34%;
+  }
+}
+
+/* CLINIC Page */
+/* line 2027, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.clinicCallout h3 {
+  font-weight: 400;
+  margin-bottom: 3rem;
+  line-height: 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 2027, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .clinicCallout h3 {
+    display: none;
+  }
+}
+
+/* line 2035, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage {
+  font-size: 1.1rem;
+}
+
+/* line 2037, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .naada-button.medium {
+  font-size: 14px;
+}
+
+/* line 2039, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .breadcrumb {
+  display: none;
+}
+
+/* line 2041, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .centerWrap {
+  margin: 2rem auto 4rem;
+}
+
+/* line 2043, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .centerWrap.bottom {
+  margin-bottom: 8rem;
+}
+
+/* line 2045, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .centerWrap p {
+  width: 70%;
+  margin: 0 auto 2rem;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 2045, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-clinicpage .centerWrap p {
+    width: 90%;
+  }
+}
+
+/* line 2050, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .servicesWrap {
+  float: left;
+  margin-bottom: 4rem;
+}
+
+/* line 2053, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .servicesWrap .serviceBlock {
+  position: relative;
+  margin: 2rem auto;
+  width: 100%;
+  float: left;
+  background-color: #f1f1f1;
+}
+
+/* line 2059, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .servicesWrap .serviceBlock .serviceRight, .page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft {
+  float: left;
+  width: 45%;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 2059, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-clinicpage .servicesWrap .serviceBlock .serviceRight, .page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft {
+    width: 90%;
+  }
+}
+
+/* line 2064, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft {
+  background-position: center;
+  background-size: cover;
+  margin-right: 5%;
+  min-height: 455px;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 2064, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft {
+    min-height: 200px;
+    width: 100%;
+  }
+}
+
+/* line 2072, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .servicesWrap .serviceBlock .serviceLeft h2 {
+  color: #fff;
+  margin: 2rem;
+}
+
+/* line 2075, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .servicesWrap .serviceBlock .serviceRight {
+  padding: 2rem 0;
+}
+
+@media only screen and (max-width: 400px) {
+  /* line 2075, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .page-template-clinicpage .servicesWrap .serviceBlock .serviceRight {
+    padding: 2rem 1rem;
+  }
+}
+
+/* line 2079, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .rates {
+  width: 100%;
+  float: left;
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+/* line 2084, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .rates .centerWrap {
+  margin: 2rem auto;
+}
+
+/* line 2086, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .rates ul {
+  margin-left: 20px;
+}
+
+/* line 2088, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .rates ul li {
+  list-style-type: disc;
+}
+
+/* line 2090, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .testimonialWrap {
+  float: left;
+  margin-bottom: 4rem;
+}
+
+/* line 2093, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .testimonialWrap .testimonial {
+  padding: 2rem;
+  background-color: #e6e6e6;
+  position: relative;
+}
+
+/* line 2097, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .testimonialWrap .testimonial:after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 40px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 40px solid #e6e6e6;
+  bottom: -36px;
+  left: 54%;
+}
+
+/* line 2107, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .testimonialWrap .testimonial .pic {
+  float: left;
+  width: 200px;
+  z-index: 100;
+  position: relative;
+  margin-right: 2rem;
+}
+
+/* line 2113, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .testimonialWrap .testimonial p:first-child {
+  padding: 0;
+  width: 75%;
+  float: right;
+}
+
+/* line 2117, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .testimonialWrap .testimonial p:first-child:before {
+  top: 0rem;
+  left: -32px;
+}
+
+/* line 2120, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.page-template-clinicpage .testimonialWrap p.author {
+  float: right;
+  font-weight: 600;
+  margin-right: 29%;
+  font-size: 1.5rem;
+}
+
+/* line 2127, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.page-id-8431 select#options[staff_ids] {
+  display: none;
+}
+
+/* line 2130, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.bookingCloak {
+  display: none;
+}
+
+/* WooCommerce Styles */
+/* line 2138, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.woocommerce main div.product p.price, .woocommerce main div.product span.price {
+  color: #B3BA1C;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* line 2142, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.woocommerce main div.product .quantity input {
+  padding: .5rem;
+}
+
+/* line 2144, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.woocommerce main #respond input#submit.alt, .woocommerce main a.button.alt, .woocommerce main button.button.alt, .woocommerce main input.button.alt {
+  background-color: #f7ad00;
+  padding: .75rem;
+}
+
+/* line 2147, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.woocommerce main #respond input#submit.alt:hover, .woocommerce main a.button.alt:hover, .woocommerce main button.button.alt:hover, .woocommerce main input.button.alt:hover {
+  background-color: #fabd30;
+}
+
+/* line 2149, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.woocommerce main button.single_add_to_cart_button.button.alt.large.centered {
+  padding: 1.25rem 2rem;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  float: none;
+}
+
+/* line 2158, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.woocommerce-cart main td.product-name, .woocommerce-checkout main td.product-name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* line 2165, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main .woocommerce .order_details li, body.woocommerce-cart main .woocommerce .order_details li, body.woocommerce-checkout main .woocommerce .order_details li {
+  list-style-type: none;
+  font-size: .8rem;
+}
+
+/* line 2168, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main .woocommerce .woocommerce-message, body.woocommerce-cart main .woocommerce .woocommerce-message, body.woocommerce-checkout main .woocommerce .woocommerce-message {
+  border-top: 3px solid #b3ba1c;
+}
+
+/* line 2170, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main .woocommerce .woocommerce-info, body.woocommerce-cart main .woocommerce .woocommerce-info, body.woocommerce-checkout main .woocommerce .woocommerce-info {
+  border-top-color: #3FA4DC;
+}
+
+/* line 2172, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main .woocommerce .woocommerce-info:before, body.woocommerce-cart main .woocommerce .woocommerce-info:before, body.woocommerce-checkout main .woocommerce .woocommerce-info:before {
+  color: #3FA4DC;
+}
+
+/* line 2174, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main .woocommerce #respond input#submit.alt, body.woocommerce main .woocommerce a.button.alt, body.woocommerce main .woocommerce button.button.alt, body.woocommerce main .woocommerce input.button.alt, body.woocommerce-cart main .woocommerce #respond input#submit.alt, body.woocommerce-cart main .woocommerce a.button.alt, body.woocommerce-cart main .woocommerce button.button.alt, body.woocommerce-cart main .woocommerce input.button.alt, body.woocommerce-checkout main .woocommerce #respond input#submit.alt, body.woocommerce-checkout main .woocommerce a.button.alt, body.woocommerce-checkout main .woocommerce button.button.alt, body.woocommerce-checkout main .woocommerce input.button.alt {
+  background-color: #f7ad00;
+}
+
+/* line 2176, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main .woocommerce #respond input#submit.alt:hover, body.woocommerce main .woocommerce a.button.alt:hover, body.woocommerce main .woocommerce button.button.alt:hover, body.woocommerce main .woocommerce input.button.alt:hover, body.woocommerce-cart main .woocommerce #respond input#submit.alt:hover, body.woocommerce-cart main .woocommerce a.button.alt:hover, body.woocommerce-cart main .woocommerce button.button.alt:hover, body.woocommerce-cart main .woocommerce input.button.alt:hover, body.woocommerce-checkout main .woocommerce #respond input#submit.alt:hover, body.woocommerce-checkout main .woocommerce a.button.alt:hover, body.woocommerce-checkout main .woocommerce button.button.alt:hover, body.woocommerce-checkout main .woocommerce input.button.alt:hover {
+  background-color: #fabd30;
+}
+
+/* line 2178, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main .woocommerce input.button.alt:disabled, body.woocommerce main .woocommerce .woocommerce input.button.alt:disabled[disabled], body.woocommerce-cart main .woocommerce input.button.alt:disabled, body.woocommerce-cart main .woocommerce .woocommerce input.button.alt:disabled[disabled], body.woocommerce-checkout main .woocommerce input.button.alt:disabled, body.woocommerce-checkout main .woocommerce .woocommerce input.button.alt:disabled[disabled] {
+  background-color: #f7ad00;
+}
+
+/* line 2180, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main .star-rating, body.woocommerce-cart main .star-rating, body.woocommerce-checkout main .star-rating {
+  color: #b3ba1c;
+}
+
+/* line 2182, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main #payment ul.payment_methods li, body.woocommerce-cart main #payment ul.payment_methods li, body.woocommerce-checkout main #payment ul.payment_methods li {
+  list-style-type: none;
+}
+
+/* line 2184, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main #reviews #comments ol.commentlist li, body.woocommerce-cart main #reviews #comments ol.commentlist li, body.woocommerce-checkout main #reviews #comments ol.commentlist li {
+  list-style-type: none;
+  margin: 2rem 0 2rem;
+}
+
+/* line 2187, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main #reviews #comments ol.commentlist li img.avatar, body.woocommerce-cart main #reviews #comments ol.commentlist li img.avatar, body.woocommerce-checkout main #reviews #comments ol.commentlist li img.avatar {
+  width: 100px;
+  background: transparent;
+  border-radius: 4px;
+}
+
+/* line 2191, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+body.woocommerce main #reviews #comments ol.commentlist li .comment-text, body.woocommerce-cart main #reviews #comments ol.commentlist li .comment-text, body.woocommerce-checkout main #reviews #comments ol.commentlist li .comment-text {
+  margin: 0 0 0 120px;
+  background: #F5F5F5;
+  border: 0;
+}
+
+/* Old Genesis Columns */
+/* line 2198, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.five-sixths, .four-sixths, .one-fourth, .one-half, .one-sixth,
+.one-third, .three-fourths, .three-sixths, .two-fourths, .two-sixths, .two-thirds {
+  float: left;
+  margin-left: 2.564102564102564%;
+}
+
+/* line 2203, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.one-half, .three-sixths, .two-fourths {
+  width: 48.717948717948715%;
+}
+
+/* line 2206, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.one-third, .two-sixths {
+  width: 31.623931623931625%;
+}
+
+/* line 2209, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.four-sixths, .two-thirds {
+  width: 65.81196581196582%;
+}
+
+/* line 2212, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.one-fourth {
+  width: 23.076923076923077%;
+}
+
+/* line 2215, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.three-fourths {
+  width: 74.35897435897436%;
+}
+
+/* line 2218, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.one-sixth {
+  width: 14.52991452991453%;
+}
+
+/* line 2221, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.five-sixths {
+  width: 82.90598290598291%;
+}
+
+/* line 2224, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+.first {
+  clear: both;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  /* line 2229, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .one-third {
+    width: 100%;
+  }
+  /* line 2231, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .one-third .first {
+    margin: 0;
+  }
+  /* line 2233, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  .one-third img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  /* line 2237, /Users/Andrew/Creative Cloud Files/Clients/Naada/Naada Yoga Family/naada-family2018/scss/naada.sass */
+  body.parent-pageid-8403 .one-half {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=../css/naada.map */

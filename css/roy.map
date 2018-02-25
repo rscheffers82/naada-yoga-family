@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/roy.css",
+	"sources": [
+		"../scss/roy.sass"
+	],
+	"sourcesContent": [
+		"div.roy {\n  color: green; }\n\n@media only screen and (max-width: 639px) {\n  .one-half {\n    width: 100%; } }\n"
+	],
+	"mappings": ";AAAA,AAAG,GAAA,AAAA,IAAI,CAAC;EACN,KAAK,EAAE,KAAM;CAAG;;AAElB,MAAM,MAAD,MAAM,MAAM,SAAS,EAAE,KAAK;;EAC/B,AAAA,SAAS,CAAC;IACR,KAAK,EAAE,IAAK;GAAG",
+	"names": []
+}
