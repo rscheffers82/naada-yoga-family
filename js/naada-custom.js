@@ -5,6 +5,34 @@
 
 jQuery( document ).ready(function( $ ) {
 
+  // Filter out content on home or workshops depending on the page.
+  var interval = 250;
+
+  // home
+  if ($('body').hasClass('page-id-27')) {
+    FilterNonFamilyContent('.slick-track div.enrollment');
+  }
+
+  // workshops
+  if ($('body').hasClass('page-id-10')) {
+    FilterNonFamilyContent('healcode-widget .filtered_collection > div');
+  }
+
+  function FilterNonFamilyContent(selector) {
+    var filterFamilyContent = setInterval(function() {
+      var elementWrapper = $(selector);
+      if (elementWrapper.length !== 0) {
+        $(selector)
+          .each(function(){
+            var classLevel = $(this).data('hcClassLevel');
+            if (classLevel !== 6) $(this).hide();
+          });
+          clearInterval(filterFamilyContent);
+      }
+    }, interval);
+  }
+  // ---
+
   naadaSearch();
   misc();
   scrollNavReveal();
