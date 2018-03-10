@@ -37,8 +37,6 @@ jQuery( document ).ready(function( $ ) {
 
   // Call success functions for Healcode Workshops
    healcodeWorkshopsReady(function () {
-       applySlickSlider();
-       modifyMarkup();
        multiDayMarkup();
        fireModal();
    });
@@ -59,60 +57,6 @@ jQuery( document ).ready(function( $ ) {
         var trimd = classname.substring(0, 25) + "...";
           $(this).text(trimd);
       }
-    });
-  }
-
-  function applySlickSlider() {
-    // Call Slick Slider on the Workshops widget
-    $('div.naada-carousel .filtered_collection').slick ({
-      dots: true,
-      infinite: false,
-      slidesToShow: 3,
-      slidesToScroll: 3,
-      variableWidth: true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            variableWidth: true
-          }
-        },
-        {
-          breakpoint: 680,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            variableWidth: true
-          }
-        }
-      ]
-    });
-  }
-
-  function modifyMarkup(){
-
-    // Adds read more to Event Meta
-    $('div.naada-carousel .enrollment.slick-slide > div.healcode-date-area').after("<div class=\"more-info\"><a href=\"#\">More Info</a></div>");
-
-    //Add css classes to columize events
-    $('div.naada-carousel div.healcode div.enrollment, div.naada-carousel div.healcode div.healcode-course').css({"float": "left", "clear": "none" })
-
-    // Hides event description area by default
-    $("div.naada-carousel div.healcode-description-area").hide();
-
-    // Remove 'Date:' in Healcode Output
-    var date = $('div.naada-carousel div.healcode span.healcode-date-value');
-    date.each(function(){
-      var str = $(this).text().replace(/Date:/g, '');
-      // if ($(this).text().length > 18){
-      // //  console.log(this);
-      //   var year = new Date().getFullYear();
-      //   //var yearPos = this.str.search(year);
-      //   str.replace(/year/g,'');
-      // }
-      $(this).text(str);
     });
   }
 

@@ -486,10 +486,13 @@ ul.menu-primary
   width: 100%
   position: relative
   min-height: 100vh
-  background: url('../images/familyyoga-header.jpg') no-repeat center left
+  // background: url('../images/familyyoga-header.jpg') no-repeat center left
   background-size: cover
   @media only screen and (max-width: 400px)
     min-height: 250px
+
+#naadaFootage
+  width: 100vw
 
 .familyCallout
   position: absolute
@@ -579,19 +582,18 @@ ul.menu-primary
     li.backNaada
       transition: all .3s ease
       padding: 3rem 0
-      background-color: $naadagreen
-      border-radius: 200px
-      color: #fff
-      cursor: pointer
       border: 2px solid $naadagreen
+      background-color: transparent
+      border-radius: 200px
+      cursor: pointer
       a
         padding: 3rem 1rem
-        color: #fff
+        color: $naadagreen
       &:hover
+        background-color: $naadagreen
         border: 2px solid $naadagreen
-        background-color: transparent
         a
-          color: $naadagreen
+          color: #fff
     li.language a
       color: $orange
       &:hover
@@ -1056,7 +1058,7 @@ body.home .site-inner
     h2
       text-align: center
     &.testimonials
-      padding: 4rem 0 !important
+      padding: 2rem 0 !important
     @media only screen and (max-width: 400px)
       padding: 2rem 2rem
     h3.schedule
@@ -1083,7 +1085,7 @@ body.home .site-inner
         padding: 1em
       &.second, &.first
         width: 45%
-        float: right
+        float: left
         @media only screen and (max-width: 1000px)
           width: 100%
       &.first
