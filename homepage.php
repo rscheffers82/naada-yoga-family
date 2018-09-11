@@ -13,8 +13,8 @@ function naada_videoBanner() {
 
     <!-- Video -->
     <video id="naadaFootage" autoplay="autoplay" muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/vid/family-video-poster.jpg">
-      <source src="<?php echo get_stylesheet_directory_uri(); ?>/vid/naada-family-hero.mp4" type="video/mp4">
-      <source src="<?php echo get_stylesheet_directory_uri(); ?>/vid/naada-family-hero2.webm" type="video/webm">
+      <source src="<?php echo get_stylesheet_directory_uri(); ?>/vid/naada-family-hero-2.mp4" type="video/mp4">
+      <source src="<?php echo get_stylesheet_directory_uri(); ?>/vid/naada-main-vid.webm" type="video/webm">
 
       Your browser doesn't support HTML5 video. Here's a <a href="<?php echo get_stylesheet_directory_uri(); ?>/vid/naada-family-hero.mp4">link</a> to download the video.
     </video>
