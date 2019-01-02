@@ -6,21 +6,25 @@ Template Name: Homepage
 add_action( 'genesis_after_header', 'naada_videoBanner', 10 );
 function naada_videoBanner() {
   ?>
-  <div class="familyBanner">
+
+  <?php
+  // New Slider using Slider REvolution
+    putRevSlider("family-homepage") ?>
+  <!--<div class="familyBanner">-->
 
     <!-- Calls our Call out Widget -->
-    <?php dynamic_sidebar("family_callout"); ?>
+    <?php //dynamic_sidebar("family_callout"); ?>
 
     <!-- Video -->
-    <video id="naadaFootage" autoplay="autoplay" muted loop poster="<?php echo get_stylesheet_directory_uri(); ?>/vid/family-video-poster.jpg">
-      <source src="<?php echo get_stylesheet_directory_uri(); ?>/vid/naada-family-hero-2.mp4" type="video/mp4">
-      <source src="<?php echo get_stylesheet_directory_uri(); ?>/vid/naada-main-vid.webm" type="video/webm">
+    <!-- <video id="naadaFootage" autoplay="autoplay" muted loop poster="<?php //echo get_stylesheet_directory_uri(); ?>/vid/family-video-poster.jpg">
+      <source src="<?php //echo get_stylesheet_directory_uri(); ?>/vid/naada-family-hero-2.mp4" type="video/mp4">
+      <source src="<?php //echo get_stylesheet_directory_uri(); ?>/vid/naada-main-vid.webm" type="video/webm">
 
-      Your browser doesn't support HTML5 video. Here's a <a href="<?php echo get_stylesheet_directory_uri(); ?>/vid/naada-family-hero.mp4">link</a> to download the video.
-    </video>
+      Your browser doesn't support HTML5 video. Here's a <a href="<?php //echo get_stylesheet_directory_uri(); ?>/vid/naada-family-hero.mp4">link</a> to download the video.
+    </video> -->
 
 
-  </div>
+    <!--</div>-->
   <?php
 }
 ?>
