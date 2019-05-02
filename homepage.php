@@ -37,6 +37,10 @@ function homepage_Output(){
     <h3 class="schedule"><?php the_field('upcoming_schedule');?></h3>
     <a class="fullSched" href="/schedule"><?php the_field('full_schedule');?></a>
     <div class="horz-sched"><?php echo do_shortcode( '[hc-hmw snippet="Family-Program-Schedule-Horizontal"]');?></div>
+    <?php if (get_field('banner_ad')):
+        the_field('banner_ad');
+    endif;?>
+
     <div class="sell first">
       <div class="greenbox">
         <h3><?php the_field('sell_box_1_title'); ?></h3>

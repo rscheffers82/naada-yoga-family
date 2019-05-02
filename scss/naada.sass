@@ -2134,68 +2134,50 @@ body.page-id-8431 select#options[staff_ids]
 .bookingCloak
   display: none
 
+/* Banner Ad for Kids Mindfulness */
+.bannerAd
+  height: 200px
+  width: 100%
+  background: url('../images/bannerAd-bg.jpg') repeat top left
+  padding: 1.5rem
+  border-radius: 5px
+  display: block
+  float: left
+  position: relative
+  margin-bottom: 2rem
+  .adLogo
+    float: left
+    margin-right: 2rem
+  h2, h4
+    color: #fff
+    text-align: left !important
+    width: 60%
+    float: left
+  h2
+    margin-top: 1rem
+  a
+    position: absolute
+    right: 5%
+    top: 34%
 
-/* WooCommerce Styles
-.woocommerce
-  main
-    div.product
-      p.price, span.price
-        color: #B3BA1C
-        font-size: 1.5rem
-        font-weight: 500
-      .quantity input
-        padding: .5rem
-    #respond input#submit.alt, a.button.alt,  button.button.alt, input.button.alt
-      background-color: $orange
-      padding: .75rem
-      &:hover
-        background-color: #fabd30
-    button.single_add_to_cart_button.button.alt.large.centered
-      padding: 1.25rem 2rem
-      text-align: center
-      display: block
-      margin: 0 auto
-      float: none
+html:lang(fr-FR)
+  .bannerAd h2
+    font-size: 1.5rem
+  .bannerAd
+    h2, h4
+      width: 50%
+body.page-id-10 div.healcode
+  float: left
 
-.woocommerce-cart, .woocommerce-checkout
-  main
-    td.product-name
-      font-weight: bold
-      font-size: 1rem
 
-body.woocommerce, body.woocommerce-cart, body.woocommerce-checkout
-  main
-    .woocommerce
-      .order_details li
-        list-style-type: none
-        font-size: .8rem
-      .woocommerce-message
-        border-top: 3px solid $naadagreen
-      .woocommerce-info
-        border-top-color: #3FA4DC
-      .woocommerce-info:before
-        color: #3FA4DC
-      #respond input#submit.alt, a.button.alt, button.button.alt, input.button.alt
-        background-color: $orange
-        &:hover
-          background-color: $orangeHover
-      input.button.alt:disabled, .woocommerce input.button.alt:disabled[disabled]
-        background-color: $orange
-    .star-rating
-      color: $naadagreen
-    #payment ul.payment_methods li
-      list-style-type: none
-    #reviews #comments ol.commentlist li
-      list-style-type: none
-      margin: 2rem 0 2rem
-      img.avatar
-        width: 100px
-        background: transparent
-        border-radius: 4px
-      .comment-text
-        margin: 0 0 0 120px
-        background: #F5F5F5
-        border: 0
+@media only screen and (max-width: 400px)
+  .bannerAd, html:lang(fr-FR) .bannerAd
+    height: auto
+    h2, h4
+      width: 100%
+    a
+      position: relative
+
 
 
 /* Old Genesis Columns */
