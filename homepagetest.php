@@ -61,11 +61,14 @@ function homepage_Output(){
       }
 
       if (count($courses) > 0): ?>
-      <?php // var_dump($courses); ?>
-      <div class="courses__wrapper">
+
+      <h3><?php the_field('upcoming_courses_title');?></h3>
+      <div class="courses__container clearfix">
         <?php foreach ( $courses as $course ): ?>
           <div class="course__wrapper">
-            <img class="course__image" src="<?php echo $course->image; ?>">
+            <div class="course__image__container">
+              <img class="course__image" src="<?php echo $course->image; ?>">
+            </div>
             <p class="course__paragraph"><?php echo $course->description; ?></p>
             <a class="naada-button orange-button medium" href="<?php echo $course->link; ?>" target="_blank">Register Now</a>
           </div>

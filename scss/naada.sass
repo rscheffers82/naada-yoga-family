@@ -2144,7 +2144,7 @@ body.page-id-8431 select#options[staff_ids]
   display: block
   float: left
   position: relative
-  margin-bottom: 2rem
+  margin-bottom: 3.5rem
   .adLogo
     float: left
     margin-right: 2rem
@@ -2222,3 +2222,33 @@ body.page-id-10 div.healcode
 @media only screen and (max-width: 900px)
   body.parent-pageid-8403 .one-half
     width: 100%
+
+.courses__container
+  display: flex
+  flex-flow: row nowrap
+  clear: both
+  margin: 2rem 0
+
+.course__wrapper
+  padding: 0 1rem
+  padding-bottom: 17.5%
+  flex: 1
+  &:first-child
+    padding-left: 0
+  &:last-child
+    padding-right: 0
+
+.course__image__container
+  position: relative
+  width: 100%
+  height: 17.5%
+  margin-bottom: 1.5rem
+  overflow: hidden
+
+.course__image
+  position: absolute
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  object-fit: cover
