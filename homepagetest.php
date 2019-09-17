@@ -51,8 +51,9 @@ function homepage_Output(){
           $new_course = new stdClass();
           $new_course->id =  $course_count;
           $new_course->image = get_field('image_' . $course_count);
+          $new_course->title = get_field('title_' . $course_count);
           $new_course->description = get_field('description_' . $course_count);
-          $new_course->link = get_field('link_' . $course_count);
+          $new_course->link = get_field('register_link_' . $course_count);
           $courses[] = $new_course;
           $course_count += 1;
         } else {
@@ -63,12 +64,12 @@ function homepage_Output(){
       if (count($courses) > 0): ?>
 
       <h3><?php the_field('upcoming_courses_title');?></h3>
+      <br>
       <div class="courses__container clearfix">
         <?php foreach ( $courses as $course ): ?>
           <div class="course__wrapper">
-            <div class="course__image__container">
-              <img class="course__image" src="<?php echo $course->image; ?>">
-            </div>
+            <img class="course__image" src="<?php echo $course->image; ?>">
+            <h3 class="course__title"><?php echo $course->title ?></h3>
             <p class="course__paragraph"><?php echo $course->description; ?></p>
             <a class="naada-button orange-button medium" href="<?php echo $course->link; ?>" target="_blank">Register Now</a>
           </div>
