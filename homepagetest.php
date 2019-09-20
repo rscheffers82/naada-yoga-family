@@ -77,20 +77,20 @@ function homepage_Output(){
       </div>
     <?php endif; ?>
 
-    <div class="sell first">
+    <!-- <div class="sell first">
       <div class="greenbox">
-        <h3><?php the_field('sell_box_1_title'); ?></h3>
+        <h3><?php// the_field('sell_box_1_title'); ?></h3>
       </div>
-      <p><?php the_field('sell_box_1_text');?></p>
+      <p><?php //the_field('sell_box_1_text');?></p>
     </div>
     <div class="sell second">
       <div class="greenbox">
-        <h3><?php the_field('sell_box_2_title'); ?></h3>
+        <h3><?php// the_field('sell_box_2_title'); ?></h3>
         </div>
-        <p><?php the_field('sell_box_2_text');?>
+        <p><?php //the_field('sell_box_2_text');?>
           <a class="naada-button orange-button medium" href="http://naada.ca/schedule" target="_blank"><?php the_field('sell_btn_text');?></a>
         </p>
-    </div>
+    </div> -->
 
     <hr />
 
