@@ -37,8 +37,17 @@ function homepage_Output(){
     <h3 class="schedule"><?php the_field('upcoming_schedule');?></h3>
     <a class="fullSched" href="/schedule"><?php the_field('full_schedule');?></a>
     <div class="horz-sched"><?php echo do_shortcode( '[hc-hmw snippet="Family-Program-Schedule-Horizontal"]');?></div>
-    <?php if (get_field('banner_ad')):
-        the_field('banner_ad');
+
+    <?php
+    // Check if Banner is activated
+    if (get_field('activate_banner_ad')):
+      // if So, output banner markup & fields ?>
+      <div class="bannerAd">
+         <img src="/wp-content/uploads/2019/04/littleflower-logo.png" class="adLogo"/>
+         <h2><?php the_field('banner_title');?></h2>
+         <h4><?php the_field('banner_ad_date');?></h4>
+         <a class="button orange" href="<?php the_field('banner_ad_button_link');?>" target="_blank"><?php the_field('banner_ad_button_text');?></a>
+      </div><?php
     endif;?>
 
     <?php
@@ -46,6 +55,7 @@ function homepage_Output(){
       $end_reached = false;
       $courses = array();
       while (!$end_reached) {
+        // Can be a bit improved upon, when no image is selected, for the 2nd and the 3rd and 4th are specified, then only the first will be visible, 3 and 4 are ignored.
         $value = get_field('image_' . $course_count);
         if ($value) {
           $new_course = new stdClass();
@@ -54,6 +64,7 @@ function homepage_Output(){
           $new_course->title = get_field('title_' . $course_count);
           $new_course->description = get_field('description_' . $course_count);
           $new_course->link = get_field('register_link_' . $course_count);
+          $new_course->enabled = get_field('enabled_' . $course_count);
           $courses[] = $new_course;
           $course_count += 1;
         } else {
@@ -61,18 +72,21 @@ function homepage_Output(){
         }
       }
 
-      if (count($courses) > 0): ?>
 
+      if (count($courses) > 0): ?>
       <h3><?php the_field('upcoming_courses_title');?></h3>
       <br>
+
       <div class="courses__container clearfix">
         <?php foreach ( $courses as $course ): ?>
-          <div class="course__wrapper">
-            <img class="course__image" src="<?php echo $course->image; ?>">
-            <h3 class="course__title"><?php echo $course->title ?></h3>
-            <p class="course__paragraph"><?php echo $course->description; ?></p>
-            <a class="naada-button orange-button medium" href="<?php echo $course->link; ?>" target="_blank">Register Now</a>
-          </div>
+          <?php if($course->enabled) : ?>
+            <div class="course__wrapper">
+              <img class="course__image" src="<?php echo $course->image; ?>">
+              <h3 class="course__title"><?php echo $course->title ?></h3>
+              <p class="course__paragraph"><?php echo $course->description; ?></p>
+              <a class="naada-button orange-button medium" href="<?php echo $course->link; ?>" target="_blank">Register Now</a>
+            </div>
+          <?php endif ?>
         <?php endforeach; ?>
       </div>
     <?php endif; ?>
